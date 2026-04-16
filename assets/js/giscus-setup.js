@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "kenmusik/donghyeok-kim.github.io",
+    "data-repo": "dh-quant/donghyeok-kim.github.io",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",
