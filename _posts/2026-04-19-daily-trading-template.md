@@ -72,5 +72,5 @@ print(df.tail())
 이미지는 `assets/img/posts/` 폴더에 올리고 아래처럼 불러오기:
 
 {% raw %}
-{% include figure.liquid loading="eager" path="assets/img/posts/2026-04-19-chart.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/posts/2026-04-16-chart.png" class="img-fluid rounded z-depth-1" %}
 {% endraw %}
