@@ -7,7 +7,7 @@ tags: trading daily-log quant
 categories: trading
 giscus_comments: false
 related_posts: true
-thumbnail: assets/img/posts/thumbnail.jpg
+thumbnail: assets/img/NQ1!_20260416.jpg
 toc:
   sidebar: left
 ---
