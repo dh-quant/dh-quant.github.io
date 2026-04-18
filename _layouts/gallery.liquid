@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    <div class="gallery-grid">
+      {% assign images = site.data.gallery %}
+      {% for img in images %}
+        <div class="gallery-item">
+          <a href="{{ img.file | prepend: '/assets/img/gallery/' | relative_url }}" target="_blank">
+            <img
+              src="{{ img.file | prepend: '/assets/img/gallery/' | relative_url }}"
+              alt="{{ img.alt | default: img.caption }}"
+              loading="lazy"
+            />
+          </a>
+          {% if img.caption %}
+            <p class="gallery-caption">{{ img.caption }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </article>
+</div>
+
+<style>
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  .gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    background: var(--global-card-bg-color, #f9f9f9);
+  }
+  .gallery-item a {
+    display: block;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+  }
+  .gallery-item:hover img {
+    transform: scale(1.04);
+  }
+  .gallery-caption {
+    font-size: 0.8rem;
+    color: var(--global-text-color-light, #888);
+    text-align: center;
+    padding: 0.4rem 0.6rem 0.6rem;
+    margin: 0;
+  }
+</style>
