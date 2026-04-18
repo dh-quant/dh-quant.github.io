@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-gallery",
+          title: "gallery",
+          description: "사진 모음",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/gallery/";
+          },
         },{id: "post-매매-복기-2026-04-16-nq-long",
         
           title: "매매 복기 | 2026-04-16 NQ Long",
