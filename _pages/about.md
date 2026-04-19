@@ -85,42 +85,120 @@ chart:
   </div>
 </div>
 
-### 세계 시장 시계
+<div class="dh-section-title">Global Markets Desk</div>
 
-지금 어느 시장이 열려 있는지 한눈에.
+<div class="dh-dashboard">
 
-<div id="dh-market-clock" class="dh-clock" aria-label="World market clock"></div>
-
-### 오늘의 시장 히트맵
-
-<p class="dh-section-sub">라이브 티커 데이터 기준. 색이 진할수록 변동폭이 큽니다.</p>
-
-<div class="dh-board">
-  <div id="dh-heatmap" class="dh-heatmap"></div>
-
-  <div class="dh-movers">
-    <div class="dh-movers__col">
-      <h4 class="dh-movers__title dh-movers__title--up">🚀 Top Gainers</h4>
-      <ol id="dh-movers-up" class="dh-movers__list"></ol>
+  <div class="dh-panel dh-span-4">
+    <div class="dh-panel__gradient"></div>
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">Fear &amp; Greed</h4>
+      <span class="dh-panel__sub">Derived</span>
     </div>
-    <div class="dh-movers__col">
-      <h4 class="dh-movers__title dh-movers__title--down">🩸 Top Losers</h4>
-      <ol id="dh-movers-down" class="dh-movers__list"></ol>
+    <div id="dh-fear-greed" class="dh-gauge"></div>
+    <div class="dh-gauge-meta"><span>loading…</span></div>
+  </div>
+
+  <div class="dh-panel dh-span-4">
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">Asset Class Pulse</h4>
+      <span class="dh-panel__sub">1D · Avg</span>
+    </div>
+    <div id="dh-asset-bars" class="dh-bars"></div>
+  </div>
+
+  <div class="dh-panel dh-span-4">
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">World Markets · Clock</h4>
+      <span class="dh-panel__sub">Local time + Index</span>
+    </div>
+    <div id="dh-market-clock" class="dh-clock"></div>
+  </div>
+
+  <div class="dh-panel dh-span-7">
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">Global Indices</h4>
+      <span class="dh-panel__sub">Last 22 trading days</span>
+    </div>
+    <div id="dh-indices" class="dh-rows"></div>
+  </div>
+
+  <div class="dh-panel dh-span-5">
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">US Treasury Curve</h4>
+      <span class="dh-panel__sub">Today vs Yesterday</span>
+    </div>
+    <div id="dh-yield-curve" class="dh-yield-curve"></div>
+  </div>
+
+  <div class="dh-panel dh-span-12">
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">US Sector Map</h4>
+      <span class="dh-panel__sub">Select Sector SPDRs · 1D change</span>
+    </div>
+    <div id="dh-sector-tree" class="dh-sector-tree"></div>
+  </div>
+
+  <div class="dh-panel dh-span-4">
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">Commodities</h4>
+      <span class="dh-panel__sub">Energy · Metals · Grains</span>
+    </div>
+    <div id="dh-commodities" class="dh-cards"></div>
+  </div>
+
+  <div class="dh-panel dh-span-4">
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">FX Majors</h4>
+      <span class="dh-panel__sub">USD pairs</span>
+    </div>
+    <div id="dh-fx" class="dh-cards"></div>
+  </div>
+
+  <div class="dh-panel dh-span-4">
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">Crypto</h4>
+      <span class="dh-panel__sub">Top cap</span>
+    </div>
+    <div id="dh-crypto" class="dh-cards"></div>
+  </div>
+
+  <div class="dh-panel dh-span-12">
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">KOSPI · Live Candlestick</h4>
+      <span class="dh-panel__sub">Daily · 6 months · MA20/60</span>
+    </div>
+    <div id="dh-kospi-chart" class="dh-echarts"></div>
+  </div>
+
+  <div class="dh-panel dh-span-7">
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">Headline Heatmap</h4>
+      <span class="dh-panel__sub">Color intensity ∝ |Δ%|</span>
+    </div>
+    <div id="dh-heatmap" class="dh-heatmap"></div>
+  </div>
+
+  <div class="dh-panel dh-span-5">
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">Top Movers</h4>
+      <span class="dh-panel__sub">Among headline</span>
+    </div>
+    <div class="dh-movers">
+      <div class="dh-movers__col">
+        <h5 class="dh-movers__title dh-movers__title--up">🚀 Gainers</h5>
+        <ol id="dh-movers-up" class="dh-movers__list"></ol>
+      </div>
+      <div class="dh-movers__col">
+        <h5 class="dh-movers__title dh-movers__title--down">🩸 Losers</h5>
+        <ol id="dh-movers-down" class="dh-movers__list"></ol>
+      </div>
     </div>
   </div>
+
 </div>
 
-### KOSPI · 라이브 차트
-
-국내 대표 지수를 일봉으로 보고, 20일·60일 이동평균선과 거래량을 함께 표시합니다.
-데이터는 GitHub Action이 15분마다 Yahoo Finance에서 당겨옵니다 — 기간 슬라이더로 확대/축소 가능.
-
-<div class="dh-chart-wrap">
-  <h4>KOSPI · Daily · 6 months</h4>
-  <div id="dh-kospi-chart" class="dh-echarts"></div>
-</div>
-
-### 오늘의 한 마디
+<div class="dh-section-title">오늘의 한 마디</div>
 
 <figure class="dh-quote" id="dh-quote" aria-live="polite">
   <blockquote class="dh-quote__text">—</blockquote>
@@ -134,6 +212,6 @@ chart:
 
 <script src="{{ '/assets/js/ticker.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/market-clock.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/market-board.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/quotes.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/kospi-chart.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/quotes.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/dashboard.js' | relative_url }}" defer></script>
