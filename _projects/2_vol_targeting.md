@@ -2,7 +2,7 @@
 layout: page
 title: Vol-Targeted Momentum
 description: 변동성 타겟팅으로 드로우다운을 억제하는 크로스-에셋 모멘텀 전략.
-img:
+img: assets/img/projects/vol_targeting.svg
 importance: 2
 category: quant
 giscus_comments: false

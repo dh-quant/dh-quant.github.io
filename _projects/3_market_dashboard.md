@@ -2,7 +2,7 @@
 layout: page
 title: Market Dashboard
 description: 실시간 매크로 · 섹터 · 자금흐름을 한 화면에서 보는 개인용 트레이딩 대시보드.
-img:
+img: assets/img/projects/dashboard.svg
 importance: 3
 category: dev
 giscus_comments: false

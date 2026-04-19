@@ -2,7 +2,7 @@
 layout: page
 title: Quant Backtester
 description: 파이썬으로 직접 만든 전략 백테스팅 엔진 — 체결 지연 · 슬리피지 · 수수료까지 반영.
-img:
+img: assets/img/projects/backtester.svg
 importance: 1
 category: quant
 giscus_comments: false

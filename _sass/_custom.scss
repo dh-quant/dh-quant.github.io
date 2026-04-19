@@ -5,6 +5,16 @@
  * - Plays well with both light and dark modes via CSS variables
  ******************************************************************************/
 
+/* Pretendard — better Korean type rendering. Scoped via the utility class
+   .dh-kor so it only affects explicitly opted-in blocks and doesn't override
+   al-folio's global font stack. */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+.dh-hero, .dh-stat, .dh-chip, .dh-ticker, .dh-chart-wrap, .dh-kor {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
+
 :root {
   --bull-color: #11d68b;
   --bear-color: #ff4757;
@@ -289,4 +299,18 @@ html[data-theme="dark"] .dh-ticker__meta {
   text-transform: uppercase;
   color: var(--global-text-color-light);
   margin: 0 0 0.5rem;
+}
+
+/* ECharts canvas container */
+.dh-echarts {
+  width: 100%;
+  height: 420px;
+  min-height: 320px;
+}
+
+@media (max-width: 640px) {
+  .dh-echarts { height: 340px; }
+  .dh-hero__title { font-size: 1.15rem; }
+  .dh-ticker__meta { gap: 0.4rem; font-size: 0.6rem; padding: 0.35rem 0.6rem; }
+  .dh-ticker__src { display: none; }
 }

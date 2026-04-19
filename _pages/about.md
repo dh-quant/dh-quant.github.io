@@ -25,6 +25,7 @@ latest_posts:
 
 chart:
   chartjs: true
+  echarts: true
 ---
 
 <section class="dh-hero">
@@ -87,9 +88,21 @@ chart:
   </div>
 </div>
 
+### KOSPI · 라이브 차트
+
+국내 대표 지수를 일봉으로 보고, 20일·60일 이동평균선과 거래량을 함께 표시합니다.
+데이터는 GitHub Action이 15분마다 Yahoo Finance에서 당겨옵니다 — 기간 슬라이더로 확대/축소 가능.
+
+<div class="dh-chart-wrap">
+  <h4>KOSPI · Daily · 6 months</h4>
+  <div id="dh-kospi-chart" class="dh-echarts"></div>
+</div>
+
+<script src="{{ '/assets/js/kospi-chart.js' | relative_url }}" defer></script>
+
 ### 샘플 에쿼티 커브
 
-실험 전략의 누적 수익 곡선(예시). 벤치마크 대비 알파와 드로우다운을 한눈에 봅니다.
+실험 전략의 누적 수익 곡선(합성 데이터). 벤치마크 대비 알파와 드로우다운을 한눈에 봅니다.
 
 <div class="dh-chart-wrap">
   <h4>Equity Curve · Strategy vs. Benchmark</h4>
