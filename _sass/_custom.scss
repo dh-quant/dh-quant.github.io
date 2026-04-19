@@ -65,7 +65,8 @@ html[data-theme="dark"] {
   margin-bottom: 0.5rem;
 }
 
-.dh-hero__eyebrow .pulse-dot {
+.pulse-dot {
+  display: inline-block;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -145,16 +146,58 @@ html[data-theme="dark"] {
   background: var(--ticker-bg), var(--global-card-bg-color);
   font-family: "Roboto Slab", "Roboto Mono", monospace;
   font-size: 0.85rem;
-  padding: 0.55rem 0;
   margin: 1.25rem 0;
+}
+
+.dh-ticker__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  border-bottom: 1px solid var(--global-divider-color);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+html[data-theme="dark"] .dh-ticker__meta {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.dh-ticker__live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  color: var(--bull-color);
+}
+
+.dh-ticker__updated {
+  color: var(--global-text-color);
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.dh-ticker__src {
+  margin-left: auto;
+  opacity: 0.7;
 }
 
 .dh-ticker__track {
   display: inline-flex;
   gap: 2.5rem;
-  padding-left: 100%;
+  padding: 0.55rem 0 0.55rem 100%;
   white-space: nowrap;
-  animation: dh-marquee 38s linear infinite;
+  animation: dh-marquee 60s linear infinite;
+}
+
+.dh-ticker:hover .dh-ticker__track { animation-play-state: paused; }
+
+.dh-ticker__item--stale {
+  opacity: 0.55;
+  font-style: italic;
 }
 
 .dh-ticker__item {

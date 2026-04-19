@@ -46,20 +46,18 @@ chart:
   </div>
 </section>
 
-<div class="dh-ticker" aria-hidden="true">
+<div class="dh-ticker" id="dh-ticker" aria-label="Live market ticker">
+  <div class="dh-ticker__meta">
+    <span class="dh-ticker__live"><span class="pulse-dot"></span> LIVE</span>
+    <span class="dh-ticker__updated">loading…</span>
+    <span class="dh-ticker__src">Yahoo Finance · 15m cron</span>
+  </div>
   <div class="dh-ticker__track">
-    <span class="dh-ticker__item"><span class="dh-ticker__symbol">KOSPI</span> <span class="dh-ticker__price">2,712.34</span> <span class="dh-ticker__chg dh-ticker__chg--up">▲ 0.82%</span></span>
-    <span class="dh-ticker__item"><span class="dh-ticker__symbol">KOSDAQ</span> <span class="dh-ticker__price">878.12</span> <span class="dh-ticker__chg dh-ticker__chg--down">▼ 0.35%</span></span>
-    <span class="dh-ticker__item"><span class="dh-ticker__symbol">S&P 500</span> <span class="dh-ticker__price">5,204.10</span> <span class="dh-ticker__chg dh-ticker__chg--up">▲ 1.13%</span></span>
-    <span class="dh-ticker__item"><span class="dh-ticker__symbol">NDX</span> <span class="dh-ticker__price">18,330.70</span> <span class="dh-ticker__chg dh-ticker__chg--up">▲ 1.46%</span></span>
-    <span class="dh-ticker__item"><span class="dh-ticker__symbol">NQ1!</span> <span class="dh-ticker__price">18,402.25</span> <span class="dh-ticker__chg dh-ticker__chg--up">▲ 0.91%</span></span>
-    <span class="dh-ticker__item"><span class="dh-ticker__symbol">WTI</span> <span class="dh-ticker__price">82.41</span> <span class="dh-ticker__chg dh-ticker__chg--down">▼ 0.44%</span></span>
-    <span class="dh-ticker__item"><span class="dh-ticker__symbol">GOLD</span> <span class="dh-ticker__price">2,391.60</span> <span class="dh-ticker__chg dh-ticker__chg--up">▲ 0.27%</span></span>
-    <span class="dh-ticker__item"><span class="dh-ticker__symbol">BTC</span> <span class="dh-ticker__price">63,110</span> <span class="dh-ticker__chg dh-ticker__chg--down">▼ 1.12%</span></span>
-    <span class="dh-ticker__item"><span class="dh-ticker__symbol">USDKRW</span> <span class="dh-ticker__price">1,378.20</span> <span class="dh-ticker__chg dh-ticker__chg--up">▲ 0.18%</span></span>
-    <span class="dh-ticker__item"><span class="dh-ticker__symbol">VIX</span> <span class="dh-ticker__price">14.32</span> <span class="dh-ticker__chg dh-ticker__chg--down">▼ 3.12%</span></span>
+    <span class="dh-ticker__item dh-ticker__item--stale"><span class="dh-ticker__symbol">Loading markets…</span></span>
   </div>
 </div>
+
+<script src="{{ '/assets/js/ticker.js' | relative_url }}" defer></script>
 
 ### 무엇을 하고 있나요
 
