@@ -24,7 +24,6 @@ latest_posts:
   limit: 3
 
 chart:
-  chartjs: true
   echarts: true
 ---
 
@@ -58,8 +57,6 @@ chart:
   </div>
 </div>
 
-<script src="{{ '/assets/js/ticker.js' | relative_url }}" defer></script>
-
 ### 무엇을 하고 있나요
 
 이 사이트에는 **매매 일지**, **시장 분석**, 그리고 관심 있는 주제들을 기록합니다.
@@ -88,6 +85,31 @@ chart:
   </div>
 </div>
 
+### 세계 시장 시계
+
+지금 어느 시장이 열려 있는지 한눈에.
+
+<div id="dh-market-clock" class="dh-clock" aria-label="World market clock"></div>
+
+### 오늘의 시장 히트맵
+
+<p class="dh-section-sub">라이브 티커 데이터 기준. 색이 진할수록 변동폭이 큽니다.</p>
+
+<div class="dh-board">
+  <div id="dh-heatmap" class="dh-heatmap"></div>
+
+  <div class="dh-movers">
+    <div class="dh-movers__col">
+      <h4 class="dh-movers__title dh-movers__title--up">🚀 Top Gainers</h4>
+      <ol id="dh-movers-up" class="dh-movers__list"></ol>
+    </div>
+    <div class="dh-movers__col">
+      <h4 class="dh-movers__title dh-movers__title--down">🩸 Top Losers</h4>
+      <ol id="dh-movers-down" class="dh-movers__list"></ol>
+    </div>
+  </div>
+</div>
+
 ### KOSPI · 라이브 차트
 
 국내 대표 지수를 일봉으로 보고, 20일·60일 이동평균선과 거래량을 함께 표시합니다.
@@ -98,99 +120,20 @@ chart:
   <div id="dh-kospi-chart" class="dh-echarts"></div>
 </div>
 
-<script src="{{ '/assets/js/kospi-chart.js' | relative_url }}" defer></script>
+### 오늘의 한 마디
 
-### 샘플 에쿼티 커브
-
-실험 전략의 누적 수익 곡선(합성 데이터). 벤치마크 대비 알파와 드로우다운을 한눈에 봅니다.
-
-<div class="dh-chart-wrap">
-  <h4>Equity Curve · Strategy vs. Benchmark</h4>
-  <canvas id="dhEquityChart" height="140"></canvas>
-</div>
-
-<script>
-  (function () {
-    function initChart() {
-      var el = document.getElementById("dhEquityChart");
-      if (!el || typeof Chart === "undefined") return;
-
-      // Synthetic but plausible equity curves (not real P&L)
-      var labels = [];
-      var n = 120;
-      for (var i = 0; i < n; i++) labels.push("D" + (i + 1));
-
-      function walk(seed, drift, vol) {
-        var out = [100];
-        var s = seed;
-        for (var i = 1; i < n; i++) {
-          s = (s * 9301 + 49297) % 233280;
-          var r = (s / 233280 - 0.5) * 2;
-          out.push(+(out[i - 1] * (1 + drift + r * vol)).toFixed(2));
-        }
-        return out;
-      }
-
-      var strat = walk(42, 0.0018, 0.011);
-      var bench = walk(7,  0.0007, 0.009);
-
-      var styles = getComputedStyle(document.documentElement);
-      var bull = styles.getPropertyValue("--bull-color").trim() || "#11d68b";
-      var accent = styles.getPropertyValue("--accent-violet").trim() || "#7c5cff";
-      var textCol = styles.getPropertyValue("--global-text-color").trim() || "#111";
-      var gridCol = styles.getPropertyValue("--global-divider-color").trim() || "rgba(0,0,0,0.08)";
-
-      new Chart(el.getContext("2d"), {
-        type: "line",
-        data: {
-          labels: labels,
-          datasets: [
-            {
-              label: "Strategy",
-              data: strat,
-              borderColor: bull,
-              backgroundColor: bull + "22",
-              tension: 0.25,
-              fill: true,
-              pointRadius: 0,
-              borderWidth: 2
-            },
-            {
-              label: "Benchmark",
-              data: bench,
-              borderColor: accent,
-              backgroundColor: "transparent",
-              borderDash: [4, 4],
-              tension: 0.25,
-              pointRadius: 0,
-              borderWidth: 2
-            }
-          ]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          interaction: { mode: "index", intersect: false },
-          plugins: {
-            legend: { labels: { color: textCol, font: { size: 11 } } },
-            tooltip: { mode: "index", intersect: false }
-          },
-          scales: {
-            x: { ticks: { color: textCol, maxTicksLimit: 6 }, grid: { color: gridCol } },
-            y: { ticks: { color: textCol }, grid: { color: gridCol } }
-          }
-        }
-      });
-    }
-
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", initChart);
-    } else {
-      setTimeout(initChart, 50);
-    }
-  })();
-</script>
+<figure class="dh-quote" id="dh-quote" aria-live="polite">
+  <blockquote class="dh-quote__text">—</blockquote>
+  <figcaption class="dh-quote__author">—</figcaption>
+  <div class="dh-quote__progress"><span></span></div>
+</figure>
 
 ### 연락 · 링크
 
 관심사가 겹치거나 이야기 나누고 싶으시면 메일·깃허브로 편하게 연락 주세요.
+
+<script src="{{ '/assets/js/ticker.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/market-clock.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/market-board.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/quotes.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/kospi-chart.js' | relative_url }}" defer></script>
