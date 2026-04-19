@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Market Dashboard thumbnail">
+  <defs>
+    <linearGradient id="bgDB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a0f22"/>
+      <stop offset="1" stop-color="#30153a"/>
+    </linearGradient>
+    <linearGradient id="cardDB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(255,255,255,0.09)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bgDB)"/>
+  <!-- card frames -->
+  <g>
+    <rect x="30"  y="30"  width="230" height="120" rx="14" fill="url(#cardDB)" stroke="rgba(255,255,255,0.08)"/>
+    <rect x="280" y="30"  width="230" height="120" rx="14" fill="url(#cardDB)" stroke="rgba(255,255,255,0.08)"/>
+    <rect x="530" y="30"  width="240" height="120" rx="14" fill="url(#cardDB)" stroke="rgba(255,255,255,0.08)"/>
+    <rect x="30"  y="170" width="480" height="180" rx="14" fill="url(#cardDB)" stroke="rgba(255,255,255,0.08)"/>
+    <rect x="530" y="170" width="240" height="180" rx="14" fill="url(#cardDB)" stroke="rgba(255,255,255,0.08)"/>
+  </g>
+  <!-- KPI 1 -->
+  <g font-family="Segoe UI, Roboto, sans-serif">
+    <text x="50" y="60"  font-size="12" fill="#b99ad0" letter-spacing="3">KOSPI</text>
+    <text x="50" y="100" font-size="30" fill="#eaf1ff" font-weight="700">2,712.34</text>
+    <text x="50" y="128" font-size="14" fill="#11d68b">▲ +0.82%</text>
+  </g>
+  <g font-family="Segoe UI, Roboto, sans-serif">
+    <text x="300" y="60"  font-size="12" fill="#b99ad0" letter-spacing="3">VIX</text>
+    <text x="300" y="100" font-size="30" fill="#eaf1ff" font-weight="700">14.32</text>
+    <text x="300" y="128" font-size="14" fill="#ff4757">▼ -3.12%</text>
+  </g>
+  <g font-family="Segoe UI, Roboto, sans-serif">
+    <text x="550" y="60"  font-size="12" fill="#b99ad0" letter-spacing="3">USDKRW</text>
+    <text x="550" y="100" font-size="30" fill="#eaf1ff" font-weight="700">1,378.20</text>
+    <text x="550" y="128" font-size="14" fill="#11d68b">▲ +0.18%</text>
+  </g>
+  <!-- mini sparkline in the wide card -->
+  <path d="M50 310 C 120 290, 160 260, 220 250 S 340 220, 400 200 470 160 495 150"
+        fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+  <g stroke="#5a3970" stroke-width="1" opacity="0.5">
+    <path d="M50 240 H500 M50 280 H500 M50 320 H500"/>
+  </g>
+  <text x="50" y="200" font-size="12" fill="#c2a3d8" letter-spacing="3" font-family="Segoe UI, Roboto, sans-serif">SECTOR LEADERSHIP · 20D</text>
+  <!-- heatmap tiles -->
+  <g transform="translate(550,190)">
+    <rect x="0"   y="0"  width="55" height="45" fill="#11d68b" opacity="0.8"/>
+    <rect x="60"  y="0"  width="55" height="45" fill="#11d68b" opacity="0.55"/>
+    <rect x="120" y="0"  width="55" height="45" fill="#f2c94c" opacity="0.65"/>
+    <rect x="180" y="0"  width="55" height="45" fill="#ff4757" opacity="0.55"/>
+    <rect x="0"   y="50" width="55" height="45" fill="#11d68b" opacity="0.3"/>
+    <rect x="60"  y="50" width="55" height="45" fill="#f2c94c" opacity="0.4"/>
+    <rect x="120" y="50" width="55" height="45" fill="#ff4757" opacity="0.3"/>
+    <rect x="180" y="50" width="55" height="45" fill="#ff4757" opacity="0.75"/>
+    <rect x="0"   y="100" width="55" height="45" fill="#11d68b" opacity="0.65"/>
+    <rect x="60"  y="100" width="55" height="45" fill="#11d68b" opacity="0.45"/>
+    <rect x="120" y="100" width="55" height="45" fill="#f2c94c" opacity="0.55"/>
+    <rect x="180" y="100" width="55" height="45" fill="#ff4757" opacity="0.45"/>
+  </g>
+  <text x="550" y="182" font-size="12" fill="#c2a3d8" letter-spacing="3" font-family="Segoe UI, Roboto, sans-serif">SECTOR HEAT</text>
+  <g font-family="Segoe UI, Roboto, sans-serif">
+    <text x="40" y="400" font-size="30" font-weight="700" fill="#f6e7ff">Market Dashboard</text>
+    <text x="40" y="428" font-size="16" fill="#c8a5dd">FastAPI · Next.js · Plotly</text>
+  </g>
+</svg>
