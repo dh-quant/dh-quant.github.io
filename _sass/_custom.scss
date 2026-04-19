@@ -1,0 +1,249 @@
+/*******************************************************************************
+ * Custom finance/trading-themed flourishes layered on top of al-folio.
+ * - Candlestick-inspired accents (bull green / bear red)
+ * - Gradient hero, animated ticker tape, skill chips, glowing project cards
+ * - Plays well with both light and dark modes via CSS variables
+ ******************************************************************************/
+
+:root {
+  --bull-color: #11d68b;
+  --bear-color: #ff4757;
+  --accent-gold: #f2c94c;
+  --accent-violet: #7c5cff;
+  --accent-cyan: #22d3ee;
+  --hero-grad-1: #7c5cff;
+  --hero-grad-2: #22d3ee;
+  --hero-grad-3: #11d68b;
+  --chip-bg: rgba(124, 92, 255, 0.08);
+  --chip-border: rgba(124, 92, 255, 0.35);
+  --chip-text: #5b3dd1;
+  --ticker-bg: linear-gradient(90deg, rgba(17, 214, 139, 0.08), rgba(124, 92, 255, 0.08), rgba(255, 71, 87, 0.08));
+  --terminal-bg: #0f1419;
+  --terminal-text: #c9d1d9;
+  --card-glow: 0 8px 32px rgba(124, 92, 255, 0.18);
+}
+
+html[data-theme="dark"] {
+  --chip-bg: rgba(34, 211, 238, 0.1);
+  --chip-border: rgba(34, 211, 238, 0.4);
+  --chip-text: #7dd3fc;
+  --card-glow: 0 8px 32px rgba(34, 211, 238, 0.2);
+}
+
+/* ---------- Hero banner ---------- */
+.dh-hero {
+  position: relative;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.75rem;
+  border-radius: 18px;
+  background:
+    linear-gradient(120deg, rgba(124, 92, 255, 0.12), rgba(34, 211, 238, 0.08) 45%, rgba(17, 214, 139, 0.12)),
+    var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  overflow: hidden;
+}
+
+.dh-hero::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(120deg, var(--hero-grad-1), var(--hero-grad-2), var(--hero-grad-3));
+  z-index: -1;
+  filter: blur(24px);
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.dh-hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.5rem;
+}
+
+.dh-hero__eyebrow .pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--bull-color);
+  box-shadow: 0 0 0 0 rgba(17, 214, 139, 0.6);
+  animation: dh-pulse 2s infinite;
+}
+
+@keyframes dh-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(17, 214, 139, 0.6); }
+  70%  { box-shadow: 0 0 0 10px rgba(17, 214, 139, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(17, 214, 139, 0); }
+}
+
+.dh-hero__title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+  background: linear-gradient(90deg, var(--hero-grad-1), var(--hero-grad-2), var(--hero-grad-3));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.dh-hero__tagline {
+  font-size: 0.98rem;
+  color: var(--global-text-color);
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* ---------- Skill chips ---------- */
+.dh-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.dh-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  border-radius: 999px;
+  background: var(--chip-bg);
+  border: 1px solid var(--chip-border);
+  color: var(--chip-text);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dh-chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(124, 92, 255, 0.18);
+}
+
+.dh-chip--bull  { color: #0a8c5a; background: rgba(17, 214, 139, 0.1);  border-color: rgba(17, 214, 139, 0.35); }
+.dh-chip--bear  { color: #c62839; background: rgba(255, 71, 87, 0.1);  border-color: rgba(255, 71, 87, 0.35); }
+.dh-chip--gold  { color: #9a7b0a; background: rgba(242, 201, 76, 0.14); border-color: rgba(242, 201, 76, 0.4); }
+.dh-chip--cyan  { color: #0e7490; background: rgba(34, 211, 238, 0.1);  border-color: rgba(34, 211, 238, 0.4); }
+
+html[data-theme="dark"] {
+  .dh-chip--bull { color: #5eead4; }
+  .dh-chip--bear { color: #fca5a5; }
+  .dh-chip--gold { color: #fde68a; }
+  .dh-chip--cyan { color: #7dd3fc; }
+}
+
+/* ---------- Ticker tape ---------- */
+.dh-ticker {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  background: var(--ticker-bg), var(--global-card-bg-color);
+  font-family: "Roboto Slab", "Roboto Mono", monospace;
+  font-size: 0.85rem;
+  padding: 0.55rem 0;
+  margin: 1.25rem 0;
+}
+
+.dh-ticker__track {
+  display: inline-flex;
+  gap: 2.5rem;
+  padding-left: 100%;
+  white-space: nowrap;
+  animation: dh-marquee 38s linear infinite;
+}
+
+.dh-ticker__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dh-ticker__symbol { font-weight: 600; letter-spacing: 0.04em; }
+.dh-ticker__price  { color: var(--global-text-color); }
+.dh-ticker__chg    { font-weight: 600; }
+.dh-ticker__chg--up   { color: var(--bull-color); }
+.dh-ticker__chg--down { color: var(--bear-color); }
+
+@keyframes dh-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
+/* ---------- Section cards ---------- */
+.dh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+  margin: 1.25rem 0;
+}
+
+.dh-stat {
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid var(--global-divider-color);
+  background: var(--global-card-bg-color);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.dh-stat:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--card-glow);
+}
+
+.dh-stat::after {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--hero-grad-1), var(--hero-grad-3));
+}
+
+.dh-stat__label { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--global-text-color-light); }
+.dh-stat__value { font-size: 1.35rem; font-weight: 700; margin-top: 0.2rem; color: var(--global-text-color); }
+.dh-stat__note  { font-size: 0.78rem; color: var(--global-text-color-light); margin-top: 0.15rem; }
+
+/* ---------- Project card glow (applies only to project grid) ---------- */
+.projects .card.hoverable {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  border: 1px solid var(--global-divider-color);
+}
+
+.projects .card.hoverable:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--card-glow);
+  border-color: var(--chip-border);
+}
+
+.projects h2.category {
+  background: linear-gradient(90deg, var(--hero-grad-1), var(--hero-grad-3));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* ---------- Chart container ---------- */
+.dh-chart-wrap {
+  margin: 1.25rem 0;
+  padding: 0.9rem 1rem 0.4rem;
+  border-radius: 14px;
+  border: 1px solid var(--global-divider-color);
+  background: var(--global-card-bg-color);
+}
+
+.dh-chart-wrap h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  margin: 0 0 0.5rem;
+}
