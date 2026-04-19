@@ -247,8 +247,6 @@ jekyll-archives:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
-  books:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
 display_tags: ["trading", "finance", "quant", "markets", "macro"] # these tags will be displayed on the front page of your blog
 display_categories: ["매매일지", "분석", "리서치"] # these categories will be displayed on the front page of your blog
