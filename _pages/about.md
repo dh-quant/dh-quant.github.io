@@ -149,7 +149,15 @@ chart:
 
 <div class="dh-dashboard">
 
-  <div class="dh-panel dh-span-4 dh-reveal">
+  <div class="dh-panel dh-span-12 dh-reveal dh-panel--strip">
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">World Markets · Sessions</h4>
+      <span class="dh-panel__sub">Local time + Headline index</span>
+    </div>
+    <div id="dh-market-clock" class="dh-clock dh-clock--strip"></div>
+  </div>
+
+  <div class="dh-panel dh-span-5 dh-reveal">
     <div class="dh-panel__gradient"></div>
     <div class="dh-panel__head">
       <h4 class="dh-panel__title">Fear &amp; Greed</h4>
@@ -159,20 +167,12 @@ chart:
     <div class="dh-gauge-meta"><span>loading…</span></div>
   </div>
 
-  <div class="dh-panel dh-span-4 dh-reveal">
+  <div class="dh-panel dh-span-7 dh-reveal">
     <div class="dh-panel__head">
       <h4 class="dh-panel__title">Asset Class Pulse</h4>
       <span class="dh-panel__sub">1D · Avg</span>
     </div>
     <div id="dh-asset-bars" class="dh-bars"></div>
-  </div>
-
-  <div class="dh-panel dh-span-4 dh-reveal">
-    <div class="dh-panel__head">
-      <h4 class="dh-panel__title">World Markets · Clock</h4>
-      <span class="dh-panel__sub">Local time + Index</span>
-    </div>
-    <div id="dh-market-clock" class="dh-clock"></div>
   </div>
 
   <div class="dh-panel dh-span-7 dh-reveal">
