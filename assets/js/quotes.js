@@ -1,6 +1,7 @@
 /*
  * Rotating trader/market quotes — one every ~12 seconds with a fill-up
- * progress bar. Starts on a random quote so every visit feels fresh.
+ * progress bar, pagination dots, click-to-jump, and pause on hover/focus.
+ * Starts on a random quote so every visit feels fresh.
  */
 (function () {
   "use strict";
@@ -28,32 +29,59 @@
     { text: "포지션 사이징이 시그널보다 중요하다.", author: "Ed Seykota" }
   ];
 
-  function escapeHtml(s) {
-    return String(s == null ? "" : s).replace(/[&<>]/g, function (c) {
-      return c === "&" ? "&amp;" : c === "<" ? "&lt;" : "&gt;";
+  var idx = 0;
+  var timer = null;
+  var paused = false;
+
+  function buildDots(root) {
+    var holder = root.querySelector(".dh-quote__dots") ||
+                 document.getElementById("dh-quote-dots");
+    if (!holder) return null;
+    holder.innerHTML = "";
+    QUOTES.forEach(function (_, i) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "dh-quote__dot";
+      b.setAttribute("role", "tab");
+      b.setAttribute("aria-label", "Quote " + (i + 1));
+      b.addEventListener("click", function () {
+        idx = i;
+        render(root, idx);
+        restartTimer(root);
+      });
+      holder.appendChild(b);
+    });
+    return holder;
+  }
+
+  function setActiveDot(root, i) {
+    var dots = root.querySelectorAll(".dh-quote__dot");
+    dots.forEach(function (d, j) {
+      d.classList.toggle("is-active", j === i);
+      d.setAttribute("aria-selected", j === i ? "true" : "false");
     });
   }
 
-  function render(root, idx) {
-    var q = QUOTES[idx];
+  function render(root, i) {
+    var q = QUOTES[i];
     var text = root.querySelector(".dh-quote__text");
     var auth = root.querySelector(".dh-quote__author");
     var bar = root.querySelector(".dh-quote__progress > span");
     if (!text || !auth) return;
 
-    // fade transition
     root.classList.remove("is-active");
-    void root.offsetWidth; // force reflow
-    text.textContent = "“" + q.text + "”";
-    auth.textContent = "— " + q.author;
+    void root.offsetWidth; // force reflow → restart fade
+    text.textContent = "\u201C" + q.text + "\u201D";
+    auth.textContent = "\u2014 " + q.author;
     root.classList.add("is-active");
+    setActiveDot(root, i);
 
     if (bar) {
       bar.style.transition = "none";
       bar.style.width = "0%";
-      // next frame: start animating to 100%
       requestAnimationFrame(function () {
         requestAnimationFrame(function () {
+          if (paused) return;
           bar.style.transition = "width " + ROTATE_MS + "ms linear";
           bar.style.width = "100%";
         });
@@ -61,17 +89,47 @@
     }
   }
 
+  function restartTimer(root) {
+    if (timer) clearInterval(timer);
+    timer = setInterval(function () {
+      if (paused) return;
+      idx = (idx + 1) % QUOTES.length;
+      render(root, idx);
+    }, ROTATE_MS);
+  }
+
   function init() {
     var root = document.getElementById("dh-quote");
     if (!root) return;
 
-    var idx = Math.floor(Math.random() * QUOTES.length);
+    buildDots(root);
+    idx = Math.floor(Math.random() * QUOTES.length);
     render(root, idx);
+    restartTimer(root);
 
-    setInterval(function () {
-      idx = (idx + 1) % QUOTES.length;
-      render(root, idx);
-    }, ROTATE_MS);
+    // Pause on hover or keyboard focus for readability.
+    function setPaused(p) {
+      paused = p;
+      var bar = root.querySelector(".dh-quote__progress > span");
+      if (!bar) return;
+      if (p) {
+        var w = bar.getBoundingClientRect().width;
+        var parent = bar.parentElement.getBoundingClientRect().width || 1;
+        bar.style.transition = "none";
+        bar.style.width = (w / parent * 100) + "%";
+      } else {
+        // resume: top up remaining time proportionally
+        var w2 = bar.getBoundingClientRect().width;
+        var parent2 = bar.parentElement.getBoundingClientRect().width || 1;
+        var remaining = ROTATE_MS * (1 - w2 / parent2);
+        bar.style.transition = "width " + Math.max(remaining, 200) + "ms linear";
+        bar.style.width = "100%";
+      }
+    }
+    root.addEventListener("mouseenter", function () { setPaused(true); });
+    root.addEventListener("mouseleave", function () { setPaused(false); });
+    root.addEventListener("focusin", function () { setPaused(true); });
+    root.addEventListener("focusout", function () { setPaused(false); });
   }
 
   if (document.readyState === "loading") {

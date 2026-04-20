@@ -702,3 +702,302 @@ html[data-theme="dark"] .dh-world-map .land { fill: rgba(124,92,255,0.14); strok
   .dh-ticker__src { display: none; }
   .dh-panel { padding: 0.85rem 0.95rem; }
 }
+
+/* ============================================================
+ * v2 polish — added on top of original dashboard styles.
+ * Fallback tile, regime panel, key levels, quote dots,
+ * scroll reveal, heatmap tooltip, sparkle accents.
+ * ============================================================ */
+
+/* --- Graceful failure tile ----------------------------------------- */
+.dh-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 140px;
+  padding: 1rem 0.75rem;
+  text-align: center;
+  font-family: var(--sans);
+  color: var(--global-text-color-light);
+  border: 1px dashed var(--panel-border);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255, 71, 87, 0.04), rgba(124, 92, 255, 0.04));
+}
+.dh-fallback__icon { font-size: 1.4rem; }
+.dh-fallback__text { font-size: 0.82rem; }
+.dh-fallback__retry {
+  appearance: none;
+  border: 1px solid var(--panel-border);
+  background: var(--panel-bg);
+  color: var(--global-text-color);
+  padding: 0.32rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: transform 0.12s ease, border-color 0.18s ease, color 0.18s ease;
+}
+.dh-fallback__retry:hover {
+  border-color: rgba(124, 92, 255, 0.55);
+  color: var(--accent-violet);
+  transform: translateY(-1px);
+}
+
+/* --- Regime / weekly thesis panel ---------------------------------- */
+.dh-regime {
+  display: grid;
+  grid-template-columns: minmax(110px, 0.6fr) 1fr;
+  gap: 0.85rem 1rem;
+  align-items: center;
+}
+.dh-regime__bias {
+  position: relative;
+  padding: 0.85rem 0.75rem;
+  border-radius: 14px;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at top, rgba(124, 92, 255, 0.18), transparent 60%),
+    var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  overflow: hidden;
+}
+.dh-regime__bias::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(124, 92, 255, 0.12));
+  pointer-events: none;
+}
+.dh-regime__bias-label {
+  display: block;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.2rem;
+}
+.dh-regime__bias-value {
+  display: block;
+  font-family: var(--sans);
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  background: linear-gradient(110deg, var(--hero-grad-1), var(--hero-grad-2), var(--hero-grad-3));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  z-index: 1;
+}
+.dh-regime__bias-tag {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.4);
+  color: #0e7490;
+  position: relative;
+  z-index: 1;
+}
+html[data-theme="dark"] .dh-regime__bias-tag { color: #7dd3fc; }
+
+.dh-regime__body {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--global-text-color);
+}
+.dh-regime__quote {
+  margin: 0 0 0.45rem;
+  font-weight: 600;
+}
+.dh-regime__notes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+}
+.dh-regime__notes li {
+  position: relative;
+  padding-left: 0.95rem;
+}
+.dh-regime__notes li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  color: var(--accent-violet);
+  font-weight: 700;
+}
+.dh-regime__meta {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--global-text-color-light);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-top: 1px dashed var(--panel-border);
+  padding-top: 0.55rem;
+}
+
+@media (max-width: 540px) {
+  .dh-regime { grid-template-columns: 1fr; }
+}
+
+/* --- Key levels (watchlist) panel ---------------------------------- */
+.dh-levels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.55rem;
+}
+.dh-level {
+  padding: 0.55rem 0.7rem;
+  border-radius: 12px;
+  border: 1px solid var(--panel-border);
+  background: linear-gradient(165deg, rgba(124, 92, 255, 0.05), transparent 65%), var(--panel-bg);
+  font-family: var(--mono);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.dh-level:hover { transform: translateY(-2px); box-shadow: 0 10px 22px -14px rgba(124, 92, 255, 0.4); }
+.dh-level__sym  { font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--global-text-color-light); }
+.dh-level__name { font-size: 0.7rem; color: var(--global-text-color-light); margin-top: 0.1rem; opacity: 0.75; }
+.dh-level__rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem 0.5rem;
+  margin-top: 0.45rem;
+  font-size: 0.74rem;
+}
+.dh-level__row { display: flex; justify-content: space-between; gap: 0.25rem; }
+.dh-level__k   { color: var(--global-text-color-light); }
+.dh-level__v   { color: var(--global-text-color); font-weight: 700; }
+.dh-level__v.up   { color: var(--up-color); }
+.dh-level__v.down { color: var(--down-color); }
+
+/* --- Quote carousel: pagination dots & smoother fade --------------- */
+.dh-quote { padding-bottom: 1.6rem; }
+.dh-quote__dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0.45rem;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.35rem;
+  z-index: 2;
+}
+.dh-quote__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--panel-border);
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.dh-quote__dot:hover { background: var(--accent-violet); transform: scale(1.25); }
+.dh-quote__dot.is-active {
+  width: 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--hero-grad-1), var(--hero-grad-2));
+}
+
+/* --- Heatmap tile tooltip on hover --------------------------------- */
+.dh-heatmap__tile {
+  position: relative;
+  cursor: default;
+}
+.dh-heatmap__tile::before {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+  background: var(--global-text-color);
+  color: var(--global-bg-color);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  z-index: 5;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+}
+.dh-heatmap__tile:hover::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* --- Scroll-reveal ------------------------------------------------- */
+.dh-reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.7s cubic-bezier(.2,.8,.2,1), transform 0.7s cubic-bezier(.2,.8,.2,1);
+  will-change: opacity, transform;
+}
+.dh-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .dh-reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* --- Subtle global noise texture for premium feel ------------------ */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.025;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+html[data-theme="dark"] body::before { opacity: 0.04; }
+
+/* --- Hero chip pulse on first load --------------------------------- */
+@keyframes dh-chip-rise {
+  0%   { opacity: 0; transform: translateY(6px); }
+  100% { opacity: 1; transform: none; }
+}
+.dh-chips .dh-chip {
+  animation: dh-chip-rise 0.5s cubic-bezier(.2,.8,.2,1) both;
+}
+.dh-chips .dh-chip:nth-child(1) { animation-delay: 0.05s; }
+.dh-chips .dh-chip:nth-child(2) { animation-delay: 0.10s; }
+.dh-chips .dh-chip:nth-child(3) { animation-delay: 0.15s; }
+.dh-chips .dh-chip:nth-child(4) { animation-delay: 0.20s; }
+.dh-chips .dh-chip:nth-child(5) { animation-delay: 0.25s; }
+.dh-chips .dh-chip:nth-child(6) { animation-delay: 0.30s; }
+.dh-chips .dh-chip:nth-child(7) { animation-delay: 0.35s; }
+
+/* --- Section title accent -------------------------------------------*/
+.dh-section-title {
+  position: relative;
+}
+.dh-section-title__count {
+  font-family: var(--mono);
+  letter-spacing: 0.05em;
+  color: var(--accent-violet);
+  font-size: 0.7rem;
+  opacity: 0.85;
+}

@@ -451,8 +451,10 @@
           );
         }
         var c = heatColor(r.change_pct);
+        var tip = (r.label || r.symbol) + " · " + (r.price_display || "—") + " · " + fmtPct(r.change_pct);
         return (
-          '<div class="dh-heatmap__tile" style="background:' + c.bg + ';border-color:' + c.border + '">' +
+          '<div class="dh-heatmap__tile" data-tip="' + escapeHtml(tip) +
+          '" style="background:' + c.bg + ';border-color:' + c.border + '">' +
           '<div class="dh-heatmap__sym">' + escapeHtml(r.label || r.symbol) + "</div>" +
           '<div class="dh-heatmap__price">' + escapeHtml(r.price_display || "") + "</div>" +
           '<div class="dh-heatmap__pct ' + (r.change_pct >= 0 ? "up" : "down") + '">' +
@@ -482,8 +484,45 @@
     }
   }
 
+  /* --- Stamp updated-at + source on each panel that has a time slot -- */
+  function stampUpdated(doc) {
+    var ts = doc && doc.fetched_at ? new Date(doc.fetched_at) : new Date();
+    var pretty = ts.toLocaleString("en-US", { hour12: false });
+    document.querySelectorAll("[data-dh-stamp]").forEach(function (n) {
+      n.textContent = pretty;
+    });
+  }
+
+  /* --- Error-state painter (show retry chip in every empty panel) --- */
+  function paintErrorState(panelIds) {
+    panelIds.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      // Don't overwrite if data already painted something real.
+      if (el.dataset.dhPainted === "1") return;
+      el.innerHTML =
+        '<div class="dh-fallback">' +
+        '<span class="dh-fallback__icon">⚠️</span>' +
+        '<div class="dh-fallback__text">데이터를 불러올 수 없습니다</div>' +
+        '<button type="button" class="dh-fallback__retry">다시 시도</button>' +
+        "</div>";
+      var btn = el.querySelector(".dh-fallback__retry");
+      if (btn) btn.addEventListener("click", load);
+    });
+  }
+
   /* =============== ORCHESTRATION ==================================== */
   var lastData = null;
+  var ALL_PANELS = [
+    "dh-fear-greed", "dh-asset-bars", "dh-indices", "dh-yield-curve",
+    "dh-sector-tree", "dh-commodities", "dh-fx", "dh-crypto",
+    "dh-heatmap", "dh-movers-up", "dh-movers-down"
+  ];
+
+  function markPainted(id) {
+    var el = document.getElementById(id);
+    if (el) el.dataset.dhPainted = "1";
+  }
 
   function renderAll(doc) {
     lastData = doc;
@@ -491,14 +530,14 @@
     var d = doc.data || {};
 
     // Panels render against specific DOM ids; all are optional.
-    renderFearGreed(document.getElementById("dh-fear-greed"), doc.derived);
-    renderAssetClasses(document.getElementById("dh-asset-bars"), d);
-    renderIndicesTable(document.getElementById("dh-indices"), d.global_indices);
-    renderYieldCurve(document.getElementById("dh-yield-curve"), d.yields_us);
-    renderSectorTreemap(document.getElementById("dh-sector-tree"), d.sectors_us);
-    renderCards(document.getElementById("dh-commodities"), d.commodities);
-    renderCards(document.getElementById("dh-fx"), d.fx, { showFlag: true });
-    renderCards(document.getElementById("dh-crypto"), d.crypto);
+    renderFearGreed(document.getElementById("dh-fear-greed"), doc.derived);   markPainted("dh-fear-greed");
+    renderAssetClasses(document.getElementById("dh-asset-bars"), d);          markPainted("dh-asset-bars");
+    renderIndicesTable(document.getElementById("dh-indices"), d.global_indices); markPainted("dh-indices");
+    renderYieldCurve(document.getElementById("dh-yield-curve"), d.yields_us); markPainted("dh-yield-curve");
+    renderSectorTreemap(document.getElementById("dh-sector-tree"), d.sectors_us); markPainted("dh-sector-tree");
+    renderCards(document.getElementById("dh-commodities"), d.commodities);    markPainted("dh-commodities");
+    renderCards(document.getElementById("dh-fx"), d.fx, { showFlag: true });  markPainted("dh-fx");
+    renderCards(document.getElementById("dh-crypto"), d.crypto);              markPainted("dh-crypto");
 
     // Expose for world-map.js and other consumers
     window.DH_MARKETS = doc;
@@ -507,13 +546,19 @@
     // heatmap + movers use the headline bucket here rather than ticker.json
     // so all panels stay coherent
     renderHeatmapAndMovers(d.headline);
+    markPainted("dh-heatmap"); markPainted("dh-movers-up"); markPainted("dh-movers-down");
+
+    stampUpdated(doc);
   }
 
   function load() {
     fetchJson(REMOTE_URL)
       .catch(function () { return fetchJson(LOCAL_URL); })
       .then(renderAll)
-      .catch(function (err) { console.warn("[dashboard] load failed", err); });
+      .catch(function (err) {
+        console.warn("[dashboard] load failed", err);
+        paintErrorState(ALL_PANELS);
+      });
   }
 
   function init() {

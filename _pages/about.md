@@ -63,33 +63,93 @@ chart:
 주로 파이썬으로 데이터 파이프라인을 짜고, 직접 돌린 백테스트와 실매매 결과를 비교하며 전략을 다듬고 있어요.
 
 <div class="dh-grid">
-  <div class="dh-stat">
+  <div class="dh-stat dh-reveal">
     <div class="dh-stat__label">Focus</div>
     <div class="dh-stat__value">Systematic</div>
     <div class="dh-stat__note">룰 기반 · 규율 있는 엔트리/엑싯</div>
   </div>
-  <div class="dh-stat">
+  <div class="dh-stat dh-reveal">
     <div class="dh-stat__label">Assets</div>
     <div class="dh-stat__value">Equities · Futures</div>
     <div class="dh-stat__note">KRX · CME · 선물옵션까지</div>
   </div>
-  <div class="dh-stat">
+  <div class="dh-stat dh-reveal">
     <div class="dh-stat__label">Stack</div>
     <div class="dh-stat__value">Python · SQL</div>
     <div class="dh-stat__note">pandas · numpy · vectorbt</div>
   </div>
-  <div class="dh-stat">
+  <div class="dh-stat dh-reveal">
     <div class="dh-stat__label">Goal</div>
     <div class="dh-stat__value">Edge + Discipline</div>
     <div class="dh-stat__note">작은 엣지를 꾸준히 · 크게 잃지 않기</div>
   </div>
 </div>
 
-<div class="dh-section-title">Global Markets Desk</div>
+<div class="dh-section-title">
+  Trading Stance
+  <span class="dh-section-title__count">// week of {{ site.data.regime.updated }}</span>
+</div>
 
 <div class="dh-dashboard">
 
-  <div class="dh-panel dh-span-4">
+  <div class="dh-panel dh-span-8 dh-reveal">
+    <div class="dh-panel__gradient"></div>
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">Weekly Thesis</h4>
+      <span class="dh-panel__sub">Manually curated</span>
+    </div>
+    <div class="dh-regime">
+      <div class="dh-regime__bias">
+        <span class="dh-regime__bias-label">Bias</span>
+        <span class="dh-regime__bias-value">{{ site.data.regime.bias }}</span>
+        <span class="dh-regime__bias-tag">{{ site.data.regime.tag }}</span>
+      </div>
+      <div class="dh-regime__body">
+        <p class="dh-regime__quote">{{ site.data.regime.quote }}</p>
+        <ul class="dh-regime__notes">
+          {% for n in site.data.regime.notes %}<li>{{ n }}</li>{% endfor %}
+        </ul>
+      </div>
+      <div class="dh-regime__meta">
+        <span>Updated · {{ site.data.regime.updated }}</span>
+        <span>Edit · _data/regime.yml</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="dh-panel dh-span-4 dh-reveal">
+    <div class="dh-panel__head">
+      <h4 class="dh-panel__title">Key Levels</h4>
+      <span class="dh-panel__sub">Manual watchlist</span>
+    </div>
+    <div class="dh-levels">
+      {% for L in site.data.regime.levels %}
+      <div class="dh-level">
+        <div class="dh-level__sym">{{ L.sym }}</div>
+        <div class="dh-level__name">{{ L.name }}</div>
+        <div class="dh-level__rows">
+          {% for r in L.rows %}
+          <div class="dh-level__row">
+            <span class="dh-level__k">{{ r.k }}</span>
+            <span class="dh-level__v {{ r.dir }}">{{ r.v }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+
+<div class="dh-section-title">
+  Global Markets Desk
+  <span class="dh-section-title__count">// live · 15m cron</span>
+</div>
+
+<div class="dh-dashboard">
+
+  <div class="dh-panel dh-span-4 dh-reveal">
     <div class="dh-panel__gradient"></div>
     <div class="dh-panel__head">
       <h4 class="dh-panel__title">Fear &amp; Greed</h4>
@@ -99,7 +159,7 @@ chart:
     <div class="dh-gauge-meta"><span>loading…</span></div>
   </div>
 
-  <div class="dh-panel dh-span-4">
+  <div class="dh-panel dh-span-4 dh-reveal">
     <div class="dh-panel__head">
       <h4 class="dh-panel__title">Asset Class Pulse</h4>
       <span class="dh-panel__sub">1D · Avg</span>
@@ -107,7 +167,7 @@ chart:
     <div id="dh-asset-bars" class="dh-bars"></div>
   </div>
 
-  <div class="dh-panel dh-span-4">
+  <div class="dh-panel dh-span-4 dh-reveal">
     <div class="dh-panel__head">
       <h4 class="dh-panel__title">World Markets · Clock</h4>
       <span class="dh-panel__sub">Local time + Index</span>
@@ -115,7 +175,7 @@ chart:
     <div id="dh-market-clock" class="dh-clock"></div>
   </div>
 
-  <div class="dh-panel dh-span-7">
+  <div class="dh-panel dh-span-7 dh-reveal">
     <div class="dh-panel__head">
       <h4 class="dh-panel__title">Global Indices</h4>
       <span class="dh-panel__sub">Last 22 trading days</span>
@@ -123,7 +183,7 @@ chart:
     <div id="dh-indices" class="dh-rows"></div>
   </div>
 
-  <div class="dh-panel dh-span-5">
+  <div class="dh-panel dh-span-5 dh-reveal">
     <div class="dh-panel__head">
       <h4 class="dh-panel__title">US Treasury Curve</h4>
       <span class="dh-panel__sub">Today vs Yesterday</span>
@@ -131,7 +191,7 @@ chart:
     <div id="dh-yield-curve" class="dh-yield-curve"></div>
   </div>
 
-  <div class="dh-panel dh-span-12">
+  <div class="dh-panel dh-span-12 dh-reveal">
     <div class="dh-panel__head">
       <h4 class="dh-panel__title">US Sector Map</h4>
       <span class="dh-panel__sub">Select Sector SPDRs · 1D change</span>
@@ -139,7 +199,7 @@ chart:
     <div id="dh-sector-tree" class="dh-sector-tree"></div>
   </div>
 
-  <div class="dh-panel dh-span-4">
+  <div class="dh-panel dh-span-4 dh-reveal">
     <div class="dh-panel__head">
       <h4 class="dh-panel__title">Commodities</h4>
       <span class="dh-panel__sub">Energy · Metals · Grains</span>
@@ -147,7 +207,7 @@ chart:
     <div id="dh-commodities" class="dh-cards"></div>
   </div>
 
-  <div class="dh-panel dh-span-4">
+  <div class="dh-panel dh-span-4 dh-reveal">
     <div class="dh-panel__head">
       <h4 class="dh-panel__title">FX Majors</h4>
       <span class="dh-panel__sub">USD pairs</span>
@@ -155,7 +215,7 @@ chart:
     <div id="dh-fx" class="dh-cards"></div>
   </div>
 
-  <div class="dh-panel dh-span-4">
+  <div class="dh-panel dh-span-4 dh-reveal">
     <div class="dh-panel__head">
       <h4 class="dh-panel__title">Crypto</h4>
       <span class="dh-panel__sub">Top cap</span>
@@ -163,7 +223,7 @@ chart:
     <div id="dh-crypto" class="dh-cards"></div>
   </div>
 
-  <div class="dh-panel dh-span-12">
+  <div class="dh-panel dh-span-12 dh-reveal">
     <div class="dh-panel__head">
       <h4 class="dh-panel__title">KOSPI · Live Candlestick</h4>
       <span class="dh-panel__sub">Daily · 6 months · MA20/60</span>
@@ -171,7 +231,7 @@ chart:
     <div id="dh-kospi-chart" class="dh-echarts"></div>
   </div>
 
-  <div class="dh-panel dh-span-7">
+  <div class="dh-panel dh-span-7 dh-reveal">
     <div class="dh-panel__head">
       <h4 class="dh-panel__title">Headline Heatmap</h4>
       <span class="dh-panel__sub">Color intensity ∝ |Δ%|</span>
@@ -179,7 +239,7 @@ chart:
     <div id="dh-heatmap" class="dh-heatmap"></div>
   </div>
 
-  <div class="dh-panel dh-span-5">
+  <div class="dh-panel dh-span-5 dh-reveal">
     <div class="dh-panel__head">
       <h4 class="dh-panel__title">Top Movers</h4>
       <span class="dh-panel__sub">Among headline</span>
@@ -198,11 +258,15 @@ chart:
 
 </div>
 
-<div class="dh-section-title">오늘의 한 마디</div>
+<div class="dh-section-title">
+  오늘의 한 마디
+  <span class="dh-section-title__count">// rotate · 12s</span>
+</div>
 
-<figure class="dh-quote" id="dh-quote" aria-live="polite">
+<figure class="dh-quote dh-reveal" id="dh-quote" aria-live="polite">
   <blockquote class="dh-quote__text">—</blockquote>
   <figcaption class="dh-quote__author">—</figcaption>
+  <div class="dh-quote__dots" id="dh-quote-dots" role="tablist" aria-label="Choose quote"></div>
   <div class="dh-quote__progress"><span></span></div>
 </figure>
 
@@ -215,3 +279,4 @@ chart:
 <script src="{{ '/assets/js/kospi-chart.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/quotes.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/dashboard.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/reveal.js' | relative_url }}" defer></script>
