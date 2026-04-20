@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gallery/";
           },
-        },{id: "post-매매-복기-2026-04-16-nq-long",
+        },{id: "post-매매-복기-2026-04-21-nq-스윕-없는-수렴-그리고-멈출-줄-아는-것",
+        
+          title: "매매 복기 | 2026-04-21 NQ — 스윕 없는 수렴, 그리고 멈출 줄 아는...",
+        
+        description: "거래량 기준봉 이후 수렴 국면이 이어졌으나 유동성 스윕이 실현되지 않고 횡보 — 짧게 두 번의 매매 후 중단",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/trading-journal/";
+          
+        },
+      },{id: "post-매매-복기-2026-04-16-nq-long",
         
           title: "매매 복기 | 2026-04-16 NQ Long",
         
