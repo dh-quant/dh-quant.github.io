@@ -45,7 +45,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2026/trading-journal/";
+            window.location.href = "/blog/2026/04/20/trading-journal/";
           
         },
       },{id: "post-매매-복기-2026-04-16-nq-long",
@@ -56,7 +56,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2026/trading-journal/";
+            window.location.href = "/blog/2026/04/16/trading-journal/";
           
         },
       },{id: "projects-quant-backtester",
