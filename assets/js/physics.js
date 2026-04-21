@@ -12,12 +12,20 @@
   // ---------- helpers ----------
   const fitCanvas = (canvas) => {
     const dpr = window.devicePixelRatio || 1;
+    // Cache logical height once — setting canvas.height mutates the attribute,
+    // so re-reading it after the first fit would compound on every resize.
+    if (!canvas.dataset.baseHeight) {
+      canvas.dataset.baseHeight = canvas.getAttribute('height') || '380';
+    }
+    const logicalH = parseInt(canvas.dataset.baseHeight, 10);
     const rect = canvas.getBoundingClientRect();
-    canvas.width = Math.round(rect.width * dpr);
-    canvas.height = Math.round(parseInt(canvas.getAttribute('height'), 10) * dpr);
+    const logicalW = rect.width;
+    canvas.style.height = logicalH + 'px';
+    canvas.width = Math.round(logicalW * dpr);
+    canvas.height = Math.round(logicalH * dpr);
     const ctx = canvas.getContext('2d');
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    return { ctx, w: rect.width, h: parseInt(canvas.getAttribute('height'), 10) };
+    return { ctx, w: logicalW, h: logicalH };
   };
 
   const isDark = () =>
