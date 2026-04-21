@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
+        },{id: "nav-markets",
+          title: "markets",
+          description: "실시간 글로벌 시황 · 섹터 · 채권 · 원자재 · FX · 크립토. 15분 cron으로 데이터 갱신.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/markets/";
+          },
         },{id: "nav-projects",
           title: "projects",
           description: "퀀트 전략, 분석 툴, 사이드 프로젝트 모음.",
