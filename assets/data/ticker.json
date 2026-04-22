@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-22T07:14:41.024608+00:00",
+  "updated_at": "2026-04-22T09:00:25.619571+00:00",
   "source": "Yahoo Finance",
   "items": [
     {
@@ -39,14 +39,13 @@
     {
       "symbol": "KOSDAQ",
       "name": "KOSDAQ",
-      "price": 1179.03,
-      "price_display": "1,179.03",
-      "change": 4.18,
-      "change_pct": 0.356,
+      "price": 1181.12,
+      "price_display": "1,181.12",
+      "change": 2.09,
+      "change_pct": 0.177,
       "direction": "up",
       "currency": "KRW",
       "sparkline": [
-        1096.89,
         1121.4399,
         1159.55,
         1136.64,
@@ -67,7 +66,8 @@
         1162.97,
         1170.04,
         1174.85,
-        1179.03
+        1179.03,
+        1181.12
       ]
     },
     {
@@ -139,10 +139,10 @@
     {
       "symbol": "NQ1!",
       "name": "NQ1!",
-      "price": 26834.75,
-      "price_display": "26,834.75",
-      "change": 200.0,
-      "change_pct": 0.751,
+      "price": 26805.0,
+      "price_display": "26,805.00",
+      "change": 170.25,
+      "change_pct": 0.639,
       "direction": "up",
       "currency": "USD",
       "sparkline": [
@@ -167,16 +167,16 @@
         26825.5,
         26748.75,
         26634.75,
-        26834.75
+        26805.0
       ]
     },
     {
       "symbol": "WTI",
       "name": "WTI",
-      "price": 88.74,
-      "price_display": "88.7400",
-      "change": -3.39,
-      "change_pct": -3.68,
+      "price": 91.03,
+      "price_display": "91.0300",
+      "change": -1.1,
+      "change_pct": -1.194,
       "direction": "down",
       "currency": "USD",
       "sparkline": [
@@ -201,16 +201,16 @@
         83.85,
         89.61,
         92.13,
-        88.74
+        91.03
       ]
     },
     {
       "symbol": "GOLD",
       "name": "GOLD",
-      "price": 4787.1,
-      "price_display": "4,787.10",
-      "change": 88.7001,
-      "change_pct": 1.888,
+      "price": 4774.2,
+      "price_display": "4,774.20",
+      "change": 75.8001,
+      "change_pct": 1.613,
       "direction": "up",
       "currency": "USD",
       "sparkline": [
@@ -235,16 +235,16 @@
         4857.6001,
         4806.6001,
         4698.3999,
-        4787.1001
+        4774.2002
       ]
     },
     {
       "symbol": "BTC",
       "name": "BTC",
-      "price": 78117.28,
-      "price_display": "78,117.28",
-      "change": 1764.5066,
-      "change_pct": 2.311,
+      "price": 77993.98,
+      "price_display": "77,993.98",
+      "change": 1641.2066,
+      "change_pct": 2.15,
       "direction": "up",
       "currency": "USD",
       "sparkline": [
@@ -269,16 +269,16 @@
         73856.3516,
         75872.5234,
         76352.7734,
-        78117.2812
+        77993.9766
       ]
     },
     {
       "symbol": "ETH",
       "name": "ETH",
-      "price": 2396.82,
-      "price_display": "2,396.82",
-      "change": 68.8495,
-      "change_pct": 2.957,
+      "price": 2388.24,
+      "price_display": "2,388.24",
+      "change": 60.2695,
+      "change_pct": 2.589,
       "direction": "up",
       "currency": "USD",
       "sparkline": [
@@ -303,16 +303,16 @@
         2264.917,
         2315.2124,
         2327.9705,
-        2396.8201
+        2388.24
       ]
     },
     {
       "symbol": "USDKRW",
       "name": "USDKRW",
-      "price": 1476.9,
-      "price_display": "1,476.90",
-      "change": 7.64,
-      "change_pct": 0.52,
+      "price": 1477.48,
+      "price_display": "1,477.48",
+      "change": 8.22,
+      "change_pct": 0.559,
       "direction": "up",
       "currency": "KRW",
       "sparkline": [
@@ -337,16 +337,16 @@
         1477.92,
         1465.15,
         1469.26,
-        1476.9
+        1477.48
       ]
     },
     {
       "symbol": "DXY",
       "name": "DXY",
-      "price": 98.292,
-      "price_display": "98.2920",
-      "change": -0.118,
-      "change_pct": -0.12,
+      "price": 98.294,
+      "price_display": "98.2940",
+      "change": -0.116,
+      "change_pct": -0.118,
       "direction": "down",
       "currency": "USD",
       "sparkline": [
@@ -371,17 +371,17 @@
         98.1,
         98.05,
         98.41,
-        98.292
+        98.294
       ]
     },
     {
       "symbol": "VIX",
       "name": "VIX",
-      "price": 19.5,
-      "price_display": "19.5000",
-      "change": 0.63,
-      "change_pct": 3.339,
-      "direction": "up",
+      "price": 19.25,
+      "price_display": "19.2500",
+      "change": -0.25,
+      "change_pct": -1.282,
+      "direction": "down",
       "currency": "USD",
       "sparkline": [
         26.15,
@@ -404,7 +404,8 @@
         17.94,
         17.48,
         18.87,
-        19.5
+        19.5,
+        19.25
       ]
     }
   ]
