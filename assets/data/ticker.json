@@ -1,18 +1,17 @@
 {
-  "updated_at": "2026-04-21T23:53:39.214126+00:00",
+  "updated_at": "2026-04-22T03:26:14.390845+00:00",
   "source": "Yahoo Finance",
   "items": [
     {
       "symbol": "KOSPI",
       "name": "KOSPI",
-      "price": 6388.47,
-      "price_display": "6,388.47",
-      "change": 196.5501,
-      "change_pct": 3.174,
-      "direction": "up",
+      "price": 6381.99,
+      "price_display": "6,381.99",
+      "change": -6.4802,
+      "change_pct": -0.101,
+      "direction": "down",
       "currency": "KRW",
       "sparkline": [
-        5405.75,
         5553.9199,
         5642.21,
         5460.46,
@@ -32,20 +31,21 @@
         6091.3901,
         6226.0498,
         6191.9199,
-        6219.0898
+        6219.0898,
+        6388.4702,
+        6381.9902
       ]
     },
     {
       "symbol": "KOSDAQ",
       "name": "KOSDAQ",
-      "price": 1179.03,
-      "price_display": "1,179.03",
-      "change": 8.99,
-      "change_pct": 0.768,
-      "direction": "up",
+      "price": 1168.2,
+      "price_display": "1,168.20",
+      "change": -10.83,
+      "change_pct": -0.919,
+      "direction": "down",
       "currency": "KRW",
       "sparkline": [
-        1096.89,
         1121.4399,
         1159.55,
         1136.64,
@@ -65,7 +65,9 @@
         1152.4301,
         1162.97,
         1170.04,
-        1174.85
+        1174.85,
+        1179.03,
+        1168.2
       ]
     },
     {
@@ -137,10 +139,10 @@
     {
       "symbol": "NQ1!",
       "name": "NQ1!",
-      "price": 26757.25,
-      "price_display": "26,757.25",
-      "change": 8.5,
-      "change_pct": 0.032,
+      "price": 26807.75,
+      "price_display": "26,807.75",
+      "change": 173.0,
+      "change_pct": 0.65,
       "direction": "up",
       "currency": "USD",
       "sparkline": [
@@ -164,17 +166,18 @@
         26487.25,
         26825.5,
         26748.75,
-        26757.25
+        26634.75,
+        26807.75
       ]
     },
     {
       "symbol": "WTI",
       "name": "WTI",
-      "price": 90.55,
-      "price_display": "90.5500",
-      "change": 0.94,
-      "change_pct": 1.049,
-      "direction": "up",
+      "price": 89.51,
+      "price_display": "89.5100",
+      "change": -2.62,
+      "change_pct": -2.844,
+      "direction": "down",
       "currency": "USD",
       "sparkline": [
         88.13,
@@ -197,17 +200,18 @@
         94.69,
         83.85,
         89.61,
-        90.55
+        92.13,
+        89.51
       ]
     },
     {
       "symbol": "GOLD",
       "name": "GOLD",
-      "price": 4747.6,
-      "price_display": "4,747.60",
-      "change": -59.0001,
-      "change_pct": -1.227,
-      "direction": "down",
+      "price": 4776.3,
+      "price_display": "4,776.30",
+      "change": 77.9001,
+      "change_pct": 1.658,
+      "direction": "up",
       "currency": "USD",
       "sparkline": [
         4404.1001,
@@ -230,16 +234,17 @@
         4785.3999,
         4857.6001,
         4806.6001,
-        4747.6001
+        4698.3999,
+        4776.2998
       ]
     },
     {
       "symbol": "BTC",
       "name": "BTC",
-      "price": 76331.97,
-      "price_display": "76,331.97",
-      "change": 459.4466,
-      "change_pct": 0.606,
+      "price": 77540.01,
+      "price_display": "77,540.01",
+      "change": 1667.4866,
+      "change_pct": 2.198,
       "direction": "up",
       "currency": "USD",
       "sparkline": [
@@ -264,16 +269,16 @@
         75726.2109,
         73856.3516,
         75872.5234,
-        76331.9688
+        77540.0078
       ]
     },
     {
       "symbol": "ETH",
       "name": "ETH",
-      "price": 2327.01,
-      "price_display": "2,327.01",
-      "change": 11.7976,
-      "change_pct": 0.51,
+      "price": 2365.52,
+      "price_display": "2,365.52",
+      "change": 50.3076,
+      "change_pct": 2.173,
       "direction": "up",
       "currency": "USD",
       "sparkline": [
@@ -298,16 +303,16 @@
         2351.1006,
         2264.917,
         2315.2124,
-        2327.01
+        2365.52
       ]
     },
     {
       "symbol": "USDKRW",
       "name": "USDKRW",
-      "price": 1486.73,
-      "price_display": "1,486.73",
-      "change": 17.47,
-      "change_pct": 1.189,
+      "price": 1479.78,
+      "price_display": "1,479.78",
+      "change": 10.52,
+      "change_pct": 0.716,
       "direction": "up",
       "currency": "KRW",
       "sparkline": [
@@ -332,17 +337,17 @@
         1477.92,
         1465.15,
         1469.26,
-        1486.73
+        1479.78
       ]
     },
     {
       "symbol": "DXY",
       "name": "DXY",
-      "price": 98.408,
-      "price_display": "98.4080",
-      "change": 0.358,
-      "change_pct": 0.365,
-      "direction": "up",
+      "price": 98.385,
+      "price_display": "98.3850",
+      "change": -0.025,
+      "change_pct": -0.025,
+      "direction": "down",
       "currency": "USD",
       "sparkline": [
         98.95,
@@ -365,7 +370,8 @@
         98.22,
         98.1,
         98.05,
-        98.408
+        98.41,
+        98.385
       ]
     },
     {
