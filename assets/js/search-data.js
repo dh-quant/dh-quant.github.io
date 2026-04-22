@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/physics/";
           },
-        },{id: "post-매매-복기-2026-04-21-nq-스윕-없는-수렴-그리고-멈출-줄-아는-것",
+        },{id: "post-매매-복기-2026-04-23-nq-수렴-끝의-스윕-ict-2022-모델대로",
+        
+          title: "매매 복기 | 2026-04-23 NQ — 수렴 끝의 스윕, ICT 2022 모델대로",
+        
+        description: "거래량 수렴 → 유동성 스윕 확인 → 다음 스윙 포인트에서 전량 정리. ICT 2022 모델 기반 짧은 매매",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/04/23/trading-journal/";
+          
+        },
+      },{id: "post-매매-복기-2026-04-21-nq-스윕-없는-수렴-그리고-멈출-줄-아는-것",
         
           title: "매매 복기 | 2026-04-21 NQ — 스윕 없는 수렴, 그리고 멈출 줄 아는...",
         
