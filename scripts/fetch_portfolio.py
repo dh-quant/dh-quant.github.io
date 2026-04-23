@@ -42,15 +42,24 @@ USER_AGENT = (
 # ---------------------------------------------------------------------------
 
 POSITIONS = [
-    {"sym": "MSTR",      "name": "Strategy",                "qty": 6,           "avg_usd":  145.7966, "cat": "us"},
-    {"sym": "MUFG",      "name": "Mitsubishi UFJ (ADR)",    "qty": 45,          "avg_usd":   18.9300, "cat": "us"},
-    {"sym": "BMNR",      "name": "BitMine Immersion",       "qty": 17,          "avg_usd":   23.3247, "cat": "us"},
-    {"sym": "SPYM",      "name": "SPDR Portfolio S&P 500",  "qty": 4,           "avg_usd":   77.1300, "cat": "us"},
-    {"sym": "JOBY",      "name": "Joby Aviation",           "qty": 14,          "avg_usd":   14.6100, "cat": "us"},
-    {"sym": "SONY",      "name": "Sony Group (ADR)",        "qty": 6,           "avg_usd":   22.7766, "cat": "us"},
-    {"sym": "069500.KS", "name": "KODEX 200",               "qty": 1,           "avg_usd":   55.47,   "cat": "kr"},
-    {"sym": "ETH-USD",   "name": "Ethereum",                "qty": 0.00565847,  "avg_usd": 2392.30,   "cat": "crypto"},
-    {"sym": "W-USD",     "name": "Wormhole",                "qty": 1541.64,     "avg_usd":    0.01314,"cat": "crypto"},
+    {"sym": "MSTR",      "name": "Strategy",                "qty": 6,           "avg_usd":  145.7966, "cat": "us",
+     "logo": "https://logo.clearbit.com/microstrategy.com"},
+    {"sym": "MUFG",      "name": "Mitsubishi UFJ (ADR)",    "qty": 45,          "avg_usd":   18.9300, "cat": "us",
+     "logo": "https://logo.clearbit.com/mufg.jp"},
+    {"sym": "BMNR",      "name": "BitMine Immersion",       "qty": 17,          "avg_usd":   23.3247, "cat": "us",
+     "logo": "https://logo.clearbit.com/bitminetech.io"},
+    {"sym": "SPYM",      "name": "SPDR Portfolio S&P 500",  "qty": 4,           "avg_usd":   77.1300, "cat": "us",
+     "logo": "https://logo.clearbit.com/ssga.com"},
+    {"sym": "JOBY",      "name": "Joby Aviation",           "qty": 14,          "avg_usd":   14.6100, "cat": "us",
+     "logo": "https://logo.clearbit.com/jobyaviation.com"},
+    {"sym": "SONY",      "name": "Sony Group (ADR)",        "qty": 6,           "avg_usd":   22.7766, "cat": "us",
+     "logo": "https://logo.clearbit.com/sony.com"},
+    {"sym": "069500.KS", "name": "KODEX 200",               "qty": 1,           "avg_usd":   55.47,   "cat": "kr",
+     "logo": "https://logo.clearbit.com/samsungam.com"},
+    {"sym": "ETH-USD",   "name": "Ethereum",                "qty": 0.00565847,  "avg_usd": 2392.30,   "cat": "crypto",
+     "logo": "https://assets.coingecko.com/coins/images/279/small/ethereum.png"},
+    {"sym": "W-USD",     "name": "Wormhole",                "qty": 1541.64,     "avg_usd":    0.01314,"cat": "crypto",
+     "logo": "https://assets.coingecko.com/coins/images/35087/small/wormhole.png"},
 ]
 
 # Idle cash balances (already USD-converted at the time you last updated them).
@@ -180,6 +189,7 @@ def main() -> int:
             "pnl_pct":   round(pnl_pct, 2),
             "value":     round(value_usd, 2),
             "pnl":       round(pnl_usd, 2),
+            "logo":      pos.get("logo", ""),
             "avg_display":     fmt_usd(pos["avg_usd"], precise=True),
             "last_display":    fmt_usd(last_usd, precise=True),
             "value_display":   fmt_usd(value_usd),
@@ -213,6 +223,13 @@ def main() -> int:
             "value": round(CASH_USD, 2),
             "color": CATEGORY_COLORS["cash"],
         })
+
+    # Pre-compute percentages so the template doesn't have to do float math.
+    for slice in allocation:
+        pct = slice["value"] / aum_usd * 100.0 if aum_usd else 0.0
+        slice["pct"] = round(pct, 1)
+        slice["pct_display"] = f"{pct:.1f}%"
+        slice["pct_int"] = int(round(pct))
 
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
