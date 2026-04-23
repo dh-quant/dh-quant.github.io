@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/portfolio/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "퀀트 전략, 분석 툴, 사이드 프로젝트 모음.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "nav-cv",
           title: "CV",
           description: "Donghyeok Kim | KENTECH",
@@ -91,22 +84,7 @@ ninja.data = [{
             window.location.href = "/blog/2026/04/16/trading-journal/";
           
         },
-      },{id: "projects-quant-backtester",
-          title: 'Quant Backtester',
-          description: "파이썬으로 직접 만든 전략 백테스팅 엔진 — 체결 지연 · 슬리피지 · 수수료까지 반영.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_quant_backtester/";
-            },},{id: "projects-vol-targeted-momentum",
-          title: 'Vol-Targeted Momentum',
-          description: "변동성 타겟팅으로 드로우다운을 억제하는 크로스-에셋 모멘텀 전략.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_vol_targeting/";
-            },},{id: "projects-market-dashboard",
-          title: 'Market Dashboard',
-          description: "실시간 매크로 · 섹터 · 자금흐름을 한 화면에서 보는 개인용 트레이딩 대시보드.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_market_dashboard/";
-            },},{
+      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
