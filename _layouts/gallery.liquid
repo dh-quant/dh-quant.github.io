@@ -13,8 +13,8 @@ layout: default
     <div class="gallery-grid">
       {% assign images = site.data.gallery %}
       {% for img in images %}
-        <div class="gallery-item">
-          <a href="{{ img.file | prepend: '/assets/img/gallery/' | relative_url }}" target="_blank">
+        <figure class="gallery-item">
+          <a href="{{ img.file | prepend: '/assets/img/gallery/' | relative_url }}" target="_blank" rel="noopener">
             <img
               src="{{ img.file | prepend: '/assets/img/gallery/' | relative_url }}"
               alt="{{ img.alt | default: img.caption }}"
@@ -22,9 +22,9 @@ layout: default
             />
           </a>
           {% if img.caption %}
-            <p class="gallery-caption">{{ img.caption }}</p>
+            <figcaption class="gallery-caption">{{ img.caption }}</figcaption>
           {% endif %}
-        </div>
+        </figure>
       {% endfor %}
     </div>
   </article>
@@ -33,33 +33,46 @@ layout: default
 <style>
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 1.75rem;
   }
   .gallery-item {
+    position: relative;
+    margin: 0;
+    border: 1px solid var(--border, #e7e5e4);
+    border-radius: 12px;
     overflow: hidden;
-    border-radius: 8px;
-    background: var(--global-card-bg-color, #f9f9f9);
+    background: var(--surface, #ffffff);
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .gallery-item:hover {
+    border-color: var(--border-strong, #d6d3d1);
+    transform: translateY(-2px);
   }
   .gallery-item a {
     display: block;
+    line-height: 0;
   }
   .gallery-item img {
     width: 100%;
-    height: 200px;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
-    transition: transform 0.3s ease;
     display: block;
+    transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
-  .gallery-item:hover img {
-    transform: scale(1.04);
-  }
+  .gallery-item:hover img { transform: scale(1.03); }
   .gallery-caption {
-    font-size: 0.8rem;
-    color: var(--global-text-color-light, #888);
-    text-align: center;
-    padding: 0.4rem 0.6rem 0.6rem;
     margin: 0;
+    padding: 0.7rem 0.95rem 0.8rem;
+    border-top: 1px solid var(--border, #e7e5e4);
+    font-family: var(--sans, inherit);
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--fg, #1c1917);
+    letter-spacing: -0.005em;
+  }
+  @media (max-width: 560px) {
+    .gallery-grid { grid-template-columns: 1fr; }
   }
 </style>
