@@ -1144,10 +1144,18 @@ html[data-theme="dark"] .dh-alloc-bar { background: var(--surface-sunken); }
 
 .dh-holdings__sym {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: var(--sans);
+  min-width: 0;
+}
+.dh-holdings__sym-text {
+  display: flex;
   flex-direction: column;
   gap: 0.15rem;
   line-height: 1.25;
-  font-family: var(--sans);
+  min-width: 0;
 }
 .dh-holdings__sym b {
   font-weight: 600;
@@ -1159,7 +1167,36 @@ html[data-theme="dark"] .dh-alloc-bar { background: var(--surface-sunken); }
   font-style: normal;
   font-size: 0.72rem;
   color: var(--fg-mute);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
+.dh-holdings__logo,
+.dh-perf__logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+html[data-theme="dark"] .dh-holdings__logo,
+html[data-theme="dark"] .dh-perf__logo {
+  background: #ffffff;
+}
+.dh-holdings__logo img,
+.dh-perf__logo img {
+  width: 78%;
+  height: 78%;
+  object-fit: contain;
+  display: block;
+}
+.dh-perf__logo { width: 26px; height: 26px; }
 
 .dh-holdings__pct {
   justify-self: start;
@@ -1205,9 +1242,17 @@ html[data-theme="dark"] .dh-alloc-bar { background: var(--surface-sunken); }
 }
 .dh-perf__sym {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--sans);
+  min-width: 0;
+}
+.dh-perf__sym-text {
+  display: flex;
   flex-direction: column;
   line-height: 1.25;
-  font-family: var(--sans);
+  min-width: 0;
 }
 .dh-perf__sym b {
   font-weight: 600;
@@ -1215,7 +1260,14 @@ html[data-theme="dark"] .dh-alloc-bar { background: var(--surface-sunken); }
   color: var(--fg);
   letter-spacing: -0.01em;
 }
-.dh-perf__sym em { font-style: normal; font-size: 0.7rem; color: var(--fg-mute); }
+.dh-perf__sym em {
+  font-style: normal;
+  font-size: 0.7rem;
+  color: var(--fg-mute);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .dh-perf__bar {
   position: relative;
   height: 5px;

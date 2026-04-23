@@ -84,14 +84,11 @@ chart:
     </div>
     <div class="dh-alloc-list">
       {% for slice in p.allocation %}
-        {% assign pct = slice.value | times: 1000 | divided_by: p.summary.aum_usd %}
-        {% assign pct_int = pct | divided_by: 10 %}
-        {% assign pct_frac = pct | modulo: 10 %}
         <div class="dh-alloc-row">
           <span class="dh-alloc-dot" style="background: {{ slice.color }};"></span>
           <span class="dh-alloc-label">{{ slice.label }}</span>
-          <span class="dh-alloc-bar"><span class="dh-alloc-fill" style="width: {{ pct_int }}%; background: {{ slice.color }};"></span></span>
-          <span class="dh-alloc-pct">{{ pct_int }}.{{ pct_frac }}%</span>
+          <span class="dh-alloc-bar"><span class="dh-alloc-fill" style="width: {{ slice.pct_int }}%; background: {{ slice.color }};"></span></span>
+          <span class="dh-alloc-pct">{{ slice.pct_display }}</span>
         </div>
       {% endfor %}
     </div>
@@ -111,8 +108,13 @@ chart:
     {% for r in usd %}
     <div class="dh-holdings__row">
       <span class="dh-holdings__sym">
-        <b>{{ r.sym }}</b>
-        <em>{{ r.name }}</em>
+        <span class="dh-holdings__logo">
+          {% if r.logo %}<img src="{{ r.logo }}" alt="" loading="lazy" onerror="this.style.display='none'" />{% endif %}
+        </span>
+        <span class="dh-holdings__sym-text">
+          <b>{{ r.sym }}</b>
+          <em>{{ r.name }}</em>
+        </span>
       </span>
       <span>{{ r.qty }}</span>
       <span>{{ r.avg_display }}</span>
@@ -142,8 +144,13 @@ chart:
     {% for r in krw %}
     <div class="dh-holdings__row">
       <span class="dh-holdings__sym">
-        <b>{{ r.sym }}</b>
-        <em>{{ r.name }}</em>
+        <span class="dh-holdings__logo">
+          {% if r.logo %}<img src="{{ r.logo }}" alt="" loading="lazy" onerror="this.style.display='none'" />{% endif %}
+        </span>
+        <span class="dh-holdings__sym-text">
+          <b>{{ r.sym }}</b>
+          <em>{{ r.name }}</em>
+        </span>
       </span>
       <span>{{ r.qty }}</span>
       <span>{{ r.avg_display }}</span>
@@ -173,8 +180,13 @@ chart:
     {% for r in crp %}
     <div class="dh-holdings__row">
       <span class="dh-holdings__sym">
-        <b>{{ r.sym }}</b>
-        <em>{{ r.name }}</em>
+        <span class="dh-holdings__logo">
+          {% if r.logo %}<img src="{{ r.logo }}" alt="" loading="lazy" onerror="this.style.display='none'" />{% endif %}
+        </span>
+        <span class="dh-holdings__sym-text">
+          <b>{{ r.sym }}</b>
+          <em>{{ r.name }}</em>
+        </span>
       </span>
       <span>{{ r.qty }}</span>
       <span>{{ r.avg_display }}</span>
@@ -208,7 +220,10 @@ chart:
       {% for r in sorted limit: 4 %}
         {% if r.pnl_pct >= 0 %}
         <div class="dh-perf__row">
-          <span class="dh-perf__sym"><b>{{ r.sym }}</b><em>{{ r.name }}</em></span>
+          <span class="dh-perf__sym">
+            <span class="dh-perf__logo">{% if r.logo %}<img src="{{ r.logo }}" alt="" loading="lazy" onerror="this.style.display='none'" />{% endif %}</span>
+            <span class="dh-perf__sym-text"><b>{{ r.sym }}</b><em>{{ r.name }}</em></span>
+          </span>
           <span class="dh-perf__bar"><span class="dh-perf__fill up" style="width: {{ r.pnl_pct | times: 2 | at_most: 100 }}%;"></span></span>
           <span class="dh-perf__pct up">{{ r.pnl_pct_display }}</span>
         </div>
@@ -228,7 +243,10 @@ chart:
         {% if r.pnl_pct < 0 %}
         {% assign mag = 0 | minus: r.pnl_pct %}
         <div class="dh-perf__row">
-          <span class="dh-perf__sym"><b>{{ r.sym }}</b><em>{{ r.name }}</em></span>
+          <span class="dh-perf__sym">
+            <span class="dh-perf__logo">{% if r.logo %}<img src="{{ r.logo }}" alt="" loading="lazy" onerror="this.style.display='none'" />{% endif %}</span>
+            <span class="dh-perf__sym-text"><b>{{ r.sym }}</b><em>{{ r.name }}</em></span>
+          </span>
           <span class="dh-perf__bar"><span class="dh-perf__fill down" style="width: {{ mag | times: 2 | at_most: 100 }}%;"></span></span>
           <span class="dh-perf__pct down">{{ r.pnl_pct_display }}</span>
         </div>
