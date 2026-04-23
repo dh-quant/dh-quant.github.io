@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/markets/";
           },
+        },{id: "nav-portfolio",
+          title: "portfolio",
+          description: "개인 투자 포트폴리오 스냅샷 · 자산군별 배분 · 종목별 P&amp;L. 수동 갱신.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/portfolio/";
+          },
         },{id: "nav-projects",
           title: "projects",
           description: "퀀트 전략, 분석 툴, 사이드 프로젝트 모음.",
