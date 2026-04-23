@@ -7,13 +7,10 @@ subtitle: <a href='https://www.kentech.ac.kr'>KENTECH</a> · 금융 · 퀀트 ·
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true
-  more_info: >
-    <p><i class="fa-solid fa-envelope"></i> lucaskdh@kentech.ac.kr</p>
-    <p><i class="fa-solid fa-location-dot"></i> 전라남도 나주시, KENTECH</p>
+  image_circular: false
 
 selected_papers: false
-social: true
+social: false
 
 announcements:
   enabled: false
@@ -71,21 +68,4 @@ latest_posts:
   </div>
 </div>
 
-<div class="dh-section-title">
-  오늘의 한 마디
-  <span class="dh-section-title__count">// rotate · 12s</span>
-</div>
-
-<figure class="dh-quote dh-reveal" id="dh-quote" aria-live="polite">
-  <blockquote class="dh-quote__text">—</blockquote>
-  <figcaption class="dh-quote__author">—</figcaption>
-  <div class="dh-quote__dots" id="dh-quote-dots" role="tablist" aria-label="Choose quote"></div>
-  <div class="dh-quote__progress"><span></span></div>
-</figure>
-
-### 연락 · 링크
-
-관심사가 겹치거나 이야기 나누고 싶으시면 메일·깃허브로 편하게 연락 주세요.
-
-<script src="{{ '/assets/js/quotes.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/reveal.js' | relative_url }}" defer></script>
