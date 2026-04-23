@@ -111,10 +111,8 @@ chart:
         <span class="dh-holdings__logo">
           {% if r.logo %}<img src="{{ r.logo }}" alt="" loading="lazy" onerror="this.style.display='none'" />{% endif %}
         </span>
-        <span class="dh-holdings__sym-text">
-          <b>{{ r.sym }}</b>
-          <em>{{ r.name }}</em>
-        </span>
+        <b class="dh-holdings__ticker">{{ r.sym }}</b>
+        <em class="dh-holdings__name">{{ r.name }}</em>
       </span>
       <span>{{ r.qty }}</span>
       <span>{{ r.avg_display }}</span>
@@ -147,10 +145,8 @@ chart:
         <span class="dh-holdings__logo">
           {% if r.logo %}<img src="{{ r.logo }}" alt="" loading="lazy" onerror="this.style.display='none'" />{% endif %}
         </span>
-        <span class="dh-holdings__sym-text">
-          <b>{{ r.sym }}</b>
-          <em>{{ r.name }}</em>
-        </span>
+        <b class="dh-holdings__ticker">{{ r.sym }}</b>
+        <em class="dh-holdings__name">{{ r.name }}</em>
       </span>
       <span>{{ r.qty }}</span>
       <span>{{ r.avg_display }}</span>
@@ -183,10 +179,8 @@ chart:
         <span class="dh-holdings__logo">
           {% if r.logo %}<img src="{{ r.logo }}" alt="" loading="lazy" onerror="this.style.display='none'" />{% endif %}
         </span>
-        <span class="dh-holdings__sym-text">
-          <b>{{ r.sym }}</b>
-          <em>{{ r.name }}</em>
-        </span>
+        <b class="dh-holdings__ticker">{{ r.sym }}</b>
+        <em class="dh-holdings__name">{{ r.name }}</em>
       </span>
       <span>{{ r.qty }}</span>
       <span>{{ r.avg_display }}</span>
@@ -222,7 +216,8 @@ chart:
         <div class="dh-perf__row">
           <span class="dh-perf__sym">
             <span class="dh-perf__logo">{% if r.logo %}<img src="{{ r.logo }}" alt="" loading="lazy" onerror="this.style.display='none'" />{% endif %}</span>
-            <span class="dh-perf__sym-text"><b>{{ r.sym }}</b><em>{{ r.name }}</em></span>
+            <b class="dh-perf__ticker">{{ r.sym }}</b>
+            <em class="dh-perf__name">{{ r.name }}</em>
           </span>
           <span class="dh-perf__bar"><span class="dh-perf__fill up" style="width: {{ r.pnl_pct | times: 2 | at_most: 100 }}%;"></span></span>
           <span class="dh-perf__pct up">{{ r.pnl_pct_display }}</span>
@@ -245,7 +240,8 @@ chart:
         <div class="dh-perf__row">
           <span class="dh-perf__sym">
             <span class="dh-perf__logo">{% if r.logo %}<img src="{{ r.logo }}" alt="" loading="lazy" onerror="this.style.display='none'" />{% endif %}</span>
-            <span class="dh-perf__sym-text"><b>{{ r.sym }}</b><em>{{ r.name }}</em></span>
+            <b class="dh-perf__ticker">{{ r.sym }}</b>
+            <em class="dh-perf__name">{{ r.name }}</em>
           </span>
           <span class="dh-perf__bar"><span class="dh-perf__fill down" style="width: {{ mag | times: 2 | at_most: 100 }}%;"></span></span>
           <span class="dh-perf__pct down">{{ r.pnl_pct_display }}</span>

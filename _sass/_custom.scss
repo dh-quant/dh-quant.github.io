@@ -1142,6 +1142,7 @@ html[data-theme="dark"] .dh-alloc-bar { background: var(--surface-sunken); }
 .dh-holdings__row:last-child { border-bottom: 0; }
 .dh-holdings__row:hover { background: var(--surface-mute); }
 
+/* Horizontal: [logo] [ticker] [name ellipsised] */
 .dh-holdings__sym {
   display: flex;
   flex-direction: row;
@@ -1150,26 +1151,24 @@ html[data-theme="dark"] .dh-alloc-bar { background: var(--surface-sunken); }
   font-family: var(--sans);
   min-width: 0;
 }
-.dh-holdings__sym-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-  line-height: 1.25;
-  min-width: 0;
-}
-.dh-holdings__sym b {
-  font-weight: 600;
-  font-size: 0.94rem;
+.dh-holdings__ticker {
+  font-weight: 700;
+  font-size: 0.92rem;
   color: var(--fg);
-  letter-spacing: -0.012em;
-}
-.dh-holdings__sym em {
+  letter-spacing: -0.01em;
+  flex-shrink: 0;
   font-style: normal;
-  font-size: 0.72rem;
+}
+.dh-holdings__name {
+  font-style: normal;
+  font-size: 0.82rem;
   color: var(--fg-mute);
+  letter-spacing: -0.003em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .dh-holdings__logo,
@@ -1191,8 +1190,8 @@ html[data-theme="dark"] .dh-perf__logo {
 }
 .dh-holdings__logo img,
 .dh-perf__logo img {
-  width: 78%;
-  height: 78%;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
   display: block;
 }
@@ -1248,25 +1247,23 @@ html[data-theme="dark"] .dh-perf__logo {
   font-family: var(--sans);
   min-width: 0;
 }
-.dh-perf__sym-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.25;
-  min-width: 0;
-}
-.dh-perf__sym b {
-  font-weight: 600;
-  font-size: 0.9rem;
+.dh-perf__ticker {
+  font-weight: 700;
+  font-size: 0.88rem;
   color: var(--fg);
   letter-spacing: -0.01em;
-}
-.dh-perf__sym em {
+  flex-shrink: 0;
   font-style: normal;
-  font-size: 0.7rem;
+}
+.dh-perf__name {
+  font-style: normal;
+  font-size: 0.76rem;
   color: var(--fg-mute);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 .dh-perf__bar {
   position: relative;

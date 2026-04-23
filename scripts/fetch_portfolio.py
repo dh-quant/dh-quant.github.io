@@ -41,25 +41,29 @@ USER_AGENT = (
 # cat: us | kr | crypto
 # ---------------------------------------------------------------------------
 
+# Logo URLs are mix-sourced: TradingView's public symbol-logo CDN where it
+# has the ticker, Google's favicon service as a reliable fallback, and
+# CoinGecko's image CDN for crypto. (Clearbit's free logo API went offline
+# in early 2025, hence none of those endpoints here.)
 POSITIONS = [
     {"sym": "MSTR",      "name": "Strategy",                "qty": 6,           "avg_usd":  145.7966, "cat": "us",
-     "logo": "https://logo.clearbit.com/microstrategy.com"},
+     "logo": "https://s3-symbol-logo.tradingview.com/microstrategy--big.svg"},
     {"sym": "MUFG",      "name": "Mitsubishi UFJ (ADR)",    "qty": 45,          "avg_usd":   18.9300, "cat": "us",
-     "logo": "https://logo.clearbit.com/mufg.jp"},
+     "logo": "https://www.google.com/s2/favicons?sz=128&domain=mufgamericas.com"},
     {"sym": "BMNR",      "name": "BitMine Immersion",       "qty": 17,          "avg_usd":   23.3247, "cat": "us",
-     "logo": "https://logo.clearbit.com/bitminetech.io"},
+     "logo": "https://s3-symbol-logo.tradingview.com/bitmine-immersion-technologies--big.svg"},
     {"sym": "SPYM",      "name": "SPDR Portfolio S&P 500",  "qty": 4,           "avg_usd":   77.1300, "cat": "us",
-     "logo": "https://logo.clearbit.com/ssga.com"},
+     "logo": "https://www.google.com/s2/favicons?sz=128&domain=ssga.com"},
     {"sym": "JOBY",      "name": "Joby Aviation",           "qty": 14,          "avg_usd":   14.6100, "cat": "us",
-     "logo": "https://logo.clearbit.com/jobyaviation.com"},
+     "logo": "https://s3-symbol-logo.tradingview.com/joby-aviation--big.svg"},
     {"sym": "SONY",      "name": "Sony Group (ADR)",        "qty": 6,           "avg_usd":   22.7766, "cat": "us",
-     "logo": "https://logo.clearbit.com/sony.com"},
+     "logo": "https://s3-symbol-logo.tradingview.com/sony--big.svg"},
     {"sym": "069500.KS", "name": "KODEX 200",               "qty": 1,           "avg_usd":   55.47,   "cat": "kr",
-     "logo": "https://logo.clearbit.com/samsungam.com"},
+     "logo": "https://www.google.com/s2/favicons?sz=128&domain=kodex.com"},
     {"sym": "ETH-USD",   "name": "Ethereum",                "qty": 0.00565847,  "avg_usd": 2392.30,   "cat": "crypto",
-     "logo": "https://assets.coingecko.com/coins/images/279/small/ethereum.png"},
+     "logo": "https://coin-images.coingecko.com/coins/images/279/small/ethereum.png"},
     {"sym": "W-USD",     "name": "Wormhole",                "qty": 1541.64,     "avg_usd":    0.01314,"cat": "crypto",
-     "logo": "https://assets.coingecko.com/coins/images/35087/small/wormhole.png"},
+     "logo": "https://coin-images.coingecko.com/coins/images/35087/small/W_Token_%283%29.png?1758122686"},
 ]
 
 # Idle cash balances (already USD-converted at the time you last updated them).
