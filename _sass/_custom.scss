@@ -1047,3 +1047,190 @@ html[data-theme="dark"] body::before { opacity: 0.04; }
 
 /* --- Asset bars: a bit tighter to match gauge card ----------------- */
 .dh-panel .dh-bars { margin-top: 0.2rem; }
+
+/* ============================================================= */
+/*  Portfolio page (/portfolio/) — holdings tables, allocation    */
+/*  breakdown, performers bars, donut sizing                       */
+/* ============================================================= */
+
+.dh-echarts--mid { height: 320px; min-height: 320px; }
+@media (max-width: 600px) { .dh-echarts--mid { height: 280px; min-height: 280px; } }
+
+/* --- Allocation breakdown list (right-side panel) ---------------- */
+.dh-alloc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding-top: 0.25rem;
+}
+.dh-alloc-row {
+  display: grid;
+  grid-template-columns: 10px minmax(80px, 1fr) minmax(60px, 2fr) auto;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+}
+.dh-alloc-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(124, 92, 255, 0.08);
+}
+.dh-alloc-label { color: var(--global-text-color); font-weight: 500; }
+.dh-alloc-bar {
+  position: relative;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.18);
+  overflow: hidden;
+}
+.dh-alloc-fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.6s cubic-bezier(.2, .8, .2, 1);
+}
+.dh-alloc-pct {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--global-text-color);
+  min-width: 52px;
+  text-align: right;
+}
+
+/* --- Holdings table --------------------------------------------- */
+.dh-holdings {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.84rem;
+}
+.dh-holdings__head,
+.dh-holdings__row {
+  display: grid;
+  grid-template-columns: 2.3fr 0.8fr 1fr 1fr 0.9fr 1.3fr 1.3fr;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.3rem;
+  font-variant-numeric: tabular-nums;
+}
+.dh-holdings__head {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  padding-bottom: 0.5rem;
+}
+.dh-holdings__row {
+  border-bottom: 1px dashed rgba(148, 163, 184, 0.14);
+  transition: background 0.18s ease;
+}
+.dh-holdings__row:last-child { border-bottom: none; }
+.dh-holdings__row:hover {
+  background: rgba(124, 92, 255, 0.05);
+  border-radius: 6px;
+}
+.dh-holdings__sym {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  line-height: 1.2;
+}
+.dh-holdings__sym b {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--global-text-color);
+  letter-spacing: 0.02em;
+}
+.dh-holdings__sym em {
+  font-style: normal;
+  font-size: 0.7rem;
+  color: var(--global-text-color-light);
+}
+.dh-holdings__pct {
+  font-weight: 700;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  justify-self: start;
+}
+.dh-holdings__pct.up   { color: var(--up-color);   background: rgba(17, 214, 139, 0.1); }
+.dh-holdings__pct.down { color: var(--down-color); background: rgba(255, 71, 87, 0.1); }
+.dh-holdings .up   { color: var(--up-color); }
+.dh-holdings .down { color: var(--down-color); }
+
+@media (max-width: 720px) {
+  .dh-holdings__head,
+  .dh-holdings__row {
+    grid-template-columns: 1.6fr 0.7fr 0.9fr 0.9fr 1fr;
+    font-size: 0.78rem;
+  }
+  .dh-holdings__head > :nth-child(6),
+  .dh-holdings__head > :nth-child(7),
+  .dh-holdings__row  > :nth-child(6),
+  .dh-holdings__row  > :nth-child(7) { display: none; }
+}
+
+/* --- Performers (top gainers / losers) -------------------------- */
+.dh-perf {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.2rem;
+}
+.dh-perf__row {
+  display: grid;
+  grid-template-columns: minmax(100px, 1.4fr) minmax(80px, 2fr) auto;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+}
+.dh-perf__sym {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.dh-perf__sym b {
+  font-weight: 700;
+  font-size: 0.86rem;
+  color: var(--global-text-color);
+}
+.dh-perf__sym em {
+  font-style: normal;
+  font-size: 0.68rem;
+  color: var(--global-text-color-light);
+}
+.dh-perf__bar {
+  position: relative;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.16);
+  overflow: hidden;
+}
+.dh-perf__fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.6s cubic-bezier(.2, .8, .2, 1);
+}
+.dh-perf__fill.up   { background: linear-gradient(90deg, rgba(17, 214, 139, 0.5), var(--up-color)); }
+.dh-perf__fill.down { background: linear-gradient(90deg, rgba(255, 71, 87, 0.5), var(--down-color)); }
+.dh-perf__pct { font-weight: 700; min-width: 60px; text-align: right; }
+.dh-perf__pct.up   { color: var(--up-color); }
+.dh-perf__pct.down { color: var(--down-color); }
+
+/* --- Footnote --------------------------------------------------- */
+.dh-portfolio-footnote {
+  margin-top: 1.2rem;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  background: rgba(148, 163, 184, 0.08);
+  border: 1px dashed rgba(148, 163, 184, 0.25);
+  font-size: 0.78rem;
+  color: var(--global-text-color-light);
+  line-height: 1.55;
+}
+.dh-portfolio-footnote code {
+  background: rgba(124, 92, 255, 0.1);
+  padding: 0.08rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}

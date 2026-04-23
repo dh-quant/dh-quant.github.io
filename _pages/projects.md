@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: 퀀트 전략, 분석 툴, 사이드 프로젝트 모음.
 nav: true
-nav_order: 3
+nav_order: 4
 display_categories: [quant, dev]
 horizontal: false
 ---

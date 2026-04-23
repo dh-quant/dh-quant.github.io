@@ -4,7 +4,7 @@ title: physics
 permalink: /physics/
 description: 인터랙티브 물리 시뮬레이션 — 전자기학 · 양자역학 · 역학 · 파동. 실제 지배방정식을 그대로 수치 적분합니다.
 nav: true
-nav_order: 6
+nav_order: 7
 _styles: >
   .phys-wrap { display: flex; flex-direction: column; gap: 2.2rem; margin-top: 1.2rem; }
   .phys-card { border: 1px solid var(--global-divider-color); border-radius: 10px; padding: 1.2rem 1.3rem 1.4rem; background: var(--global-card-bg-color, transparent); }
