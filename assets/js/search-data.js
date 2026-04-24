@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/physics/";
           },
-        },{id: "post-매매-복기-2026-04-23-nq-수렴-끝의-스윕-ict-2022-모델대로",
+        },{id: "post-매매-복기-2026-04-25-nq-정해진-손익-그리고-꾸준함",
+        
+          title: "매매 복기 | 2026-04-25 NQ — 정해진 손익, 그리고 꾸준함",
+        
+        description: "진입점과 청산 지점을 모두 표시한 복기. 손실도 수익도 정해진 대로 볼 줄 아는 것, 그리고 clear한 기준으로 들어가는 것",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/04/25/trading-journal/";
+          
+        },
+      },{id: "post-매매-복기-2026-04-23-nq-수렴-끝의-스윕-ict-2022-모델대로",
         
           title: "매매 복기 | 2026-04-23 NQ — 수렴 끝의 스윕, ICT 2022 모델대로",
         
