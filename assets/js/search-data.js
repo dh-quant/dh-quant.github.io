@@ -16,12 +16,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "nav-markets",
-          title: "markets",
-          description: "실시간 글로벌 시황 · 섹터 · 채권 · 원자재 · FX · 크립토. 15분 cron으로 데이터 갱신.",
+        },{id: "nav-sentiment",
+          title: "sentiment",
+          description: "실시간 개미 동향 — Reddit · StockTwits · Bluesky · 4chan · HN을 30분 cron으로 크롤링해 종목 멘션·감성·이상치를 종합 분석합니다.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/markets/";
+            window.location.href = "/sentiment/";
+          },
+        },{id: "nav-options",
+          title: "options",
+          description: "실전 옵션 데스크 — 딜러 GEX/Vanna/Charm, IV 표면, term structure, VRP, max-pain. 15분 cron으로 갱신.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/options/";
           },
         },{id: "nav-portfolio",
           title: "portfolio",
