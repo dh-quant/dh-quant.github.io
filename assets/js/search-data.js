@@ -44,13 +44,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gallery/";
           },
-        },{id: "nav-physics",
-          title: "physics",
-          description: "인터랙티브 물리 시뮬레이션 — 전자기학 · 양자역학 · 역학 · 파동. 실제 지배방정식을 그대로 수치 적분합니다.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/physics/";
-          },
         },{id: "post-매매-복기-2026-04-25-nq-정해진-손익-그리고-꾸준함",
         
           title: "매매 복기 | 2026-04-25 NQ — 정해진 손익, 그리고 꾸준함",
