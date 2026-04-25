@@ -1,0 +1,61 @@
+name: Update options data
+
+on:
+  # Every 15 min during US market hours (13:30–20:30 UTC ≈ 09:30–16:30 ET).
+  # Plus a single after-hours run for end-of-day snapshot.
+  schedule:
+    - cron: "*/15 13-20 * * 1-5"
+    - cron: "30 21 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: options-data
+  cancel-in-progress: true
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy scipy
+
+      - name: Fetch + analyze options chains
+        run: python scripts/fetch_options.py
+
+      - name: Commit & push if changed
+        run: |
+          set -e
+          git config user.name "dh-quant-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet _data/options/; then
+            echo "No options changes."
+            exit 0
+          fi
+
+          git add _data/options/snapshot.json _data/options/iv_history.json
+          git commit -m "chore(data): refresh options $(date -u +'%Y-%m-%dT%H:%MZ')"
+
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then
+              break
+            fi
+            git pull --rebase origin main
+          done

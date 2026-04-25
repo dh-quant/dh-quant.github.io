@@ -43,7 +43,7 @@ latest_posts:
 
 이 사이트에는 **매매 일지**, **시장 분석**, 그리고 관심 있는 주제들을 기록합니다.
 주로 파이썬으로 데이터 파이프라인을 짜고, 직접 돌린 백테스트와 실매매 결과를 비교하며 전략을 다듬고 있어요.
-실시간 글로벌 시황 대시보드는 [**markets**](/markets/) 탭에 정리해 두었습니다.
+실시간 군중 동향은 [**sentiment**](/sentiment/), 옵션 분석 데스크는 [**options**](/options/) 탭에서 보세요.
 
 <div class="dh-grid">
   <div class="dh-stat dh-reveal">

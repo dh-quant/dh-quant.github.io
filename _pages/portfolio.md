@@ -4,7 +4,7 @@ title: portfolio
 permalink: /portfolio/
 description: 개인 투자 포트폴리오 스냅샷 · 자산군별 배분 · 종목별 P&L. Yahoo Finance 15분 cron.
 nav: true
-nav_order: 3
+nav_order: 4
 
 chart:
   echarts: true
@@ -255,7 +255,7 @@ chart:
 <p class="dh-portfolio-footnote">
   Yahoo Finance 15분 cron이 <code>_data/portfolio.json</code>을 갱신하고 사이트를 재빌드합니다.
   포지션(수량·평단)은 <code>scripts/fetch_portfolio.py</code>의 <code>POSITIONS</code> 리스트에서 수동 관리.
-  실시간 시장 데이터는 <a href="{{ '/markets/' | relative_url }}">/markets/</a>에 있습니다.
+  실시간 군중 동향은 <a href="{{ '/sentiment/' | relative_url }}">/sentiment/</a>, 옵션 데스크는 <a href="{{ '/options/' | relative_url }}">/options/</a>.
 </p>
 
 <script src="{{ '/assets/js/portfolio.js' | relative_url }}" defer></script>

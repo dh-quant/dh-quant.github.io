@@ -1,0 +1,59 @@
+name: Update sentiment data
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 minutes (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sentiment-data
+  cancel-in-progress: true
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install vaderSentiment
+
+      - name: Crawl SNS + score
+        run: python scripts/fetch_sentiment.py
+
+      - name: Commit & push if changed
+        run: |
+          set -e
+          git config user.name "dh-quant-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet _data/sentiment/; then
+            echo "No sentiment changes."
+            exit 0
+          fi
+
+          git add _data/sentiment/summary.json _data/sentiment/history.json
+          git commit -m "chore(data): refresh sentiment $(date -u +'%Y-%m-%dT%H:%MZ')"
+
+          # Auto-rebase on top of any concurrent bot pushes
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then
+              break
+            fi
+            git pull --rebase origin main
+          done
