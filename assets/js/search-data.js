@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gallery/";
           },
-        },{id: "post-매매-복기-2026-04-25-nq-정해진-손익-그리고-꾸준함",
+        },{id: "post-매매-복기-2026-04-28-nq-인내심-그리고-불타기의-미학",
+        
+          title: "매매 복기 | 2026-04-28 NQ — 인내심, 그리고 불타기의 미학",
+        
+        description: "박스권 이탈 실수를 빠르게 인정하고, 의도된 Liquidity Sweep 이후 FVG 진입 — micro 5계약 피라미딩으로 +$368.44",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/04/28/trading-journal/";
+          
+        },
+      },{id: "post-매매-복기-2026-04-25-nq-정해진-손익-그리고-꾸준함",
         
           title: "매매 복기 | 2026-04-25 NQ — 정해진 손익, 그리고 꾸준함",
         
