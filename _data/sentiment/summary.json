@@ -1,36 +1,44 @@
 {
-  "updated": "2026-05-02T17:11:29.555686+00:00",
-  "doc_count": 2231,
+  "updated": "2026-05-02T18:06:40.932130+00:00",
+  "doc_count": 2227,
   "platforms": {
     "4chan": 30,
     "hn": 140,
     "stocktwits": 780,
-    "bluesky": 1281
+    "bluesky": 1277
   },
   "tickers": [
     {
       "sym": "SPY",
       "name": "S&P 500 ETF",
       "mentions": 360,
-      "mentions_6h": 200,
-      "mentions_24h": 295,
-      "velocity_per_hour": 33.33,
-      "sentiment": 0.094,
-      "bull_pct": 0.35,
-      "bear_pct": 0.186,
+      "mentions_6h": 198,
+      "mentions_24h": 284,
+      "velocity_per_hour": 33.0,
+      "sentiment": 0.097,
+      "bull_pct": 0.336,
+      "bear_pct": 0.172,
       "platforms": {
         "hn": 1,
-        "stocktwits": 212,
-        "bluesky": 147
+        "stocktwits": 215,
+        "bluesky": 144
       },
       "samples": [
         {
-          "text": "I like how you’re so attached to the idea that I betrayed a spy ring that you’re now attacking the person who actually messed with ICE agents, in defense of an organized espionage network that exists only in your head.",
+          "text": "As of last night at 1:17 AM my new philosophy is: \n\nIt’s not a real night until you spy a wine or cocktail glass with lipstick lips on the rim. Also, the very second you spy a wine or cocktail glass with lipstick lips on the rim it’s time t",
           "platform": "bluesky",
-          "score": 88,
-          "url": "https://bsky.app/profile/whstancil.bsky.social/post/3mkv2yzsqck2v",
-          "sent": -0.375,
-          "ts": 1777739543
+          "score": 39,
+          "url": "https://bsky.app/profile/mjmimages.bsky.social/post/3mkv3z2tjck23",
+          "sent": 0.0,
+          "ts": 1777740618
+        },
+        {
+          "text": "The problem is that my friend’s story about getting information from ICE was too good, so content farmers had to build an entire fanfiction around it to earn likes - first that there was a vast spy network, and then that I had betrayed the ",
+          "platform": "bluesky",
+          "score": 32,
+          "url": "https://bsky.app/profile/whstancil.bsky.social/post/3mkv7z7rerk2v",
+          "sent": 0.237,
+          "ts": 1777744918
         },
         {
           "text": "Show HN: A free ESG stock screener that publishes its losses and methodology Hey HN, JSS(JumpstartSignal) is a free, ESG-filtered daily stock screener. I built it after some really badly-timed quantum computing stock buys, so I felt I neede",
@@ -41,80 +49,29 @@
           "ts": 1777197021
         },
         {
-          "text": "Sorry I didn't cry during that episode of Spy X Family, babe. I was thinking about Super Mario Brothers 3.",
-          "platform": "bluesky",
-          "score": 28,
-          "url": "https://bsky.app/profile/thattravguy.bsky.social/post/3mkuyzdywgs2d",
-          "sent": 0.366,
-          "ts": 1777737406
-        },
-        {
-          "text": "$SPY all OTM calls and puts will expire worthless. MM and dealers win. Next few weeks we will trade rangebound to down. Spirit airline was the start. Many more bankruptcies to come TRUMP could\nLeave right now and IRAN will still only allow ",
+          "text": "$SPY There&#39;s no law that says a bubble can&#39;t burst while people are screaming &#39;bubble.&#39;  No doubt there was some screaming on the Titanic also.",
           "platform": "stocktwits",
           "score": 1,
           "url": "https://stocktwits.com/symbol/SPY",
-          "sent": -0.058,
-          "ts": 1777741859
+          "sent": -0.7,
+          "ts": 1777745186
         }
       ],
-      "z_score": 1.82
-    },
-    {
-      "sym": "BTC",
-      "name": "Bitcoin",
-      "mentions": 241,
-      "mentions_6h": 131,
-      "mentions_24h": 184,
-      "velocity_per_hour": 21.83,
-      "sentiment": 0.13,
-      "bull_pct": 0.407,
-      "bear_pct": 0.166,
-      "platforms": {
-        "hn": 1,
-        "stocktwits": 130,
-        "bluesky": 110
-      },
-      "samples": [
-        {
-          "text": "Spark: Bitcoin's Payment Layer for Stablecoins and Instant BTC ",
-          "platform": "hn",
-          "score": 5,
-          "url": "https://news.ycombinator.com/item?id=47880978",
-          "sent": 0.113,
-          "ts": 1776974464
-        },
-        {
-          "text": "Bitcoin price is facing risks as the confirmed indicator indicates a major sell-off\n\nWill BTC collapse again in the following weeks? 2026 has been an eventful year for the cryptocurrency industry, mostly driven by developments in the war be",
-          "platform": "bluesky",
-          "score": 2,
-          "url": "https://bsky.app/profile/zainaalean.bsky.social/post/3mkv2j6dgpe22",
-          "sent": -0.424,
-          "ts": 1777739009
-        },
-        {
-          "text": "$TSLA $SPY $DIA $BTC.X",
-          "platform": "stocktwits",
-          "score": 1,
-          "url": "https://stocktwits.com/symbol/SPY",
-          "sent": 0.7,
-          "ts": 1777741762
-        }
-      ],
-      "z_score": 0.62
+      "z_score": 1.78
     },
     {
       "sym": "QQQ",
       "name": "Nasdaq 100 ETF",
-      "mentions": 239,
-      "mentions_6h": 110,
-      "mentions_24h": 185,
-      "velocity_per_hour": 18.33,
-      "sentiment": 0.126,
-      "bull_pct": 0.36,
-      "bear_pct": 0.155,
+      "mentions": 244,
+      "mentions_6h": 112,
+      "mentions_24h": 184,
+      "velocity_per_hour": 18.67,
+      "sentiment": 0.128,
+      "bull_pct": 0.352,
+      "bear_pct": 0.119,
       "platforms": {
-        "stocktwits": 140,
-        "bluesky": 99
+        "stocktwits": 147,
+        "bluesky": 97
       },
       "samples": [
         {
@@ -142,30 +99,81 @@
           "ts": 1777690283
         },
         {
-          "text": "$USO $SPY $QQQ \n\nNEW: Trump aides declared an emergency to bypass Congress to sell arms valued at $8.6 billion to Israel and Arab nations. That means less weapons for the US since munitions take years to make. Some Pentagon officials are al",
+          "text": "Trading $SPY $QQQ  For A Living: Using 10:40 Algo! \n \nWatch the video to learn how to trade this repeatable pattern 🎯 \n \nhttps://x.com/TENETTRADEGROUP/status/2050613787796107433?s=20",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/SPY",
+          "sent": 0.0,
+          "ts": 1777745140
+        }
+      ],
+      "z_score": 0.96
+    },
+    {
+      "sym": "BTC",
+      "name": "Bitcoin",
+      "mentions": 233,
+      "mentions_6h": 125,
+      "mentions_24h": 171,
+      "velocity_per_hour": 20.83,
+      "sentiment": 0.139,
+      "bull_pct": 0.408,
+      "bear_pct": 0.15,
+      "platforms": {
+        "hn": 1,
+        "stocktwits": 122,
+        "bluesky": 110
+      },
+      "samples": [
+        {
+          "text": "Spark: Bitcoin's Payment Layer for Stablecoins and Instant BTC ",
+          "platform": "hn",
+          "score": 5,
+          "url": "https://news.ycombinator.com/item?id=47880978",
+          "sent": 0.113,
+          "ts": 1776974464
+        },
+        {
+          "text": "$BTC.X  $84,000 estimate \n\n 36 - 48 hours out from now \n\n$SPY $DIA                $XRP.X  $ETH.X",
           "platform": "stocktwits",
           "score": 1,
           "url": "https://stocktwits.com/symbol/SPY",
           "sent": 0.7,
-          "ts": 1777741785
+          "ts": 1777744581
+        },
+        {
+          "text": "$BTC.X it’s time to pump the next $2000\n\n$ETH.X $XRP.X  it’s go time folks 🏄‍♂️ \n\n$SPY $DJIA",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/SPY",
+          "sent": 0.7,
+          "ts": 1777743518
+        },
+        {
+          "text": "Charlie Bilello 𝕏🔁 svůj post:\n\nLast 10 Years\nNVIDIA $NVDA: +22,875%\nBitcoin $BTC: +17,205%\n$AMD: +10,030%\nTesla $TSLA: +2,362%\nApple $AAPL: +1,233%\nGoogle $GOOGL: +999%\nNetflix $NFLX: +932%\nMicrosoft $MSFT: +844%\nAmazon $AMZN: +717%\nMeta: $",
+          "platform": "bluesky",
+          "score": 1,
+          "url": "https://bsky.app/profile/charliebilello.zpravobot.news.ap.brid.gy/post/3mktmvnxp75h2",
+          "sent": 0.089,
+          "ts": 1777690036
         }
       ],
-      "z_score": 0.67
+      "z_score": 0.3
     },
     {
       "sym": "NVDA",
       "name": "NVIDIA",
-      "mentions": 187,
-      "mentions_6h": 73,
-      "mentions_24h": 143,
-      "velocity_per_hour": 12.17,
-      "sentiment": 0.143,
-      "bull_pct": 0.492,
-      "bear_pct": 0.144,
+      "mentions": 194,
+      "mentions_6h": 75,
+      "mentions_24h": 145,
+      "velocity_per_hour": 12.5,
+      "sentiment": 0.163,
+      "bull_pct": 0.495,
+      "bear_pct": 0.108,
       "platforms": {
-        "hn": 3,
-        "stocktwits": 67,
-        "bluesky": 117
+        "hn": 2,
+        "stocktwits": 76,
+        "bluesky": 116
       },
       "samples": [
         {
@@ -193,30 +201,29 @@
           "ts": 1777664903
         },
         {
-          "text": "$SPY $QQQ $NVDA",
+          "text": "$SPY $QQQ $NVDA $AMZN 🤝💵💵💵",
           "platform": "stocktwits",
           "score": 1,
           "url": "https://stocktwits.com/symbol/SPY",
           "sent": 0.0,
-          "ts": 1777741558
+          "ts": 1777743996
         }
       ],
-      "z_score": -0.8
+      "z_score": -0.47
     },
     {
       "sym": "AAPL",
       "name": "Apple",
-      "mentions": 159,
-      "mentions_6h": 61,
-      "mentions_24h": 140,
-      "velocity_per_hour": 10.17,
-      "sentiment": 0.114,
-      "bull_pct": 0.384,
-      "bear_pct": 0.088,
+      "mentions": 154,
+      "mentions_6h": 55,
+      "mentions_24h": 131,
+      "velocity_per_hour": 9.17,
+      "sentiment": 0.107,
+      "bull_pct": 0.364,
+      "bear_pct": 0.097,
       "platforms": {
-        "hn": 1,
-        "stocktwits": 48,
-        "bluesky": 110
+        "stocktwits": 45,
+        "bluesky": 109
       },
       "samples": [
         {
@@ -228,12 +235,12 @@
           "ts": 1777583400
         },
         {
-          "text": "Neuberg, Bloomberg-style AI terminal for stocks, crypto, and prediction markets Yesterday I posted an introduction to Neuberg and its 500+ dashboards, and received quite a bit of feedback in the comments. Today I want to share some of the w",
-          "platform": "hn",
-          "score": 3,
-          "url": "https://news.ycombinator.com/item?id=47611900",
-          "sent": 0.231,
-          "ts": 1775121108
+          "text": "I looked up the returns on $AAPL from like 2000-now.  Or maybe it was when Michael Dell said they should just close up shop.  It made me a little depressed.\n\nShit, I could have just dumped $100k into $NVDA 20 years ago when they were making",
+          "platform": "bluesky",
+          "score": 2,
+          "url": "https://bsky.app/profile/jimc5.bsky.social/post/3mkup6qawhk2z",
+          "sent": -0.722,
+          "ts": 1777726849
         },
         {
           "text": "I looked up the returns on $AAPL from like 2000-now.  Or maybe it was when Michael Dell said they should just close up shop.  It made me a little depressed.\n\nShit, I could have just dumped $100k into $NVDA 20 years ago when they were making",
@@ -244,28 +251,28 @@
           "ts": 1777726849
         },
         {
-          "text": "$AAPL THE BEST SMARTPHONE!",
+          "text": "S&amp;P500 has surged above a critical 100-year trend line resistance. \n\nWhile this may not prove negative for price right away, the rest of 2026 may prove the last hoorah, before macro-issues come home to roost. \n\n$SPY $QQQ $SMH $AAPL $UVX",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/AAPL",
-          "sent": 0.7,
-          "ts": 1777741675
+          "url": "https://stocktwits.com/symbol/QQQ",
+          "sent": -0.163,
+          "ts": 1777743217
         }
       ],
-      "z_score": 0.27
+      "z_score": 0.03
     },
     {
       "sym": "AMZN",
       "name": "Amazon",
-      "mentions": 145,
-      "mentions_6h": 29,
-      "mentions_24h": 114,
-      "velocity_per_hour": 4.83,
-      "sentiment": 0.084,
-      "bull_pct": 0.372,
-      "bear_pct": 0.159,
+      "mentions": 148,
+      "mentions_6h": 34,
+      "mentions_24h": 107,
+      "velocity_per_hour": 5.67,
+      "sentiment": 0.092,
+      "bull_pct": 0.378,
+      "bear_pct": 0.142,
       "platforms": {
-        "stocktwits": 46,
+        "stocktwits": 49,
         "bluesky": 99
       },
       "samples": [
@@ -294,6 +301,56 @@
           "ts": 1777652235
         },
         {
+          "text": "$SPY $QQQ $NVDA $AMZN 🤝💵💵💵",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/SPY",
+          "sent": 0.0,
+          "ts": 1777743996
+        }
+      ],
+      "z_score": -0.61
+    },
+    {
+      "sym": "META",
+      "name": "Meta",
+      "mentions": 144,
+      "mentions_6h": 78,
+      "mentions_24h": 116,
+      "velocity_per_hour": 13.0,
+      "sentiment": 0.07,
+      "bull_pct": 0.347,
+      "bear_pct": 0.174,
+      "platforms": {
+        "stocktwits": 47,
+        "bluesky": 97
+      },
+      "samples": [
+        {
+          "text": "it feels so nice to finally have a meta team again 😭",
+          "platform": "bluesky",
+          "score": 6,
+          "url": "https://bsky.app/profile/eternitysdarling.bsky.social/post/3mkv6zllry22y",
+          "sent": 0.066,
+          "ts": 1777743856
+        },
+        {
+          "text": "$SPY +0.1%   $GOOGL +6% $META -9% $MSFT -2% $AMZN +2%\n$QQQ +0.2%\n$SMH +0.6%\n$IWM -0.1%\n$EEM +0.6%\n$TLT +0.0%\n$USO -0.6%\n$IBIT +0.8%\n$GLD +1.6% @finviz_com ",
+          "platform": "bluesky",
+          "score": 5,
+          "url": "https://bsky.app/profile/mikezaccardi.bsky.social/post/3mkpdgbitkp22",
+          "sent": -0.232,
+          "ts": 1777542417
+        },
+        {
+          "text": "Chico Buarque: Justiça decide sobre ação do artista contra uso de canção por IA: Processo movido contra Meta envolve utilização não autorizada da música “Cálice” em vídeo criado por IA e publicado na plataforma #revistafórum",
+          "platform": "bluesky",
+          "score": 4,
+          "url": "https://bsky.app/profile/revistaforum.com.br/post/3mkv7jsotxe2o",
+          "sent": 0.0,
+          "ts": 1777744400
+        },
+        {
           "text": "Here&#39;s my trade from March 6th. https://youtube.com/shorts/CKKft7YMGEE?si=2Q1no5DCIH32MKVc\nUploading the actual video that shows my Position + Gain % + Time + Date. All on the actual broker app. Can not be altered or edited.\nThis is aga",
           "platform": "stocktwits",
           "score": 1,
@@ -302,20 +359,20 @@
           "ts": 1777677614
         }
       ],
-      "z_score": -0.8
+      "z_score": -0.32
     },
     {
       "sym": "MSFT",
       "name": "Microsoft",
-      "mentions": 143,
-      "mentions_6h": 36,
-      "mentions_24h": 122,
-      "velocity_per_hour": 6.0,
-      "sentiment": 0.161,
-      "bull_pct": 0.469,
-      "bear_pct": 0.126,
+      "mentions": 142,
+      "mentions_6h": 32,
+      "mentions_24h": 111,
+      "velocity_per_hour": 5.33,
+      "sentiment": 0.149,
+      "bull_pct": 0.451,
+      "bear_pct": 0.127,
       "platforms": {
-        "stocktwits": 45,
+        "stocktwits": 44,
         "bluesky": 98
       },
       "samples": [
@@ -352,121 +409,20 @@
           "ts": 1777722086
         }
       ],
-      "z_score": -0.84
-    },
-    {
-      "sym": "META",
-      "name": "Meta",
-      "mentions": 142,
-      "mentions_6h": 74,
-      "mentions_24h": 125,
-      "velocity_per_hour": 12.33,
-      "sentiment": 0.047,
-      "bull_pct": 0.317,
-      "bear_pct": 0.19,
-      "platforms": {
-        "stocktwits": 46,
-        "bluesky": 96
-      },
-      "samples": [
-        {
-          "text": "when i see meta has lost 40 million users in the last quarter or whatever my first reaction is primarily thank god that salt bae and instagram restaurants are on the way out",
-          "platform": "bluesky",
-          "score": 18,
-          "url": "https://bsky.app/profile/lauren.rotatingsandwiches.com/post/3mkv4iwsw5s2l",
-          "sent": 0.159,
-          "ts": 1777741150
-        },
-        {
-          "text": "With many LGBTQ accounts being removed by Meta, we’ve created a backup instagram account as a precaution.\n\nGO FOLLOW ➡️ @autoerot2ca ⬅️\n\nA reminder that you can also subscribe to our Substack  autoerotica.substack.com (free email list or pa",
-          "platform": "bluesky",
-          "score": 7,
-          "url": "https://bsky.app/profile/autoeroticasf.bsky.social/post/3mkv3usnvx223",
-          "sent": 0.47,
-          "ts": 1777740475
-        },
-        {
-          "text": "Carissimi amici di Bluesky, per motivi di lavoro e di organizzazione familiare nelle prossime settimane sarò un po’ meno presente, conto di tornare pienamente operativo da metà giugno. Avrò comunque modo di seguirvi…",
-          "platform": "bluesky",
-          "score": 7,
-          "url": "https://bsky.app/profile/epistocratico.bsky.social/post/3mkv3l2jlxs26",
-          "sent": 0.0,
-          "ts": 1777740148
-        },
-        {
-          "text": "Here&#39;s my trade from March 6th. https://youtube.com/shorts/CKKft7YMGEE?si=2Q1no5DCIH32MKVc\nUploading the actual video that shows my Position + Gain % + Time + Date. All on the actual broker app. Can not be altered or edited.\nThis is aga",
-          "platform": "stocktwits",
-          "score": 1,
-          "url": "https://stocktwits.com/symbol/VIX",
-          "sent": 0.255,
-          "ts": 1777677614
-        }
-      ],
-      "z_score": -0.44
-    },
-    {
-      "sym": "TSLA",
-      "name": "Tesla",
-      "mentions": 139,
-      "mentions_6h": 44,
-      "mentions_24h": 109,
-      "velocity_per_hour": 7.33,
-      "sentiment": 0.209,
-      "bull_pct": 0.532,
-      "bear_pct": 0.094,
-      "platforms": {
-        "hn": 2,
-        "stocktwits": 58,
-        "bluesky": 79
-      },
-      "samples": [
-        {
-          "text": "Tesla (TSLA) pulled questionable levers to make Q1 2026 financials look good ",
-          "platform": "hn",
-          "score": 11,
-          "url": "https://news.ycombinator.com/item?id=47870866",
-          "sent": 0.089,
-          "ts": 1776903018
-        },
-        {
-          "text": "The bar for “Smartest Man on Earth” used to be a lot higher.\nTesla $TSLA \nfuturism.com/artificial-i...",
-          "platform": "bluesky",
-          "score": 11,
-          "url": "https://bsky.app/profile/coverdrive12.bsky.social/post/3mksgzh3n722q",
-          "sent": 0.0,
-          "ts": 1777649362
-        },
-        {
-          "text": "Tesla generated more than half a billion dollars in revenue last year from selling products to two of serial con man Elon Musk’s other companies, the ponzi carmaker disclosed in an amended annual filing:\n\n$TSLA\n$TSLAQ",
-          "platform": "bluesky",
-          "score": 5,
-          "url": "https://bsky.app/profile/thomashansen.bsky.social/post/3mkuu56fqh22x",
-          "sent": 0.0,
-          "ts": 1777732166
-        },
-        {
-          "text": "$TSLA $SPY $DIA $BTC.X",
-          "platform": "stocktwits",
-          "score": 1,
-          "url": "https://stocktwits.com/symbol/SPY",
-          "sent": 0.7,
-          "ts": 1777741762
-        }
-      ],
-      "z_score": 0.25
+      "z_score": -0.9
     },
     {
       "sym": "GOOGL",
       "name": "Alphabet",
-      "mentions": 137,
-      "mentions_6h": 21,
-      "mentions_24h": 107,
-      "velocity_per_hour": 3.5,
-      "sentiment": 0.15,
-      "bull_pct": 0.423,
-      "bear_pct": 0.066,
+      "mentions": 135,
+      "mentions_6h": 16,
+      "mentions_24h": 96,
+      "velocity_per_hour": 2.67,
+      "sentiment": 0.146,
+      "bull_pct": 0.415,
+      "bear_pct": 0.067,
       "platforms": {
-        "stocktwits": 44,
+        "stocktwits": 42,
         "bluesky": 93
       },
       "samples": [
@@ -495,47 +451,106 @@
           "ts": 1777664903
         },
         {
-          "text": "$DJT $MSFT $AAPL $GOOGL $TSLA We in Europe are also glad that they’re leaving. Having American soldiers in Europe while Trump is president is like having a fox in the henhouse",
+          "text": "$GOOGL $NVDA $AVGO    \n \nOne of the best chip designers is considering an IPO.  Cerebra make the best inferencing chips I know of.  Better than the I* chips of google.    \n \nCompany is definitly worth 40 billion USD \n \nhttps://thenextweb.co",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/AAPL",
-          "sent": 0.335,
-          "ts": 1777718483
+          "url": "https://stocktwits.com/symbol/NVDA",
+          "sent": 0.461,
+          "ts": 1777741770
         }
       ],
-      "z_score": -0.3
+      "z_score": -0.44
+    },
+    {
+      "sym": "TSLA",
+      "name": "Tesla",
+      "mentions": 133,
+      "mentions_6h": 46,
+      "mentions_24h": 96,
+      "velocity_per_hour": 7.67,
+      "sentiment": 0.201,
+      "bull_pct": 0.519,
+      "bear_pct": 0.083,
+      "platforms": {
+        "hn": 1,
+        "stocktwits": 53,
+        "bluesky": 79
+      },
+      "samples": [
+        {
+          "text": "Tesla (TSLA) pulled questionable levers to make Q1 2026 financials look good ",
+          "platform": "hn",
+          "score": 11,
+          "url": "https://news.ycombinator.com/item?id=47870866",
+          "sent": 0.089,
+          "ts": 1776903018
+        },
+        {
+          "text": "The bar for “Smartest Man on Earth” used to be a lot higher.\nTesla $TSLA \nfuturism.com/artificial-i...",
+          "platform": "bluesky",
+          "score": 11,
+          "url": "https://bsky.app/profile/coverdrive12.bsky.social/post/3mksgzh3n722q",
+          "sent": 0.0,
+          "ts": 1777649362
+        },
+        {
+          "text": "Tesla generated more than half a billion dollars in revenue last year from selling products to two of serial con man Elon Musk’s other companies, the ponzi carmaker disclosed in an amended annual filing:\n\n$TSLA\n$TSLAQ",
+          "platform": "bluesky",
+          "score": 5,
+          "url": "https://bsky.app/profile/thomashansen.bsky.social/post/3mkuu56fqh22x",
+          "sent": 0.0,
+          "ts": 1777732166
+        },
+        {
+          "text": "Here&#39;s my trade from March 6th. https://youtube.com/shorts/CKKft7YMGEE?si=2Q1no5DCIH32MKVc\nUploading the actual video that shows my Position + Gain % + Time + Date. All on the actual broker app. Can not be altered or edited.\nThis is aga",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/VIX",
+          "sent": 0.255,
+          "ts": 1777677614
+        }
+      ],
+      "z_score": -0.15
     },
     {
       "sym": "AMD",
       "name": "AMD",
-      "mentions": 131,
-      "mentions_6h": 89,
-      "mentions_24h": 113,
-      "velocity_per_hour": 14.83,
-      "sentiment": 0.162,
-      "bull_pct": 0.374,
-      "bear_pct": 0.069,
+      "mentions": 129,
+      "mentions_6h": 87,
+      "mentions_24h": 105,
+      "velocity_per_hour": 14.5,
+      "sentiment": 0.155,
+      "bull_pct": 0.395,
+      "bear_pct": 0.085,
       "platforms": {
         "hn": 1,
-        "stocktwits": 48,
+        "stocktwits": 46,
         "bluesky": 82
       },
       "samples": [
         {
-          "text": "How I Rolled Out of Nest\n          ☆Versus☆\nHow I Rolled Out of HQ",
+          "text": "sometimes one of ur favs follows u amd ur like what the fuck and then you look and find you weren't following them and ur like WHAT the FUCK?",
           "platform": "bluesky",
-          "score": 11,
-          "url": "https://bsky.app/profile/keisakana.bsky.social/post/3mkuuf6zby22o",
-          "sent": 0.0,
-          "ts": 1777732435
+          "score": 19,
+          "url": "https://bsky.app/profile/galafterdark.bsky.social/post/3mkv5oubyv22j",
+          "sent": -0.288,
+          "ts": 1777742423
         },
         {
           "text": "I was meant to decompress amd now I've talked someone's ear off for the early CGI used in Young Sherlock Holmes for half an hour. 🤣",
           "platform": "bluesky",
-          "score": 8,
+          "score": 9,
           "url": "https://bsky.app/profile/evergreengrow.bsky.social/post/3mkuwvhl35k2a",
           "sent": 0.247,
           "ts": 1777735128
+        },
+        {
+          "text": "ONEXPLAYER X2 Mini “AMD Strix Halo” handheld prototype shown with X1 controller support",
+          "platform": "bluesky",
+          "score": 6,
+          "url": "https://bsky.app/profile/videocardz.com/post/3mkv327ptng2e",
+          "sent": 0.201,
+          "ts": 1777739581
         },
         {
           "text": "Building a Gaming PC Without Using Intel, AMD or Nvidia Parts [video] ",
@@ -554,46 +569,46 @@
           "ts": 1777731577
         }
       ],
-      "z_score": -0.11
+      "z_score": -0.22
     },
     {
       "sym": "ETH",
       "name": "Ethereum",
-      "mentions": 126,
-      "mentions_6h": 73,
-      "mentions_24h": 92,
-      "velocity_per_hour": 12.17,
-      "sentiment": 0.133,
-      "bull_pct": 0.452,
-      "bear_pct": 0.135,
+      "mentions": 122,
+      "mentions_6h": 71,
+      "mentions_24h": 87,
+      "velocity_per_hour": 11.83,
+      "sentiment": 0.116,
+      "bull_pct": 0.41,
+      "bear_pct": 0.139,
       "platforms": {
-        "stocktwits": 47,
-        "bluesky": 79
+        "stocktwits": 46,
+        "bluesky": 76
       },
       "samples": [
         {
-          "text": "$BTC.X $ETH.X $QQQ $SPY $XRP.X \n\n$90,000 next week \n\nDon’t sweat the technique",
+          "text": "$BTC.X  $84,000 estimate \n\n 36 - 48 hours out from now \n\n$SPY $DIA                $XRP.X  $ETH.X",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/QQQ",
+          "url": "https://stocktwits.com/symbol/SPY",
           "sent": 0.7,
-          "ts": 1777740930
+          "ts": 1777744581
         },
         {
-          "text": "$BTC.X  $XRP.X $ETH.X $QQQ $SPY \n\n🧞‍♂️⭐️⭐️⭐️⭐️🔥🔥🔥🔥⭐️⭐️⭐️⭐️ 👏",
+          "text": "$BTC.X it’s time to pump the next $2000\n\n$ETH.X $XRP.X  it’s go time folks 🏄‍♂️ \n\n$SPY $DJIA",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/QQQ",
+          "url": "https://stocktwits.com/symbol/SPY",
           "sent": 0.7,
-          "ts": 1777740857
+          "ts": 1777743518
         },
         {
-          "text": "$XRP.X $ETH.X $BTC.X $SPY $QQQ \n      \nhttps://youtu.be/9X2kgXpb3e4?si=Pwi36sHKDSrFFMAR",
+          "text": "$BTC.X \n\n$SOL.X  $XRP.X $ETH.X  $QQQ",
           "platform": "stocktwits",
           "score": 1,
           "url": "https://stocktwits.com/symbol/QQQ",
           "sent": 0.7,
-          "ts": 1777740623
+          "ts": 1777742429
         },
         {
           "text": "➤ The article discusses Bitcoin (BTC) and Ethereum (ETH) as foundational crypto assets for 2026, driven by institutional demand and ecosystem growth.",
@@ -604,27 +619,27 @@
           "ts": 1777741547
         }
       ],
-      "z_score": -0.65
+      "z_score": -0.91
     },
     {
       "sym": "IWM",
       "name": "Russell 2000 ETF",
       "mentions": 121,
-      "mentions_6h": 53,
-      "mentions_24h": 84,
-      "velocity_per_hour": 8.83,
-      "sentiment": -0.015,
-      "bull_pct": 0.182,
-      "bear_pct": 0.215,
+      "mentions_6h": 57,
+      "mentions_24h": 82,
+      "velocity_per_hour": 9.5,
+      "sentiment": -0.017,
+      "bull_pct": 0.174,
+      "bear_pct": 0.198,
       "platforms": {
-        "stocktwits": 55,
-        "bluesky": 66
+        "stocktwits": 56,
+        "bluesky": 65
       },
       "samples": [
         {
           "text": "2 May 1943 // Submarine HMS Regent was reported overdue on this day: last heard of attacking an Italian ship off Bari on 18 April. It is likely that she hit a mine. Several bodies, some wearing escape apparatus, were washed up near Brindisi",
           "platform": "bluesky",
-          "score": 19,
+          "score": 20,
           "url": "https://bsky.app/profile/rnshiplosses.bsky.social/post/3mkujni4vms2c",
           "sent": -0.159,
           "ts": 1777720902
@@ -632,7 +647,7 @@
         {
           "text": "The new hit left Edinburgh in a sinking condition and it was decided to abandon and scuttle her. HMS Foresight sank her with her last torpedo after gunfire and depth charges had proved ineffective. 58 men were lost from Edinburgh's crew. [2",
           "platform": "bluesky",
-          "score": 13,
+          "score": 14,
           "url": "https://bsky.app/profile/rnshiplosses.bsky.social/post/3mkujlzbpyk2c",
           "sent": -0.389,
           "ts": 1777720851
@@ -646,79 +661,29 @@
           "ts": 1777711487
         },
         {
-          "text": "China issued an injunction blocking US sanctions on five refiners accused of buying Iranian oil, calling the move illegal and banning recognition or compliance with the sanctions within China.\n\nRead 👇🏻 https://wp.me/PfgCxS-8FD\n\n$DJT $FXI $S",
+          "text": "$SPY $QQQ $IWM",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/QQQ",
-          "sent": -0.308,
-          "ts": 1777738757
+          "url": "https://stocktwits.com/symbol/SPY",
+          "sent": 0.0,
+          "ts": 1777744843
         }
       ],
-      "z_score": 1.68
-    },
-    {
-      "sym": "COIN",
-      "name": "Coinbase",
-      "mentions": 109,
-      "mentions_6h": 82,
-      "mentions_24h": 96,
-      "velocity_per_hour": 13.67,
-      "sentiment": 0.168,
-      "bull_pct": 0.468,
-      "bear_pct": 0.119,
-      "platforms": {
-        "stocktwits": 44,
-        "bluesky": 65
-      },
-      "samples": [
-        {
-          "text": "",
-          "platform": "bluesky",
-          "score": 165,
-          "url": "https://bsky.app/profile/gtconway.bsky.social/post/3mkv4wbfjik2j",
-          "sent": 0.0,
-          "ts": 1777741598
-        },
-        {
-          "text": "So here it is lads - my attempt at the #AlphabetChallenge #WeekQforQueens #AlphabetTechPhoto of #NegativeSpace\nIt’s a £1 coin on a table 😂",
-          "platform": "bluesky",
-          "score": 10,
-          "url": "https://bsky.app/profile/sheena-mck.bsky.social/post/3mkv47eszdk2y",
-          "sent": 0.22,
-          "ts": 1777740829
-        },
-        {
-          "text": "The 2019 GALAXY'S EDGE comic, written by Ethan Sacks and illustrated by Will Sliney, is returning as a limited-edition release packed with a figure and coin related to the each issue, coming to Disney Parks and Disney Store in the US, UK an",
-          "platform": "bluesky",
-          "score": 7,
-          "url": "https://bsky.app/profile/starwarstimeline.bsky.social/post/3mkuyb7f2es2a",
-          "sent": 0.0,
-          "ts": 1777736596
-        },
-        {
-          "text": "$BTC.X $SPY $COIN $GLD $QQQ",
-          "platform": "stocktwits",
-          "score": 1,
-          "url": "https://stocktwits.com/symbol/GLD",
-          "sent": 0.7,
-          "ts": 1777707877
-        }
-      ],
-      "z_score": 1.55
+      "z_score": 1.64
     },
     {
       "sym": "PLTR",
       "name": "Palantir",
-      "mentions": 106,
+      "mentions": 107,
       "mentions_6h": 46,
       "mentions_24h": 56,
       "velocity_per_hour": 7.67,
-      "sentiment": 0.116,
-      "bull_pct": 0.415,
-      "bear_pct": 0.132,
+      "sentiment": 0.134,
+      "bull_pct": 0.421,
+      "bear_pct": 0.131,
       "platforms": {
-        "stocktwits": 45,
-        "bluesky": 61
+        "stocktwits": 47,
+        "bluesky": 60
       },
       "samples": [
         {
@@ -754,20 +719,70 @@
           "ts": 1777739599
         }
       ],
-      "z_score": 0.82
+      "z_score": 0.88
+    },
+    {
+      "sym": "COIN",
+      "name": "Coinbase",
+      "mentions": 105,
+      "mentions_6h": 77,
+      "mentions_24h": 92,
+      "velocity_per_hour": 12.83,
+      "sentiment": 0.185,
+      "bull_pct": 0.476,
+      "bear_pct": 0.105,
+      "platforms": {
+        "stocktwits": 44,
+        "bluesky": 61
+      },
+      "samples": [
+        {
+          "text": "",
+          "platform": "bluesky",
+          "score": 876,
+          "url": "https://bsky.app/profile/gtconway.bsky.social/post/3mkv4wbfjik2j",
+          "sent": 0.0,
+          "ts": 1777741598
+        },
+        {
+          "text": "But look who made lots of money ... 💰\n\n\"NEW YORK, Feb 3 - Entities behind President Donald Trump’s crypto coin have accumulated close to $100 million in trading fees in less than two weeks, according to estimates from three blockchain analy",
+          "platform": "bluesky",
+          "score": 8,
+          "url": "https://bsky.app/profile/gregsanderson.bsky.social/post/3mkv57n6bbc2y",
+          "sent": 0.0,
+          "ts": 1777741912
+        },
+        {
+          "text": "I have no doubt that a lot of the people who bought into the meme coin and took a huge hit would buy into another scheme if he was the one promoting it.",
+          "platform": "bluesky",
+          "score": 7,
+          "url": "https://bsky.app/profile/mom6.bsky.social/post/3mkv5d26ais26",
+          "sent": 0.528,
+          "ts": 1777742026
+        },
+        {
+          "text": "$BTC.X $SPY $COIN $GLD $QQQ",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/GLD",
+          "sent": 0.7,
+          "ts": 1777707877
+        }
+      ],
+      "z_score": 1.07
     },
     {
       "sym": "GLD",
       "name": "Gold ETF",
-      "mentions": 103,
-      "mentions_6h": 22,
-      "mentions_24h": 91,
-      "velocity_per_hour": 3.67,
-      "sentiment": 0.045,
-      "bull_pct": 0.233,
-      "bear_pct": 0.107,
+      "mentions": 101,
+      "mentions_6h": 19,
+      "mentions_24h": 76,
+      "velocity_per_hour": 3.17,
+      "sentiment": 0.048,
+      "bull_pct": 0.238,
+      "bear_pct": 0.099,
       "platforms": {
-        "stocktwits": 39,
+        "stocktwits": 37,
         "bluesky": 64
       },
       "samples": [
@@ -796,54 +811,54 @@
           "ts": 1777663408
         },
         {
-          "text": "$DJT $GLD $SLV $SPY more shocking is you are still getting a fish wrap?",
+          "text": "$GLD $IWM $QQQ $SPY $TLT",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/SPY",
-          "sent": -0.229,
-          "ts": 1777741722
+          "url": "https://stocktwits.com/symbol/IWM",
+          "sent": 0.0,
+          "ts": 1777734317
         }
       ],
-      "z_score": 1.28
+      "z_score": 1.09
     },
     {
       "sym": "HOOD",
       "name": "Robinhood",
-      "mentions": 99,
-      "mentions_6h": 91,
-      "mentions_24h": 93,
-      "velocity_per_hour": 15.17,
-      "sentiment": 0.137,
-      "bull_pct": 0.495,
-      "bear_pct": 0.202,
+      "mentions": 97,
+      "mentions_6h": 88,
+      "mentions_24h": 92,
+      "velocity_per_hour": 14.67,
+      "sentiment": 0.196,
+      "bull_pct": 0.577,
+      "bear_pct": 0.186,
       "platforms": {
         "stocktwits": 43,
-        "bluesky": 56
+        "bluesky": 54
       },
       "samples": [
         {
-          "text": "The only thing you would hear is my voice penetrating the hood.\n\nSo calming… so slow…\n\nThe only thing you can hear. My voice is everything.\n\nRemain still. Listen closer. Fall deeper.\n\nFeel everything. Breathe slowly. Focus intently.\n\nAll mi",
+          "text": "“Hey,,,can you lean out the window and get a photo of that new mail truck”\n\n“what?”\n\n“ …please”\n\n“you’re going to post this on bluesky, aren’t you?”\n\n“yes. thank you, i love you”",
           "platform": "bluesky",
-          "score": 30,
-          "url": "https://bsky.app/profile/vampbirb.bsky.social/post/3mkuzzijz6s2y",
-          "sent": 0.42,
-          "ts": 1777738485
+          "score": 108,
+          "url": "https://bsky.app/profile/energyturtle.bsky.social/post/3mkv5kjyqic2v",
+          "sent": 0.397,
+          "ts": 1777742278
         },
         {
-          "text": "Lee Dixon on comms again",
+          "text": "thinking about becoming a car hood art guy, their quality of life seems like it's off the charts",
           "platform": "bluesky",
-          "score": 24,
-          "url": "https://bsky.app/profile/annikaw.bsky.social/post/3mkv2xpoduk2q",
+          "score": 105,
+          "url": "https://bsky.app/profile/edsbs.bsky.social/post/3mkv6seiiks2d",
+          "sent": 0.181,
+          "ts": 1777743614
+        },
+        {
+          "text": "The T is for Thanos",
+          "platform": "bluesky",
+          "score": 50,
+          "url": "https://bsky.app/profile/jasonkirk.fyi/post/3mkv5shhamk23",
           "sent": 0.0,
-          "ts": 1777739499
-        },
-        {
-          "text": "Can't you read the god damn sign? \nI dont want slop user indulging in my works, sharing space with me and my homies.\nOUT!! YOU STINK OF DESPERATION AND FECES!",
-          "platform": "bluesky",
-          "score": 18,
-          "url": "https://bsky.app/profile/ependa.bsky.social/post/3mkv37ni2fk2v",
-          "sent": -0.397,
-          "ts": 1777739765
+          "ts": 1777742544
         },
         {
           "text": "$COIN $HOOD $SPY $BTC.X",
@@ -854,128 +869,27 @@
           "ts": 1777738982
         }
       ],
-      "z_score": -0.1
-    },
-    {
-      "sym": "SOL",
-      "name": "Solana",
-      "mentions": 97,
-      "mentions_6h": 61,
-      "mentions_24h": 65,
-      "velocity_per_hour": 10.17,
-      "sentiment": 0.079,
-      "bull_pct": 0.299,
-      "bear_pct": 0.155,
-      "platforms": {
-        "stocktwits": 37,
-        "bluesky": 60
-      },
-      "samples": [
-        {
-          "text": "Le funiculaire, c’est sympa sauf quand tu dois évacuer les cabines en raison du risque d’orage et que tu dois finir le parcours dans 2 bus bondés \n#MobilePhotography",
-          "platform": "bluesky",
-          "score": 9,
-          "url": "https://bsky.app/profile/chatrouge.bsky.social/post/3mkv3kmmsl22t",
-          "sent": 0.0,
-          "ts": 1777740133
-        },
-        {
-          "text": "Fui comprar pão, não tinha, e comprei o resto do mercado, gostaro?",
-          "platform": "bluesky",
-          "score": 8,
-          "url": "https://bsky.app/profile/thamblage.bsky.social/post/3mkv442ndqs2m",
-          "sent": 0.0,
-          "ts": 1777740718
-        },
-        {
-          "text": "Rüfüs Du Sol in Berlin. Wir gehen rein.",
-          "platform": "bluesky",
-          "score": 6,
-          "url": "https://bsky.app/profile/chrismorelle.bsky.social/post/3mkv2yffa722y",
-          "sent": 0.0,
-          "ts": 1777739521
-        },
-        {
-          "text": "$MULN.X\n\n100X potential…\n\nYou’re welcome!!!\n\n$COIN $ETH.X $XRP.X $SOL.X",
-          "platform": "stocktwits",
-          "score": 1,
-          "url": "https://stocktwits.com/symbol/COIN",
-          "sent": 0.7,
-          "ts": 1777734490
-        }
-      ],
-      "z_score": 0.68
-    },
-    {
-      "sym": "GME",
-      "name": "GameStop",
-      "mentions": 92,
-      "mentions_6h": 38,
-      "mentions_24h": 88,
-      "velocity_per_hour": 6.33,
-      "sentiment": 0.151,
-      "bull_pct": 0.543,
-      "bear_pct": 0.087,
-      "platforms": {
-        "4chan": 3,
-        "stocktwits": 37,
-        "bluesky": 52
-      },
-      "samples": [
-        {
-          "text": "/GME/ - Start of the Month Edition  >Basic Information   >gme.cac site redacted due to aids  https://finra-markets.morningstar.c om/MarketData/EquityOptions/detail. jsp?query=14%3A0P000002CH https://gmetimeline.com (up to 2021)   >Daily rem",
-          "platform": "4chan",
-          "score": 185,
-          "url": "https://boards.4chan.org/biz/thread/62179680",
-          "sent": -0.715,
-          "ts": 1777679996
-        },
-        {
-          "text": "/BBBYQ/ - King Kais Edition REQUIRED READING: bbbwhy.com   >REQUIRED READING: bbbwhy.com   REQUIRED READING: bbbwhy.com   >REQUIRED READING: bbbwhy.com    >rc buys 7,780,000 shares of BBBY, and $60-$80 strike calls worth 1,670,100 shares in",
-          "platform": "4chan",
-          "score": 147,
-          "url": "https://boards.4chan.org/biz/thread/62162799",
-          "sent": -0.0,
-          "ts": 1777316229
-        },
-        {
-          "text": "BREAKING: GameStop, $GME, is reportedly looking to acquire Ebay, $EBAY, per WSJ",
-          "platform": "bluesky",
-          "score": 57,
-          "url": "https://bsky.app/profile/unusualwhales.bsky.social/post/3mkt7a2y3zk2g",
-          "sent": 0.0,
-          "ts": 1777675354
-        },
-        {
-          "text": "$EBAY $GME $GOOGL",
-          "platform": "stocktwits",
-          "score": 1,
-          "url": "https://stocktwits.com/symbol/GOOGL",
-          "sent": 0.0,
-          "ts": 1777673730
-        }
-      ],
-      "z_score": -0.28
+      "z_score": -0.33
     },
     {
       "sym": "TLT",
       "name": "20Y Treasury ETF",
-      "mentions": 92,
+      "mentions": 94,
       "mentions_6h": 26,
-      "mentions_24h": 48,
+      "mentions_24h": 49,
       "velocity_per_hour": 4.33,
-      "sentiment": 0.086,
-      "bull_pct": 0.435,
-      "bear_pct": 0.174,
+      "sentiment": 0.072,
+      "bull_pct": 0.415,
+      "bear_pct": 0.202,
       "platforms": {
-        "stocktwits": 42,
+        "stocktwits": 44,
         "bluesky": 50
       },
       "samples": [
         {
           "text": "What would you do? \n\n#ThirdLegThursday #TLT #crusing #public #wank ##jerking #gay",
           "platform": "bluesky",
-          "score": 470,
+          "score": 472,
           "url": "https://bsky.app/profile/hywelwolff.bsky.social/post/3mkp37u7qx222",
           "sent": 0.0,
           "ts": 1777533613
@@ -997,23 +911,124 @@
           "ts": 1777595757
         },
         {
-          "text": "$GLD $IWM $QQQ $SPY $TLT",
+          "text": "Trimmed some risk this week and added energy exposure $XLE. \n \nIf crude stays elevated or Middle East tensions escalate, the inverse relationship to the Nasdaq should help offset some portfolio risk. \n \nI walk through the positioning and th",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/IWM",
-          "sent": 0.0,
-          "ts": 1777734317
+          "url": "https://stocktwits.com/symbol/SPY",
+          "sent": -0.35,
+          "ts": 1777744266
         }
       ],
-      "z_score": 0.84
+      "z_score": 1.09
+    },
+    {
+      "sym": "GME",
+      "name": "GameStop",
+      "mentions": 93,
+      "mentions_6h": 39,
+      "mentions_24h": 90,
+      "velocity_per_hour": 6.5,
+      "sentiment": 0.145,
+      "bull_pct": 0.548,
+      "bear_pct": 0.097,
+      "platforms": {
+        "4chan": 3,
+        "stocktwits": 39,
+        "bluesky": 51
+      },
+      "samples": [
+        {
+          "text": "/GME/ - Start of the Month Edition  >Basic Information   >gme.cac site redacted due to aids  https://finra-markets.morningstar.c om/MarketData/EquityOptions/detail. jsp?query=14%3A0P000002CH https://gmetimeline.com (up to 2021)   >Daily rem",
+          "platform": "4chan",
+          "score": 197,
+          "url": "https://boards.4chan.org/biz/thread/62179680",
+          "sent": -0.715,
+          "ts": 1777679996
+        },
+        {
+          "text": "/BBBYQ/ - King Kais Edition REQUIRED READING: bbbwhy.com   >REQUIRED READING: bbbwhy.com   REQUIRED READING: bbbwhy.com   >REQUIRED READING: bbbwhy.com    >rc buys 7,780,000 shares of BBBY, and $60-$80 strike calls worth 1,670,100 shares in",
+          "platform": "4chan",
+          "score": 149,
+          "url": "https://boards.4chan.org/biz/thread/62162799",
+          "sent": -0.0,
+          "ts": 1777316229
+        },
+        {
+          "text": "BREAKING: GameStop, $GME, is reportedly looking to acquire Ebay, $EBAY, per WSJ",
+          "platform": "bluesky",
+          "score": 57,
+          "url": "https://bsky.app/profile/unusualwhales.bsky.social/post/3mkt7a2y3zk2g",
+          "sent": 0.0,
+          "ts": 1777675354
+        },
+        {
+          "text": "$EBAY $GME $GOOGL",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/GOOGL",
+          "sent": 0.0,
+          "ts": 1777673730
+        }
+      ],
+      "z_score": -0.19
+    },
+    {
+      "sym": "SOL",
+      "name": "Solana",
+      "mentions": 92,
+      "mentions_6h": 59,
+      "mentions_24h": 61,
+      "velocity_per_hour": 9.83,
+      "sentiment": 0.098,
+      "bull_pct": 0.337,
+      "bear_pct": 0.163,
+      "platforms": {
+        "stocktwits": 36,
+        "bluesky": 56
+      },
+      "samples": [
+        {
+          "text": "Fui comprar pão, não tinha, e comprei o resto do mercado, gostaro?",
+          "platform": "bluesky",
+          "score": 14,
+          "url": "https://bsky.app/profile/thamblage.bsky.social/post/3mkv442ndqs2m",
+          "sent": 0.0,
+          "ts": 1777740718
+        },
+        {
+          "text": "Model: Gloria Sol\nStudio: Playboy\nFull gallery: eroticartxx.com/index.php/20...\n#GloriaSol #naked #nude #boobs #tits #nsfw",
+          "platform": "bluesky",
+          "score": 13,
+          "url": "https://bsky.app/profile/eroticart.bsky.social/post/3mkv4vfnnf22b",
+          "sent": -0.113,
+          "ts": 1777741569
+        },
+        {
+          "text": "\"ouin la violence politique ne doit pas exister, les gauchistes vous êtes trop extrêmistes\"\n\nPendant ce temps dans le vrai monde :",
+          "platform": "bluesky",
+          "score": 6,
+          "url": "https://bsky.app/profile/beautifuloser.bsky.social/post/3mkv4ytpdps2g",
+          "sent": -0.312,
+          "ts": 1777741684
+        },
+        {
+          "text": "$BTC.X \n\n$SOL.X  $XRP.X $ETH.X  $QQQ",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/QQQ",
+          "sent": 0.7,
+          "ts": 1777742429
+        }
+      ],
+      "z_score": 0.07
     },
     {
       "sym": "MSTR",
       "name": "Strategy",
       "mentions": 92,
-      "mentions_6h": 22,
+      "mentions_6h": 23,
       "mentions_24h": 57,
-      "velocity_per_hour": 3.67,
+      "velocity_per_hour": 3.83,
       "sentiment": 0.174,
       "bull_pct": 0.478,
       "bear_pct": 0.13,
@@ -1047,12 +1062,12 @@
           "ts": 1777650881
         },
         {
-          "text": "$BMNR getting absolutely mogged by Chad $MSTR",
+          "text": "$MSTR Microstrategy (MSTR) Stock Prediction 2026, 2027, 2030 \n \nhttps://telegaon.com/microstrategy-mstr-stock-price-prediction/",
           "platform": "stocktwits",
           "score": 1,
           "url": "https://stocktwits.com/symbol/MSTR",
-          "sent": 0.0,
-          "ts": 1777740313
+          "sent": 0.7,
+          "ts": 1777743909
         }
       ],
       "z_score": -0.28
@@ -1060,15 +1075,15 @@
     {
       "sym": "VIX",
       "name": "VIX",
-      "mentions": 91,
-      "mentions_6h": 12,
-      "mentions_24h": 78,
-      "velocity_per_hour": 2.0,
-      "sentiment": 0.108,
-      "bull_pct": 0.374,
-      "bear_pct": 0.132,
+      "mentions": 90,
+      "mentions_6h": 13,
+      "mentions_24h": 72,
+      "velocity_per_hour": 2.17,
+      "sentiment": 0.111,
+      "bull_pct": 0.378,
+      "bear_pct": 0.122,
       "platforms": {
-        "stocktwits": 33,
+        "stocktwits": 32,
         "bluesky": 58
       },
       "samples": [
@@ -1097,54 +1112,54 @@
           "ts": 1777692727
         },
         {
-          "text": "STILL MASSIVE UPSIDE FOR THE MARKET? \n   \nWhat are the charts signalling going into May and which stocks are setting up for a big move? \n       \n$IWM $IWC $VIX $NYA $SMH  all fully assessed plus 20 top stocks for your May watchlists. 👇    \n",
+          "text": "$USO the word was given.   The $VIX dropped like a rock and so will oil.",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/IWM",
-          "sent": -0.19,
-          "ts": 1777720118
+          "url": "https://stocktwits.com/symbol/VIX",
+          "sent": 0.181,
+          "ts": 1777737925
         }
       ],
-      "z_score": 0.56
+      "z_score": 0.45
     },
     {
       "sym": "AMC",
       "name": "AMC",
-      "mentions": 89,
-      "mentions_6h": 55,
+      "mentions": 88,
+      "mentions_6h": 57,
       "mentions_24h": 87,
-      "velocity_per_hour": 9.17,
-      "sentiment": 0.139,
-      "bull_pct": 0.483,
-      "bear_pct": 0.157,
+      "velocity_per_hour": 9.5,
+      "sentiment": 0.104,
+      "bull_pct": 0.443,
+      "bear_pct": 0.17,
       "platforms": {
         "stocktwits": 33,
-        "bluesky": 56
+        "bluesky": 55
       },
       "samples": [
         {
           "text": "watch THE TERROR season 1 on AMC",
           "platform": "bluesky",
-          "score": 41,
+          "score": 49,
           "url": "https://bsky.app/profile/hypercubexl.bsky.social/post/3mktupvp3mc2c",
           "sent": -0.314,
           "ts": 1777698434
         },
         {
-          "text": "Get ready for some Pine Valley drama! 🎭✨\nAll My Children is officially streaming on Pluto TV Canada. It’s time to reunite with Erica Kane and the rest of your favorite residents for all the love, betrayal, and iconic moments you’ve been mis",
+          "text": "when you are sitting with @janicefilms.bsky.social and the Janus Films logo comes on screen 🤯🤯🤯",
           "platform": "bluesky",
-          "score": 7,
-          "url": "https://bsky.app/profile/soapwire.bsky.social/post/3mkuruat7ic2y",
-          "sent": 0.371,
-          "ts": 1777729719
+          "score": 16,
+          "url": "https://bsky.app/profile/sondheimslut.bsky.social/post/3mkv5aqrhek2m",
+          "sent": 0.0,
+          "ts": 1777741949
         },
         {
-          "text": "They're finally putting the 1st part of IN SEARCH OF DARKNESS 90s horror 1990 - 1994 on Shudder/AMC + ( also through Prime) on May 15th. #HorrorSky  @badgrgrl21.bsky.social",
+          "text": "Now seated for Hokum @ AMC 🤫🍿 \n#NW #horrormovies #filmsky 🎬",
           "platform": "bluesky",
-          "score": 5,
-          "url": "https://bsky.app/profile/mdk1701.bsky.social/post/3mktxvu2xlc2m",
-          "sent": -0.377,
-          "ts": 1777701855
+          "score": 9,
+          "url": "https://bsky.app/profile/babysip.bsky.social/post/3mkv4xlak4s2k",
+          "sent": 0.0,
+          "ts": 1777741642
         },
         {
           "text": "There are more than 1,300 companies with analyst coverage reporting earnings this week, and half of them are in the Russell 2000 $IWM. So, you better listen... and obey!  \n \nhttps://www.earningswhispers.com/wrs  \n \n$ACMR $IONQ $RIG $AMC",
@@ -1155,15 +1170,15 @@
           "ts": 1777729667
         }
       ],
-      "z_score": -0.93
+      "z_score": -0.99
     },
     {
       "sym": "AVGO",
       "name": "Broadcom",
       "mentions": 83,
-      "mentions_6h": 6,
-      "mentions_24h": 18,
-      "velocity_per_hour": 1.0,
+      "mentions_6h": 5,
+      "mentions_24h": 17,
+      "velocity_per_hour": 0.83,
       "sentiment": 0.194,
       "bull_pct": 0.554,
       "bear_pct": 0.096,
@@ -1205,18 +1220,18 @@
           "ts": 1777741770
         }
       ],
-      "z_score": -0.54
+      "z_score": -0.53
     },
     {
       "sym": "SMCI",
       "name": "Super Micro",
       "mentions": 82,
-      "mentions_6h": 15,
+      "mentions_6h": 16,
       "mentions_24h": 30,
-      "velocity_per_hour": 2.5,
-      "sentiment": 0.13,
-      "bull_pct": 0.402,
-      "bear_pct": 0.183,
+      "velocity_per_hour": 2.67,
+      "sentiment": 0.151,
+      "bull_pct": 0.427,
+      "bear_pct": 0.171,
       "platforms": {
         "stocktwits": 30,
         "bluesky": 52
@@ -1247,12 +1262,12 @@
           "ts": 1776872224
         },
         {
-          "text": "$SMCI guys let&#39;s all go On Instagram or Facebook and Ask Charles Liang for our money and stop Scamming investors.  Let&#39;s leave comments under their pages.",
+          "text": "$SMCI Yahoo finance won’t even say supermicro’s name or put the logo up for upcoming earning release",
           "platform": "stocktwits",
           "score": 1,
           "url": "https://stocktwits.com/symbol/SMCI",
-          "sent": -0.36,
-          "ts": 1777738618
+          "sent": 0.7,
+          "ts": 1777744616
         }
       ],
       "z_score": -0.02
@@ -1305,46 +1320,46 @@
           "ts": 1777648252
         }
       ],
-      "z_score": -0.13
+      "z_score": -0.14
     },
     {
       "sym": "DIA",
       "name": "Dow ETF",
-      "mentions": 73,
-      "mentions_6h": 8,
-      "mentions_24h": 43,
-      "velocity_per_hour": 1.33,
-      "sentiment": 0.152,
-      "bull_pct": 0.26,
-      "bear_pct": 0.041,
+      "mentions": 67,
+      "mentions_6h": 5,
+      "mentions_24h": 33,
+      "velocity_per_hour": 0.83,
+      "sentiment": 0.124,
+      "bull_pct": 0.224,
+      "bear_pct": 0.045,
       "platforms": {
-        "stocktwits": 22,
-        "bluesky": 51
+        "stocktwits": 18,
+        "bluesky": 49
       },
       "samples": [
         {
-          "text": "$TSLA $SPY $DIA $BTC.X",
+          "text": "$BTC.X  $84,000 estimate \n\n 36 - 48 hours out from now \n\n$SPY $DIA                $XRP.X  $ETH.X",
           "platform": "stocktwits",
           "score": 1,
           "url": "https://stocktwits.com/symbol/SPY",
           "sent": 0.7,
-          "ts": 1777741762
+          "ts": 1777744581
         },
         {
-          "text": "$XRP.X  $BTC.X \n🇺🇸 🇺🇸 🇺🇸 🇺🇸 🇺🇸   $SPY $QQQ $DIA \n         \nhttps://youtu.be/zKKF_vFshMM?si=SAq5gBKxQh3Ynpao",
+          "text": "$DIA $IWM $QQQ $SPY angry Boomer 👇",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/QQQ",
-          "sent": 0.7,
-          "ts": 1777739735
+          "url": "https://stocktwits.com/symbol/IWM",
+          "sent": -0.255,
+          "ts": 1777734631
         },
         {
-          "text": "$BTC.X $DIA $NASDAQ $QQQ $SPY",
+          "text": "$SPY I really, really miss the good old days when communities could totally savage shit posters with downvotes. \n \n$QQQ  The day YouTube removed the downvote, the entire world got saturated with fake news overnight. It was intentional. \n \n$",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/QQQ",
+          "url": "https://stocktwits.com/symbol/IWM",
           "sent": 0.7,
-          "ts": 1777738610
+          "ts": 1777734008
         },
         {
           "text": "My post on equities today: Sell in May ...... : open.substack.com/pub/charting... #SPX #QQQ #DIA #IWM #investing #trading",
@@ -1355,20 +1370,20 @@
           "ts": 1777567682
         }
       ],
-      "z_score": 0.37
+      "z_score": -0.09
     },
     {
       "sym": "INTC",
       "name": "Intel",
-      "mentions": 44,
-      "mentions_6h": 13,
-      "mentions_24h": 27,
-      "velocity_per_hour": 2.17,
-      "sentiment": 0.195,
-      "bull_pct": 0.545,
-      "bear_pct": 0.182,
+      "mentions": 42,
+      "mentions_6h": 11,
+      "mentions_24h": 25,
+      "velocity_per_hour": 1.83,
+      "sentiment": 0.187,
+      "bull_pct": 0.548,
+      "bear_pct": 0.19,
       "platforms": {
-        "stocktwits": 22,
+        "stocktwits": 20,
         "bluesky": 22
       },
       "samples": [
@@ -1397,71 +1412,71 @@
           "ts": 1777736707
         }
       ],
-      "z_score": 0.15
+      "z_score": -0.06
     },
     {
       "sym": "XRP",
       "name": "Ripple",
-      "mentions": 42,
-      "mentions_6h": 29,
-      "mentions_24h": 34,
-      "velocity_per_hour": 4.83,
-      "sentiment": 0.045,
-      "bull_pct": 0.333,
-      "bear_pct": 0.167,
+      "mentions": 38,
+      "mentions_6h": 27,
+      "mentions_24h": 29,
+      "velocity_per_hour": 4.5,
+      "sentiment": -0.008,
+      "bull_pct": 0.263,
+      "bear_pct": 0.184,
       "platforms": {
         "4chan": 1,
-        "stocktwits": 20,
+        "stocktwits": 16,
         "bluesky": 21
       },
       "samples": [
         {
           "text": "/XSG/ XRP Schizo Kill-Spammy General #2541 Previously on /XSG/:  >>62128474   >Buy XRP on:  Coinbase, Binance, Bitrue, Uphold, Robinhood, Kraken, Kucoin, etc  >Why hold XRP?  https://youtu.be/5urrOWO0KDI  >Newfag Tutorial:  https://youtu.be",
           "platform": "4chan",
-          "score": 221,
+          "score": 223,
           "url": "https://boards.4chan.org/biz/thread/62155670",
           "sent": -0.261,
           "ts": 1777128662
         },
         {
-          "text": "$BTC.X $ETH.X $QQQ $SPY $XRP.X \n\n$90,000 next week \n\nDon’t sweat the technique",
+          "text": "$BTC.X  $84,000 estimate \n\n 36 - 48 hours out from now \n\n$SPY $DIA                $XRP.X  $ETH.X",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/QQQ",
+          "url": "https://stocktwits.com/symbol/SPY",
           "sent": 0.7,
-          "ts": 1777740930
+          "ts": 1777744581
         },
         {
-          "text": "$BTC.X  $XRP.X $ETH.X $QQQ $SPY \n\n🧞‍♂️⭐️⭐️⭐️⭐️🔥🔥🔥🔥⭐️⭐️⭐️⭐️ 👏",
+          "text": "$BTC.X it’s time to pump the next $2000\n\n$ETH.X $XRP.X  it’s go time folks 🏄‍♂️ \n\n$SPY $DJIA",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/QQQ",
+          "url": "https://stocktwits.com/symbol/SPY",
           "sent": 0.7,
-          "ts": 1777740857
+          "ts": 1777743518
         },
         {
-          "text": "SOL / XRP\nthecryptobasic.com/solana-exec-...\n\n#memecoin #altcoin #blockchain #stablecoin #bitcoin #btc\n#xrp #ethereum #NotSpam\nThis post is not intended to be investment advice",
+          "text": "XRP\nzycrypto.com/is-10k-xrp-d...\n\n#memecoin #altcoin #blockchain #stablecoin #bitcoin #btc\n#xrp #ethereum #NotSpam\nThis post is not intended to be investment advice",
           "platform": "bluesky",
           "score": 1,
-          "url": "https://bsky.app/profile/krypto-inc.bsky.social/post/3mkv4vkiihk22",
+          "url": "https://bsky.app/profile/krypto-inc.bsky.social/post/3mkv564tcdk22",
           "sent": 0.0,
-          "ts": 1777741574
+          "ts": 1777741861
         }
       ],
-      "z_score": 1.33
+      "z_score": 0.91
     },
     {
       "sym": "USO",
       "name": "Oil ETF",
-      "mentions": 25,
-      "mentions_6h": 14,
-      "mentions_24h": 19,
-      "velocity_per_hour": 2.33,
-      "sentiment": 0.233,
-      "bull_pct": 0.56,
-      "bear_pct": 0.2,
+      "mentions": 21,
+      "mentions_6h": 10,
+      "mentions_24h": 15,
+      "velocity_per_hour": 1.67,
+      "sentiment": 0.142,
+      "bull_pct": 0.429,
+      "bear_pct": 0.286,
       "platforms": {
-        "stocktwits": 23,
+        "stocktwits": 19,
         "bluesky": 2
       },
       "samples": [
@@ -1474,33 +1489,33 @@
           "ts": 1777542417
         },
         {
-          "text": "$USO $SPY $QQQ \n\nNEW: Trump aides declared an emergency to bypass Congress to sell arms valued at $8.6 billion to Israel and Arab nations. That means less weapons for the US since munitions take years to make. Some Pentagon officials are al",
+          "text": "Trimmed some risk this week and added energy exposure $XLE. \n \nIf crude stays elevated or Middle East tensions escalate, the inverse relationship to the Nasdaq should help offset some portfolio risk. \n \nI walk through the positioning and th",
           "platform": "stocktwits",
           "score": 1,
           "url": "https://stocktwits.com/symbol/SPY",
-          "sent": 0.7,
-          "ts": 1777741785
+          "sent": -0.35,
+          "ts": 1777744266
         },
         {
-          "text": "$QQQ $SPY $USO BREAKING: DURING APRIL 2026, KUWAIT EXPORTED ZERO BARRELS OF CRUDE OIL FOR THE FIRST TIME SINCE THE END OF GULF WAR I",
+          "text": "Trimmed some risk this week and added energy exposure $XLE. \n \nIf crude stays elevated or Middle East tensions escalate, the inverse relationship to the Nasdaq should help offset some portfolio risk. \n \nI walk through the positioning and th",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/SPY",
-          "sent": 0.7,
-          "ts": 1777741710
+          "url": "https://stocktwits.com/symbol/QQQ",
+          "sent": -0.35,
+          "ts": 1777744266
         }
       ],
-      "z_score": 0.11
+      "z_score": -0.52
     },
     {
       "sym": "GOOG",
       "name": "Alphabet C",
       "mentions": 21,
-      "mentions_6h": 5,
+      "mentions_6h": 2,
       "mentions_24h": 13,
-      "velocity_per_hour": 0.83,
-      "sentiment": 0.147,
-      "bull_pct": 0.381,
+      "velocity_per_hour": 0.33,
+      "sentiment": 0.176,
+      "bull_pct": 0.429,
       "bear_pct": 0.143,
       "platforms": {
         "stocktwits": 5,
@@ -1508,12 +1523,12 @@
       },
       "samples": [
         {
-          "text": "$GOOG $TSLA $QCOM The top performing options lottos of the week from Apr 27 - May 1. #ConsistentProfits #BluevilleCapital",
+          "text": "$META llama is a fun local LLM for conversational agents to have practically an unlimited context window\n\nNot sure how that helps investors. But meta is pretty dope for giving it out for free\n\nGemma is supposed to be pretty cool to and on p",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/TSLA",
-          "sent": 0.101,
-          "ts": 1777731821
+          "url": "https://stocktwits.com/symbol/META",
+          "sent": 0.7,
+          "ts": 1777742461
         },
         {
           "text": "$META Wall Street Breakfast gave a good recap on this weeks tech moves. $META was compared to $GOOG during the Podcast. $META stated they were cutting spending and leaning towards more AI and less humans to become more efficient. $META beat",
@@ -1540,20 +1555,20 @@
           "ts": 1777723236
         }
       ],
-      "z_score": -2.01
+      "z_score": -1.97
     },
     {
       "sym": "ORCL",
       "name": "Oracle",
-      "mentions": 21,
-      "mentions_6h": 4,
-      "mentions_24h": 14,
-      "velocity_per_hour": 0.67,
-      "sentiment": 0.145,
-      "bull_pct": 0.381,
-      "bear_pct": 0.286,
+      "mentions": 20,
+      "mentions_6h": 5,
+      "mentions_24h": 13,
+      "velocity_per_hour": 0.83,
+      "sentiment": 0.127,
+      "bull_pct": 0.35,
+      "bear_pct": 0.25,
       "platforms": {
-        "stocktwits": 11,
+        "stocktwits": 10,
         "bluesky": 10
       },
       "samples": [
@@ -1582,15 +1597,15 @@
           "ts": 1777668111
         },
         {
-          "text": "@Trading_Up123 I&#39;m not surprised $META fell. This is not the first time $META has dropped on increased AI spending and it&#39;s a big reason $ORCL was so weak from it&#39;s top. $META is STILL losing on reality labs. ($400M revenue and ",
+          "text": "$MSFT $TSLA $ORCL $GOOGL $AMZN  Holy Shat I just saw this and the store is in the USA! Robostore. You can buy your own robot...NOW!!! \nhttps://robostore.com/?srsltid=AfmBOoq84brUSnTAX5Q2Ue42CD8_8O5xDmrTzyoosszgIjJXqmEvvWxJ",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/META",
-          "sent": 0.119,
-          "ts": 1777692792
+          "url": "https://stocktwits.com/symbol/GOOGL",
+          "sent": 0.7,
+          "ts": 1777687189
         }
       ],
-      "z_score": 1.54
+      "z_score": 1.31
     },
     {
       "sym": "MU",
@@ -1599,29 +1614,29 @@
       "mentions_6h": 4,
       "mentions_24h": 11,
       "velocity_per_hour": 0.67,
-      "sentiment": 0.049,
-      "bull_pct": 0.294,
-      "bear_pct": 0.235,
+      "sentiment": 0.156,
+      "bull_pct": 0.412,
+      "bear_pct": 0.118,
       "platforms": {
         "stocktwits": 9,
         "bluesky": 8
       },
       "samples": [
         {
-          "text": "$SPY $QQQ $MU $NVDA &lt;&lt;&lt;20 min ago: \n \n—Iran military official says renewed war with U.S. &#39;likely&#39; \n \n—US Iran war deal rejected: Trump &quot;not satisfied&quot; with proposal \n \n—‘Blast Them to Hell’: Donald Trump’s Stark W",
+          "text": "$MU $SPY $QQQ $DJI   \n \n$MU  Resistance-line success follow‑up: Micron (MU) has now gained 75% \n \nWe’ll continue to track Micron closely. Since our timely bottom‑picking entry in late March, the stock has already advanced about 75%, and is ",
           "platform": "stocktwits",
           "score": 1,
           "url": "https://stocktwits.com/symbol/SPY",
-          "sent": -0.478,
-          "ts": 1777741063
+          "sent": 0.435,
+          "ts": 1777744393
         },
         {
-          "text": "$SPY $QQQ $MU $NVDA &lt;&lt;&lt;20 min ago: \n \n—Iran military official says renewed war with U.S. &#39;likely&#39; \n \n—US Iran war deal rejected: Trump &quot;not satisfied&quot; with proposal \n \n—‘Blast Them to Hell’: Donald Trump’s Stark W",
+          "text": "$MU $SPY $QQQ $DJI   \n \n$MU  Resistance-line success follow‑up: Micron (MU) has now gained 75% \n \nWe’ll continue to track Micron closely. Since our timely bottom‑picking entry in late March, the stock has already advanced about 75%, and is ",
           "platform": "stocktwits",
           "score": 1,
           "url": "https://stocktwits.com/symbol/QQQ",
-          "sent": -0.478,
-          "ts": 1777741063
+          "sent": 0.435,
+          "ts": 1777744393
         },
         {
           "text": "$SPY $QQQ $MU $NVDA &lt;&lt;&lt;20 min ago: \n \n—Iran military official says renewed war with U.S. &#39;likely&#39; \n \n—US Iran war deal rejected: Trump &quot;not satisfied&quot; with proposal \n \n—‘Blast Them to Hell’: Donald Trump’s Stark W",
@@ -1640,48 +1655,7 @@
           "ts": 1777663613
         }
       ],
-      "z_score": -0.47
-    },
-    {
-      "sym": "SLV",
-      "name": "Silver ETF",
-      "mentions": 15,
-      "mentions_6h": 4,
-      "mentions_24h": 15,
-      "velocity_per_hour": 0.67,
-      "sentiment": 0.069,
-      "bull_pct": 0.4,
-      "bear_pct": 0.333,
-      "platforms": {
-        "stocktwits": 15
-      },
-      "samples": [
-        {
-          "text": "$DJT $GLD $SLV $SPY more shocking is you are still getting a fish wrap?",
-          "platform": "stocktwits",
-          "score": 1,
-          "url": "https://stocktwits.com/symbol/SPY",
-          "sent": -0.229,
-          "ts": 1777741722
-        },
-        {
-          "text": "$SLV $SPY $GLD $DJT nickel gone next!?!?!?",
-          "platform": "stocktwits",
-          "score": 1,
-          "url": "https://stocktwits.com/symbol/SPY",
-          "sent": 0.0,
-          "ts": 1777741458
-        },
-        {
-          "text": "$DJT $GLD $SLV $SPY more shocking is you are still getting a fish wrap?",
-          "platform": "stocktwits",
-          "score": 1,
-          "url": "https://stocktwits.com/symbol/GLD",
-          "sent": -0.229,
-          "ts": 1777741722
-        }
-      ],
-      "z_score": 0.48
+      "z_score": -0.46
     },
     {
       "sym": "TSM",
@@ -1723,14 +1697,14 @@
           "ts": 1777685599
         }
       ],
-      "z_score": 0.52
+      "z_score": 0.51
     },
     {
       "sym": "NFLX",
       "name": "Netflix",
       "mentions": 15,
       "mentions_6h": 0,
-      "mentions_24h": 14,
+      "mentions_24h": 7,
       "velocity_per_hour": 0.0,
       "sentiment": 0.07,
       "bull_pct": 0.0,
@@ -1764,30 +1738,79 @@
           "ts": 1777690036
         }
       ],
-      "z_score": 1.54
+      "z_score": 1.5
+    },
+    {
+      "sym": "SLV",
+      "name": "Silver ETF",
+      "mentions": 13,
+      "mentions_6h": 2,
+      "mentions_24h": 13,
+      "velocity_per_hour": 0.33,
+      "sentiment": 0.097,
+      "bull_pct": 0.462,
+      "bear_pct": 0.308,
+      "platforms": {
+        "stocktwits": 13
+      },
+      "samples": [
+        {
+          "text": "$DJT $GLD $SLV $SPY more shocking is you are still getting a fish wrap?",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/GLD",
+          "sent": -0.229,
+          "ts": 1777741722
+        },
+        {
+          "text": "$SLV $SPY $GLD $DJT nickel gone next!?!?!?",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/GLD",
+          "sent": 0.0,
+          "ts": 1777741458
+        },
+        {
+          "text": "$BTC.X What&#39;s the point of buying crypto when tether is buying gold? (holding 154 tonnes currently). Crypto has no use case if it&#39;s being backed by Gold so might as well just buy Gold $GLD $SLV",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/GLD",
+          "sent": -0.7,
+          "ts": 1777716316
+        }
+      ],
+      "z_score": -0.22
     },
     {
       "sym": "QCOM",
       "name": "Qualcomm",
-      "mentions": 12,
+      "mentions": 13,
       "mentions_6h": 5,
-      "mentions_24h": 7,
+      "mentions_24h": 8,
       "velocity_per_hour": 0.83,
-      "sentiment": 0.082,
-      "bull_pct": 0.25,
-      "bear_pct": 0.0,
+      "sentiment": 0.068,
+      "bull_pct": 0.308,
+      "bear_pct": 0.077,
       "platforms": {
-        "stocktwits": 1,
+        "stocktwits": 2,
         "bluesky": 11
       },
       "samples": [
         {
-          "text": "$GOOG $TSLA $QCOM The top performing options lottos of the week from Apr 27 - May 1. #ConsistentProfits #BluevilleCapital",
+          "text": "$INTC $JPM $QCOM $MSFT $INTC or a repricing hapening before your eyes",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/TSLA",
-          "sent": 0.101,
-          "ts": 1777731821
+          "url": "https://stocktwits.com/symbol/MSFT",
+          "sent": 0.7,
+          "ts": 1777742110
+        },
+        {
+          "text": "$INTC at ~$100 looks like a classic late-stage momentum blow-off, repeatedly tagging and failing around the $100 level — including pushing above it after hours — without any real follow-through, which signals exhaustion rather than strength",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/MSFT",
+          "sent": -0.7,
+          "ts": 1777742064
         },
         {
           "text": "📊 This Week in Visuals\n\n📱Apple $AAPL\n☁️ Microsoft $MSFT\n🕶️ Meta $META\n💊 Eli Lilly $LLY\n💳 Visa $V\n🥤 Coca-Cola $KO\n📲 Qualcomm $QCOM\n💾 Sandisk $SNDK\n🎧 Spotify $SPOT\n🪶Robinhood $HOOD\n☕️ Starbucks $SBUX\n🏦 SoFi $SOFI\n☁️ Atlassian $TEAM\n⚡ Rivian $",
@@ -1796,17 +1819,59 @@
           "url": "https://bsky.app/profile/economyapp.extwitter.link/post/3mkuwft4yft23",
           "sent": 0.191,
           "ts": 1777734603
-        },
-        {
-          "text": "$GOOG $TSLA $QCOM The top performing options lottos of the week from Apr 27 - May 1. #ConsistentProfits #BluevilleCapital",
-          "platform": "bluesky",
-          "score": 0,
-          "url": "https://bsky.app/profile/bluevillecapital.bsky.social/post/3mkutuacrhk22",
-          "sent": 0.101,
-          "ts": 1777731866
         }
       ],
-      "z_score": -0.24
+      "z_score": -0.02
+    },
+    {
+      "sym": "LLY",
+      "name": "Eli Lilly",
+      "mentions": 12,
+      "mentions_6h": 5,
+      "mentions_24h": 11,
+      "velocity_per_hour": 0.83,
+      "sentiment": -0.02,
+      "bull_pct": 0.167,
+      "bear_pct": 0.083,
+      "platforms": {
+        "stocktwits": 3,
+        "bluesky": 9
+      },
+      "samples": [
+        {
+          "text": "🚨1 Strategy that you can trade  for life and consistency : Psych Numbers \n \n&gt; Day Trades &amp; Swing Trades vs Psych Numbers \n&gt; Importance of 10,50, 100, 200, 500, 1000 and more \n&gt; Long &amp; Shorts vs Psych Numbers \n&gt; How they ",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/NVDA",
+          "sent": 0.101,
+          "ts": 1777744987
+        },
+        {
+          "text": "Most bulls on $HIMS think the company can lock customers in via membership models, becoming some kind of Amazon or Netflix in healthcare. \n \nMuch of the previous optimism regarding Hims&#39; profit margins stemmed from the low cost of compo",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/AMZN",
+          "sent": -0.7,
+          "ts": 1777741200
+        },
+        {
+          "text": "I have a really big GLP-1 weightloss drug market analysis coming up.\nWhats particularly interesting is the high barrier of entry but also:\n1. Drug producers ($LLY; $NVO) are currently protected by patents, so their margins are really high.\n",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/AMZN",
+          "sent": 0.109,
+          "ts": 1777736194
+        },
+        {
+          "text": "$GOOGL $LLY $MU $INTC $SNDK $V $CAT $SBUX $BE among this week's winners\n$META $NVDA $KLAC $GLW $GEV $FCX losers @finviz_com ",
+          "platform": "bluesky",
+          "score": 1,
+          "url": "https://bsky.app/profile/mikezaccardi.bsky.social/post/3mksuc7chlx25",
+          "sent": -0.039,
+          "ts": 1777663613
+        }
+      ],
+      "z_score": 0.5
     },
     {
       "sym": "BMNR",
@@ -1856,20 +1921,20 @@
           "ts": 1777564972
         }
       ],
-      "z_score": 1.65
+      "z_score": 1.63
     },
     {
       "sym": "V",
       "name": "Visa",
-      "mentions": 11,
-      "mentions_6h": 5,
-      "mentions_24h": 10,
-      "velocity_per_hour": 0.83,
-      "sentiment": 0.349,
-      "bull_pct": 0.818,
+      "mentions": 10,
+      "mentions_6h": 2,
+      "mentions_24h": 9,
+      "velocity_per_hour": 0.33,
+      "sentiment": 0.326,
+      "bull_pct": 0.8,
       "bear_pct": 0.0,
       "platforms": {
-        "stocktwits": 4,
+        "stocktwits": 3,
         "bluesky": 7
       },
       "samples": [
@@ -1885,59 +1950,17 @@
           "text": "Another perfect play. This is why I continue to only buy when H% is low.\n\nLet&#39;s play a game. Guess which ticker this is.\nThis is the play from March from buying when H% is low. Got Buy Fills + Timestamps + Gain % for those who are skept",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/TSLA",
-          "sent": 0.577,
-          "ts": 1777722086
-        },
-        {
-          "text": "Another perfect play. This is why I continue to only buy when H% is low.\n\nLet&#39;s play a game. Guess which ticker this is.\nThis is the play from March from buying when H% is low. Got Buy Fills + Timestamps + Gain % for those who are skept",
-          "platform": "stocktwits",
-          "score": 1,
           "url": "https://stocktwits.com/symbol/MSFT",
           "sent": 0.577,
           "ts": 1777722086
         },
         {
-          "text": "$GOOGL $LLY $MU $INTC $SNDK $V $CAT $SBUX $BE among this week's winners\n$META $NVDA $KLAC $GLW $GEV $FCX losers @finviz_com ",
-          "platform": "bluesky",
-          "score": 1,
-          "url": "https://bsky.app/profile/mikezaccardi.bsky.social/post/3mksuc7chlx25",
-          "sent": -0.039,
-          "ts": 1777663613
-        }
-      ],
-      "z_score": 0.92
-    },
-    {
-      "sym": "LLY",
-      "name": "Eli Lilly",
-      "mentions": 11,
-      "mentions_6h": 8,
-      "mentions_24h": 10,
-      "velocity_per_hour": 1.33,
-      "sentiment": -0.031,
-      "bull_pct": 0.182,
-      "bear_pct": 0.091,
-      "platforms": {
-        "stocktwits": 2,
-        "bluesky": 9
-      },
-      "samples": [
-        {
-          "text": "Most bulls on $HIMS think the company can lock customers in via membership models, becoming some kind of Amazon or Netflix in healthcare. \n \nMuch of the previous optimism regarding Hims&#39; profit margins stemmed from the low cost of compo",
+          "text": "$XOM $PFE $AVGO $V $MA \n\n.....",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/AMZN",
-          "sent": -0.7,
-          "ts": 1777741200
-        },
-        {
-          "text": "I have a really big GLP-1 weightloss drug market analysis coming up.\nWhats particularly interesting is the high barrier of entry but also:\n1. Drug producers ($LLY; $NVO) are currently protected by patents, so their margins are really high.\n",
-          "platform": "stocktwits",
-          "score": 1,
-          "url": "https://stocktwits.com/symbol/AMZN",
-          "sent": 0.109,
-          "ts": 1777736194
+          "url": "https://stocktwits.com/symbol/AVGO",
+          "sent": 0.7,
+          "ts": 1777633130
         },
         {
           "text": "$GOOGL $LLY $MU $INTC $SNDK $V $CAT $SBUX $BE among this week's winners\n$META $NVDA $KLAC $GLW $GEV $FCX losers @finviz_com ",
@@ -1948,91 +1971,49 @@
           "ts": 1777663613
         }
       ],
-      "z_score": 0.29
+      "z_score": 0.67
     },
     {
-      "sym": "BNB",
-      "name": "BNB",
-      "mentions": 11,
-      "mentions_6h": 11,
-      "mentions_24h": 11,
-      "velocity_per_hour": 1.83,
-      "sentiment": -0.037,
-      "bull_pct": 0.0,
-      "bear_pct": 0.0,
-      "platforms": {
-        "stocktwits": 1,
-        "bluesky": 10
-      },
-      "samples": [
-        {
-          "text": "$BNB.X $COIN $BLSH \n\nKeeper 💯",
-          "platform": "stocktwits",
-          "score": 1,
-          "url": "https://stocktwits.com/symbol/COIN",
-          "sent": 0.0,
-          "ts": 1777723725
-        },
-        {
-          "text": "9:57 AM PST\n\nBTC\n$78,427.00\n\nETH\n$2,307.94\n\nXRP\n$1.39\n\nBNB\n$617.75\n\nUSDC\n$0.999876\n\nSOL\n$84.09\n\nTRX\n$0.332291\n\nFIGR_HELOC\n$1.032\n\nDOGE\n$0.108882\n\n#memecoin #altcoin #blockchain #stablecoin #bitcoin #btc\n#xrp #ethereum #NotSpam\nThis post is ",
-          "platform": "bluesky",
-          "score": 0,
-          "url": "https://bsky.app/profile/krypto-inc.bsky.social/post/3mkv4grfyt222",
-          "sent": 0.0,
-          "ts": 1777741078
-        },
-        {
-          "text": "📉 Crypto Market Update\n🟢 BTC: $78,483.34 (209.45, 0.27%)\n🟢 ETH: $2,308.53 (5.72, 0.25%)\n🔴 BNB: $618.03 (-1.98, -0.32%)\n🔴 SOL: $84.07 (-0.18, -0.21%)\n🟢 XRP: $1.39 (0, -0.22%)\n🟢 ADA: $0.25 (0, 0.44%)\n\n#Crypto #Bitcoin #Ethereum\n",
-          "platform": "bluesky",
-          "score": 0,
-          "url": "https://bsky.app/profile/fincoins.bsky.social/post/3mkv2zbeknc2c",
-          "sent": 0.0,
-          "ts": 1777739551
-        }
-      ],
-      "z_score": 0.4
-    },
-    {
-      "sym": "DOGE",
-      "name": "Dogecoin",
+      "sym": "JPM",
+      "name": "JPMorgan",
       "mentions": 10,
-      "mentions_6h": 8,
+      "mentions_6h": 4,
       "mentions_24h": 8,
-      "velocity_per_hour": 1.33,
-      "sentiment": -0.103,
-      "bull_pct": 0.0,
-      "bear_pct": 0.1,
+      "velocity_per_hour": 0.67,
+      "sentiment": 0.129,
+      "bull_pct": 0.4,
+      "bear_pct": 0.2,
       "platforms": {
-        "stocktwits": 1,
-        "bluesky": 9
+        "stocktwits": 4,
+        "bluesky": 6
       },
       "samples": [
         {
-          "text": "$SPY $DJT $BTC.X $DOGE.X $SOL  \n  \nArt of the Deal \n \nSpend $100, get $50 back, strut around like you won. That&#39;s how you bankrupt businesses and countries.",
+          "text": "First $2k profit week trading options.\n\nGoing to let the $JPM call exercise, and open a new position on Monday. I’m thinking $MSFT or $GOOGL.\n\nHappy you’re all sticking around. In another few years, this will be my job, and it just makes me",
+          "platform": "bluesky",
+          "score": 2,
+          "url": "https://bsky.app/profile/idogcapital.bsky.social/post/3mkshyapcq22w",
+          "sent": 0.454,
+          "ts": 1777650396
+        },
+        {
+          "text": "First $2k profit week trading options.\n\nGoing to let the $JPM call exercise, and open a new position on Monday. I’m thinking $MSFT or $GOOGL.\n\nHappy you’re all sticking around. In another few years, this will be my job, and it just makes me",
+          "platform": "bluesky",
+          "score": 2,
+          "url": "https://bsky.app/profile/idogcapital.bsky.social/post/3mkshyapcq22w",
+          "sent": 0.454,
+          "ts": 1777650396
+        },
+        {
+          "text": "$INTC $JPM $QCOM $MSFT $INTC or a repricing hapening before your eyes",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/SOL",
-          "sent": -0.7,
-          "ts": 1775664544
-        },
-        {
-          "text": "DOGE\ncoinfomania.com/dogecoin-qui...\n\n#memecoin #altcoin #blockchain #stablecoin #bitcoin #btc\n#xrp #ethereum #NotSpam\nThis post is not intended to be investment advice",
-          "platform": "bluesky",
-          "score": 1,
-          "url": "https://bsky.app/profile/krypto-inc.bsky.social/post/3mkv4plerdk22",
-          "sent": 0.0,
-          "ts": 1777741373
-        },
-        {
-          "text": "Bitcoin, ETH, XRP, DOGE, MSTR Cashtags Go Live on X Web, Musk Says Most Crypto Are Scams\n\nElon Musk’s X rolls out the Smart Cashtags feature for stocks and crypto assets on the web version today. This new feature adds interactive, real-time",
-          "platform": "bluesky",
-          "score": 0,
-          "url": "https://bsky.app/profile/finovohub.bsky.social/post/3mkrc6kw5ks2w",
-          "sent": -0.038,
-          "ts": 1777609804
+          "url": "https://stocktwits.com/symbol/MSFT",
+          "sent": 0.7,
+          "ts": 1777742110
         }
       ],
-      "z_score": 0.53
+      "z_score": 2.3
     },
     {
       "sym": "RKLB",
@@ -2073,21 +2054,63 @@
           "ts": 1777371493
         }
       ],
-      "z_score": -0.68
+      "z_score": -0.67
+    },
+    {
+      "sym": "DOGE",
+      "name": "Dogecoin",
+      "mentions": 9,
+      "mentions_6h": 7,
+      "mentions_24h": 7,
+      "velocity_per_hour": 1.17,
+      "sentiment": -0.005,
+      "bull_pct": 0.111,
+      "bear_pct": 0.111,
+      "platforms": {
+        "stocktwits": 1,
+        "bluesky": 8
+      },
+      "samples": [
+        {
+          "text": "$SPY $DJT $BTC.X $DOGE.X $SOL  \n  \nArt of the Deal \n \nSpend $100, get $50 back, strut around like you won. That&#39;s how you bankrupt businesses and countries.",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/SOL",
+          "sent": -0.7,
+          "ts": 1775664544
+        },
+        {
+          "text": "Dogecoin's inverted chart might look like a steep fall, but when you flip the script, it seems DOGE is just doing its usual playful dance, keeping us guessing.\n\nhttps://bigcoinreport.com/story/1890096\n\n#Bitcoin #crypto #bigcoinreport",
+          "platform": "bluesky",
+          "score": 0,
+          "url": "https://bsky.app/profile/bigcoinreport.bsky.social/post/3mkva3nzvvm27",
+          "sent": 0.486,
+          "ts": 1777744999
+        },
+        {
+          "text": "Bitcoin, ETH, XRP, DOGE, MSTR Cashtags Go Live on X Web, Musk Says Most Crypto Are Scams\n\nElon Musk’s X rolls out the Smart Cashtags feature for stocks and crypto assets on the web version today. This new feature adds interactive, real-time",
+          "platform": "bluesky",
+          "score": 0,
+          "url": "https://bsky.app/profile/finovohub.bsky.social/post/3mkrc6kw5ks2w",
+          "sent": -0.038,
+          "ts": 1777609804
+        }
+      ],
+      "z_score": 0.32
     },
     {
       "sym": "APP",
       "name": "AppLovin",
-      "mentions": 9,
-      "mentions_6h": 7,
-      "mentions_24h": 9,
-      "velocity_per_hour": 1.17,
-      "sentiment": 0.105,
-      "bull_pct": 0.556,
-      "bear_pct": 0.222,
+      "mentions": 8,
+      "mentions_6h": 6,
+      "mentions_24h": 8,
+      "velocity_per_hour": 1.0,
+      "sentiment": 0.092,
+      "bull_pct": 0.5,
+      "bear_pct": 0.25,
       "platforms": {
         "stocktwits": 4,
-        "bluesky": 5
+        "bluesky": 4
       },
       "samples": [
         {
@@ -2123,20 +2146,112 @@
           "ts": 1777708799
         }
       ],
-      "z_score": 2.45
+      "z_score": 1.66
     },
     {
-      "sym": "TQQQ",
-      "name": "QQQ 3x",
+      "sym": "BNB",
+      "name": "BNB",
       "mentions": 8,
       "mentions_6h": 8,
       "mentions_24h": 8,
       "velocity_per_hour": 1.33,
+      "sentiment": -0.017,
+      "bull_pct": 0.0,
+      "bear_pct": 0.0,
+      "platforms": {
+        "stocktwits": 1,
+        "bluesky": 7
+      },
+      "samples": [
+        {
+          "text": "$BNB.X $COIN $BLSH \n\nKeeper 💯",
+          "platform": "stocktwits",
+          "score": 1,
+          "url": "https://stocktwits.com/symbol/COIN",
+          "sent": 0.0,
+          "ts": 1777723725
+        },
+        {
+          "text": "📉 Crypto Market Update\n🟢 BTC: $78,463.23 (261.24, 0.33%)\n🟢 ETH: $2,308.24 (5.56, 0.24%)\n🔴 BNB: $618.4 (-0.75, -0.12%)\n🟢 SOL: $84.09 (0.16, 0.19%)\n🟢 XRP: $1.39 (0, 0.24%)\n🟢 ADA: $0.25 (0, 0.36%)\n\n#Crypto #Bitcoin #Ethereum\n",
+          "platform": "bluesky",
+          "score": 0,
+          "url": "https://bsky.app/profile/fincoins.bsky.social/post/3mkv6ekg7sq2q",
+          "sent": 0.0,
+          "ts": 1777743150
+        },
+        {
+          "text": "📉 Crypto Market Update\n🟢 BTC: $78,463.23 (261.24, 0.33%)\n🟢 ETH: $2,308.24 (5.56, 0.24%)\n🔴 BNB: $618.4 (-0.75, -0.12%)\n🟢 SOL: $84.09 (0.16, 0.19%)\n🟢 XRP: $1.39 (0, 0.24%)\n🟢 ADA: $0.25 (0, 0.36%)\n\n#Crypto #Bitcoin #Ethereum\n",
+          "platform": "bluesky",
+          "score": 0,
+          "url": "https://bsky.app/profile/fincoins.bsky.social/post/3mkv6ekg7sq2q",
+          "sent": 0.0,
+          "ts": 1777743150
+        }
+      ],
+      "z_score": -0.29
+    },
+    {
+      "sym": "LINK",
+      "name": "Chainlink",
+      "mentions": 7,
+      "mentions_6h": 7,
+      "mentions_24h": 7,
+      "velocity_per_hour": 1.17,
+      "sentiment": 0.029,
+      "bull_pct": 0.286,
+      "bear_pct": 0.286,
+      "platforms": {
+        "4chan": 3,
+        "bluesky": 4
+      },
+      "samples": [
+        {
+          "text": " Daily reminder that LINK is the most suppressed project ever to grace the earth, and the only one that matters.",
+          "platform": "4chan",
+          "score": 5,
+          "url": "https://boards.4chan.org/biz/thread/62181346",
+          "sent": 0.22,
+          "ts": 1777739125
+        },
+        {
+          "text": " If you hold LINK you are a part of the p3do cult now. How does it feel linkies? How far have you fallen?",
+          "platform": "4chan",
+          "score": 5,
+          "url": "https://boards.4chan.org/biz/thread/62181073",
+          "sent": -0.167,
+          "ts": 1777731312
+        },
+        {
+          "text": " Is LINK going to surpass its ATH?",
+          "platform": "4chan",
+          "score": 5,
+          "url": "https://boards.4chan.org/biz/thread/62181442",
+          "sent": 0.173,
+          "ts": 1777741527
+        },
+        {
+          "text": "LINK\ncoinpedia.org/price-analys...\n\n#memecoin #altcoin #blockchain #stablecoin #bitcoin #btc\n#xrp #ethereum #NotSpam\nThis post is not intended to be investment advice",
+          "platform": "bluesky",
+          "score": 1,
+          "url": "https://bsky.app/profile/krypto-inc.bsky.social/post/3mkv5cc6db222",
+          "sent": 0.0,
+          "ts": 1777742001
+        }
+      ],
+      "z_score": 0.49
+    },
+    {
+      "sym": "TQQQ",
+      "name": "QQQ 3x",
+      "mentions": 7,
+      "mentions_6h": 7,
+      "mentions_24h": 7,
+      "velocity_per_hour": 1.17,
       "sentiment": -0.7,
       "bull_pct": 0.0,
       "bear_pct": 1.0,
       "platforms": {
-        "stocktwits": 8
+        "stocktwits": 7
       },
       "samples": [
         {
@@ -2164,21 +2279,21 @@
           "ts": 1777733581
         }
       ],
-      "z_score": 0.36
+      "z_score": 0.12
     },
     {
       "sym": "UBER",
       "name": "Uber",
-      "mentions": 8,
-      "mentions_6h": 3,
-      "mentions_24h": 7,
-      "velocity_per_hour": 0.5,
-      "sentiment": 0.151,
-      "bull_pct": 0.625,
+      "mentions": 7,
+      "mentions_6h": 2,
+      "mentions_24h": 6,
+      "velocity_per_hour": 0.33,
+      "sentiment": 0.143,
+      "bull_pct": 0.571,
       "bear_pct": 0.0,
       "platforms": {
         "stocktwits": 2,
-        "bluesky": 6
+        "bluesky": 5
       },
       "samples": [
         {
@@ -2206,21 +2321,21 @@
           "ts": 1777708799
         }
       ],
-      "z_score": 2.51
+      "z_score": 1.95
     },
     {
       "sym": "CRWV",
       "name": "CoreWeave",
-      "mentions": 8,
-      "mentions_6h": 3,
-      "mentions_24h": 6,
-      "velocity_per_hour": 0.5,
-      "sentiment": 0.119,
-      "bull_pct": 0.625,
+      "mentions": 7,
+      "mentions_6h": 2,
+      "mentions_24h": 5,
+      "velocity_per_hour": 0.33,
+      "sentiment": 0.105,
+      "bull_pct": 0.571,
       "bear_pct": 0.0,
       "platforms": {
         "stocktwits": 1,
-        "bluesky": 7
+        "bluesky": 6
       },
       "samples": [
         {
@@ -2248,153 +2363,56 @@
           "ts": 1777370700
         }
       ],
-      "z_score": 0.71
+      "z_score": 0.36
     },
     {
-      "sym": "ADA",
-      "name": "Cardano",
-      "mentions": 8,
-      "mentions_6h": 8,
-      "mentions_24h": 8,
-      "velocity_per_hour": 1.33,
-      "sentiment": -0.051,
+      "sym": "XLE",
+      "name": "Energy SPDR",
+      "mentions": 6,
+      "mentions_6h": 5,
+      "mentions_24h": 6,
+      "velocity_per_hour": 0.83,
+      "sentiment": -0.184,
       "bull_pct": 0.0,
-      "bear_pct": 0.0,
+      "bear_pct": 0.5,
       "platforms": {
-        "bluesky": 8
+        "stocktwits": 6
       },
       "samples": [
         {
-          "text": "ADA\nzycrypto.com/cardano-whal...\n\n#memecoin #altcoin #blockchain #stablecoin #bitcoin #btc\n#xrp #ethereum #NotSpam\nThis post is not intended to be investment advice",
-          "platform": "bluesky",
-          "score": 0,
-          "url": "https://bsky.app/profile/krypto-inc.bsky.social/post/3mkv54plyuc22",
-          "sent": 0.0,
-          "ts": 1777741814
-        },
-        {
-          "text": "📉 Crypto Market Update\n🟢 BTC: $78,483.34 (209.45, 0.27%)\n🟢 ETH: $2,308.53 (5.72, 0.25%)\n🔴 BNB: $618.03 (-1.98, -0.32%)\n🔴 SOL: $84.07 (-0.18, -0.21%)\n🟢 XRP: $1.39 (0, -0.22%)\n🟢 ADA: $0.25 (0, 0.44%)\n\n#Crypto #Bitcoin #Ethereum\n",
-          "platform": "bluesky",
-          "score": 0,
-          "url": "https://bsky.app/profile/fincoins.bsky.social/post/3mkv2zbeknc2c",
-          "sent": 0.0,
-          "ts": 1777739551
-        },
-        {
-          "text": "🔍 Crypto Volume Heatmap (24Hrs):\n\n🟩 High: $USDT $BTC $ETH $USDC $SOL $DOGE $XRP $ZEC $BNB $USD1 $TRX $GRASS $TAO $LAB $LTC $HYPE $ADA $LINK $PENGU $PEPE $UB\n\n🟥 Low: $SEI $CRVUSD $RAIN $COMP $THETA $KCS $BDX $PYTH $JTO $VVV $GRT $GNO $U $KAS",
-          "platform": "bluesky",
-          "score": 0,
-          "url": "https://bsky.app/profile/zonecrypto.bsky.social/post/3mkv2lxfnpa24",
-          "sent": -0.137,
-          "ts": 1777739104
-        }
-      ],
-      "z_score": 0.31
-    },
-    {
-      "sym": "LINK",
-      "name": "Chainlink",
-      "mentions": 7,
-      "mentions_6h": 7,
-      "mentions_24h": 7,
-      "velocity_per_hour": 1.17,
-      "sentiment": 0.008,
-      "bull_pct": 0.286,
-      "bear_pct": 0.143,
-      "platforms": {
-        "4chan": 3,
-        "bluesky": 4
-      },
-      "samples": [
-        {
-          "text": " If you hold LINK you are a part of the p3do cult now. How does it feel linkies? How far have you fallen?",
-          "platform": "4chan",
-          "score": 4,
-          "url": "https://boards.4chan.org/biz/thread/62181073",
-          "sent": -0.167,
-          "ts": 1777731312
-        },
-        {
-          "text": " Daily reminder that LINK is the most suppressed project ever to grace the earth, and the only one that matters.",
-          "platform": "4chan",
-          "score": 4,
-          "url": "https://boards.4chan.org/biz/thread/62181346",
-          "sent": 0.22,
-          "ts": 1777739125
-        },
-        {
-          "text": " Is LINK going to surpass its ATH?",
-          "platform": "4chan",
-          "score": 2,
-          "url": "https://boards.4chan.org/biz/thread/62181442",
-          "sent": 0.173,
-          "ts": 1777741527
-        },
-        {
-          "text": "📦 Amazonより\n\nCORSAIR iCUE LINK TITAN 360 RX RGB 水冷式 CPU クーラー – RX120 RGB ファン搭載 – Intel® LGA 1851/1700, AMD® AM5/AM4 対応 – iCUE LINK システムハブ同梱 ブラック CW-9061018-WW\n\nhttps://amazon.co.jp/dp/B0D6BFBLTK?tag=papalog001-22\n#アマゾン #Amazon",
-          "platform": "bluesky",
-          "score": 0,
-          "url": "https://bsky.app/profile/papalog11.bsky.social/post/3mkuxdkipct2e",
-          "sent": 0.089,
-          "ts": 1777735598
-        }
-      ],
-      "z_score": 0.48
-    },
-    {
-      "sym": "CRM",
-      "name": "Salesforce",
-      "mentions": 7,
-      "mentions_6h": 7,
-      "mentions_24h": 7,
-      "velocity_per_hour": 1.17,
-      "sentiment": -0.288,
-      "bull_pct": 0.0,
-      "bear_pct": 0.714,
-      "platforms": {
-        "stocktwits": 7
-      },
-      "samples": [
-        {
-          "text": "$SPY $BTC.X $NVDA $CRM $META I don’t report people, it’s not my style. But maybe a few of you who look at this below will.\n\nI’m currently bearish on markets. Very simple. And if I am wrong, I will be humbled. Yess.\n\nIn the meantime, this du",
+          "text": "Trimmed some risk this week and added energy exposure $XLE. \n \nIf crude stays elevated or Middle East tensions escalate, the inverse relationship to the Nasdaq should help offset some portfolio risk. \n \nI walk through the positioning and th",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/NVDA",
-          "sent": -0.7,
-          "ts": 1777737889
+          "url": "https://stocktwits.com/symbol/SPY",
+          "sent": -0.35,
+          "ts": 1777744266
         },
         {
-          "text": "$SPY $BTC.X $NVDA $CRM $META I don’t report people, it’s not my style. But maybe a few of you who look at this below will.\n\nI’m currently bearish on markets. Very simple. And if I am wrong, I will be humbled. Yess.\n\nIn the meantime, this du",
+          "text": "Trimmed some risk this week and added energy exposure $XLE. \n \nIf crude stays elevated or Middle East tensions escalate, the inverse relationship to the Nasdaq should help offset some portfolio risk. \n \nI walk through the positioning and th",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/META",
-          "sent": -0.7,
-          "ts": 1777737889
+          "url": "https://stocktwits.com/symbol/QQQ",
+          "sent": -0.35,
+          "ts": 1777744266
         },
         {
-          "text": "$PLTR Dr Karp letter to shareholders talking  about:  $MSFT  $ORCL  $CRM $NOW  \n \n \nhttps://sih-st-charts.stocktwits-cdn.com/production/original_581698413.jpeg",
+          "text": "$SPY $QQQ $XLE $USO CBOE Volatility Index $VIX falls to its lowest level in 3 months . \n \nNo Fear left in the market...",
           "platform": "stocktwits",
           "score": 1,
-          "url": "https://stocktwits.com/symbol/MSFT",
-          "sent": 0.05,
-          "ts": 1777739788
+          "url": "https://stocktwits.com/symbol/VIX",
+          "sent": 0.004,
+          "ts": 1777669048
         }
       ],
-      "z_score": 2.45
+      "z_score": 0.89
     }
   ],
   "conclusions": [
     {
-      "text": "오늘의 화제: SPY(360) · BTC(241) · QQQ(239)",
+      "text": "오늘의 화제: SPY(360) · QQQ(244) · BTC(233)",
       "tone": "neutral",
       "icon": "🔥",
       "sym": null
-    },
-    {
-      "text": "CRM 패닉 (z=+2.5, 감성 -0.29) — 역발상 매수 후보",
-      "tone": "warn",
-      "icon": "↘",
-      "sym": "CRM"
     },
     {
       "text": "GOOG 조용 (z=-2.0) — 관심 소실, 추세 끝물 가능",
@@ -2403,10 +2421,10 @@
       "sym": "GOOG"
     },
     {
-      "text": "MU 의견 갈림 (강세 29% / 약세 23%) — 변동성 확대 가능",
+      "text": "HYG 의견 갈림 (강세 38% / 약세 19%) — 변동성 확대 가능",
       "tone": "info",
       "icon": "⇄",
-      "sym": "MU"
+      "sym": "HYG"
     }
   ]
 }
