@@ -1,17 +1,17 @@
 {
-  "updated": "2026-05-04 00:00 UTC",
+  "updated": "2026-05-04 04:05 UTC",
   "fx_usdkrw": 1471.22,
   "summary": {
-    "aum_usd": 3087.66,
-    "invested_value_usd": 2919.19,
+    "aum_usd": 3091.94,
+    "invested_value_usd": 2923.47,
     "invested_cost_usd": 2862.13,
-    "pnl_usd": 57.06,
-    "pnl_pct": 1.99,
+    "pnl_usd": 61.34,
+    "pnl_pct": 2.14,
     "cash_usd": 168.47,
     "positions": 9,
-    "aum_display": "$3,088",
-    "pnl_display": "+$57.06",
-    "pnl_pct_display": "+1.99%",
+    "aum_display": "$3,092",
+    "pnl_display": "+$61.34",
+    "pnl_pct_display": "+2.14%",
     "cash_display": "$168.47"
   },
   "allocation": [
@@ -19,21 +19,21 @@
       "label": "US Equities",
       "value": 2818.53,
       "color": "#b45309",
-      "pct": 91.3,
-      "pct_display": "91.3%",
+      "pct": 91.2,
+      "pct_display": "91.2%",
       "pct_int": 91
     },
     {
       "label": "KR Equities",
-      "value": 67.91,
+      "value": 71.13,
       "color": "#0891b2",
-      "pct": 2.2,
-      "pct_display": "2.2%",
+      "pct": 2.3,
+      "pct_display": "2.3%",
       "pct_int": 2
     },
     {
       "label": "Crypto",
-      "value": 32.76,
+      "value": 33.81,
       "color": "#7c3aed",
       "pct": 1.1,
       "pct_display": "1.1%",
@@ -43,8 +43,8 @@
       "label": "Cash",
       "value": 168.47,
       "color": "#78716c",
-      "pct": 5.5,
-      "pct_display": "5.5%",
+      "pct": 5.4,
+      "pct_display": "5.4%",
       "pct_int": 5
     }
   ],
@@ -160,16 +160,16 @@
         "name": "KODEX 200",
         "qty": 1,
         "avg": 55.47,
-        "last": 67.9062,
-        "pnl_pct": 22.42,
-        "value": 67.91,
-        "pnl": 12.44,
+        "last": 71.1348,
+        "pnl_pct": 28.24,
+        "value": 71.13,
+        "pnl": 15.66,
         "logo": "https://www.google.com/s2/favicons?sz=128&domain=kodex.com",
         "avg_display": "$55.47",
-        "last_display": "$67.91",
-        "value_display": "$67.91",
-        "pnl_display": "+$12.44",
-        "pnl_pct_display": "+22.42%"
+        "last_display": "$71.13",
+        "value_display": "$71.13",
+        "pnl_display": "+$15.66",
+        "pnl_pct_display": "+28.24%"
       }
     ],
     "crypto": [
@@ -179,16 +179,16 @@
         "name": "Wormhole",
         "qty": 1541.64,
         "avg": 0.0131,
-        "last": 0.0127,
-        "pnl_pct": -3.12,
-        "value": 19.63,
-        "pnl": -0.63,
+        "last": 0.0132,
+        "pnl_pct": 0.23,
+        "value": 20.3,
+        "pnl": 0.05,
         "logo": "https://coin-images.coingecko.com/coins/images/35087/small/W_Token_%283%29.png?1758122686",
         "avg_display": "$0.0131",
-        "last_display": "$0.0127",
-        "value_display": "$19.63",
-        "pnl_display": "-$0.63",
-        "pnl_pct_display": "-3.12%"
+        "last_display": "$0.0132",
+        "value_display": "$20.30",
+        "pnl_display": "+$0.05",
+        "pnl_pct_display": "+0.23%"
       },
       {
         "sym": "ETH",
@@ -196,16 +196,16 @@
         "name": "Ethereum",
         "qty": 0.00565847,
         "avg": 2392.3,
-        "last": 2320.81,
-        "pnl_pct": -2.99,
-        "value": 13.13,
-        "pnl": -0.4,
+        "last": 2386.78,
+        "pnl_pct": -0.23,
+        "value": 13.51,
+        "pnl": -0.03,
         "logo": "https://coin-images.coingecko.com/coins/images/279/small/ethereum.png",
         "avg_display": "$2,392",
-        "last_display": "$2,321",
-        "value_display": "$13.13",
-        "pnl_display": "-$0.40",
-        "pnl_pct_display": "-2.99%"
+        "last_display": "$2,387",
+        "value_display": "$13.51",
+        "pnl_display": "-$0.03",
+        "pnl_pct_display": "-0.23%"
       }
     ]
   }
